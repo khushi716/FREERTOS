@@ -1,0 +1,57 @@
+16:58:33 **** Incremental Build of configuration Debug for project HAL_FreeRTOS-POSIX_Demo_8 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-hal-posix-freertos Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_8'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+[1/12] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_8/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o
+[2/12] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_8/build/Debug/libraries_shared/abstraction-rtos/source/COMPONENT_FREERTOS/cyabs_freertos_common.o
+[3/12] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_8/build/Debug/libraries_shared/abstraction-rtos/source/COMPONENT_FREERTOS/cyabs_freertos_helpers.o
+[4/12] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_8/build/Debug/libraries_shared/abstraction-rtos/source/COMPONENT_FREERTOS/cyabs_rtos_freertos.o
+[5/12] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_8/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o
+[6/12] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_8/build/Debug/libraries_shared/abstraction-rtos/source/COMPONENT_FREERTOS/cyabs_rtos_dsram.o
+[7/12] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_8/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread_barrier.o
+[8/12] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_8/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_semaphore.o
+[9/12] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_8/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread_cond.o
+[10/12] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_8/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_timer.o
+[11/12] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_8/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_utils.o
+[12/12] Linking, creating elf file build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-posix-freertos.elf
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-objcopy -O ihex C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_8/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-posix-freertos.elf C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_8/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-posix-freertos.hex
+==============================================================================
+= Build complete =
+==============================================================================
+
+Calculating memory consumption: CY8C6347BZI-BLD53 GCC_ARM
+
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  43316      | 
+  | .ARM.exidx           |  0x1002a934   |  8          | 
+  | .copy.table          |  0x1002a93c   |  24         | 
+  | .zero.table          |  0x1002a954   |  8          | 
+  | .data                |  0x0800328c   |  1252       | 
+  | .cy_sharedmem        |  0x08003770   |  12         | 
+  | .noinit              |  0x08003780   |  236        | 
+  | .bss                 |  0x0800386c   |  4428       | 
+  | .heap                |  0x080049b8   |  269896     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           175692     
+
+
+16:58:38 Build Finished. 0 errors, 0 warnings. (took 5s.115ms)
+

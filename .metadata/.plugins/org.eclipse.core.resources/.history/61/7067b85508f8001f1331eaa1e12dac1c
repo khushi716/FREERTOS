@@ -1,0 +1,101 @@
+#include "cybsp.h"
+#include "cyhal.h"
+#include "cy_retarget_io.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "timers.h"
+
+/*******************************************************************************
+* Macros
+*******************************************************************************/
+#define auto_Timer_Period 3330
+#define one_shot_Timer_Period 500
+
+/*******************************************************************************
+* Function Prototypes
+*******************************************************************************/
+ void vPrintStringAndNumber(const char *pcString,volatile uint32_t ul);
+static void prvOneShotTimerCallback( TimerHandle_t xTimer );
+static void prvAutoReloadTimerCallback( TimerHandle_t xTimer );
+/*******************************************************************************
+* Global Variables
+*******************************************************************************/
+
+
+/*******************************************************************************
+* Function Definitions
+*******************************************************************************/
+// function to print and number
+void vPrintStringAndNumber(const char *pcString, volatile uint32_t ul)
+{
+    printf("%s", pcString);  // Print the string to UART (Retarget IO)
+    printf(" %ld\n", ul);  // Print the string to UART (Retarget IO)
+}
+static void prvOneShotTimerCallback( TimerHandle_t xTimer )
+{
+TickType_t xTimeNow;
+ /* Obtain the current tick count. */
+ xTimeNow = xTaskGetTickCount();
+ /* Output a string to show the time at which the callback was executed. */
+ vPrintStringAndNumber( "One-shot timer callback executing", xTimeNow );
+
+}
+static void prvAutoReloadTimerCallback( TimerHandle_t xTimer )
+{
+TickType_t xTimeNow;
+ /* Obtain the current tick count. */
+ xTimeNow = xTaskGetTickCount();
+ /* Output a string to show the time at which the callback was executed. */
+ vPrintStringAndNumber( "Auto-reload timer callback executing", xTimeNow );
+
+}
+
+/**
+ * Function Name: main
+ * Description: This is the main entry point for the application. It initializes the
+ *              hardware, creates FreeRTOS tasks, and starts the scheduler.
+ */
+int main(void)
+{
+    cy_rslt_t result;
+
+    /* Initialize the device and board peripherals */
+    result = cybsp_init();
+    if (result != CY_RSLT_SUCCESS)
+    {
+        CY_ASSERT(0);  // Initialization failed, stop here
+    }
+
+    /* Initialize UART for retargeted IO (so we can print to UART) */
+    result = cy_retarget_io_init(CYBSP_DEBUG_UART_TX, CYBSP_DEBUG_UART_RX, CY_RETARGET_IO_BAUDRATE);
+    if (result != CY_RSLT_SUCCESS)
+    {
+        CY_ASSERT(0);  // UART initialization failed, stop here
+    }
+
+    /* Enable global interrupts */
+    __enable_irq();
+   TimerHandle_t timer_create1 = NULL;
+   TimerHandle_t timer_create2 = NULL;
+   BaseType_t timer_start1;
+   BaseType_t timer_start2;
+   timer_create1 = xTimerCreate("oneshot",one_shot_Timer_Period,pdFALSE,0,prvOneShotTimerCallback);
+   timer_create2 = xTimerCreate("auto",auto_Timer_Period,pdTRUE,0,prvAutoReloadTimerCallback);
+   if( timer_create1 !=NULL && timer_create2 !=NULL ){
+	   timer_start1 = xTimerStart(timer_create1,0);
+	   timer_start2 = xTimerStart(timer_create2,0);
+	   if(timer_start1 == pdPASS && timer_start2 == pdPASS){
+		   vTaskStartScheduler();
+		    }
+	   }
+
+    // Create timer
+
+
+
+    /* If the scheduler starts, the following line should never be reached */
+    for (;;);
+
+}
+
+/* [] END OF FILE */

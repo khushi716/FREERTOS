@@ -1,0 +1,10 @@
+17:04:54 **** Incremental Build of configuration Debug for project Empty 4 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+mtbquery: the command line argument '4/build/mtbquery-info.mk' is not valid for this application
+C:/Users/Kushi/ModusToolbox/tools_3.4/make/core_version3/query-v3.mk:81: *** Searching installed tools failed with error code: 1.  Stop.
+"C:/Users/Kushi/ModusToolbox/tools_3.4/modus-shell/bin/make CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj" terminated with exit code 2. Build might be incomplete.
+
+17:04:55 Build Failed. 1 errors, 0 warnings. (took 733ms)
+

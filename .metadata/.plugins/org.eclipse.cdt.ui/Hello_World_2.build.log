@@ -1,0 +1,285 @@
+14:59:11 **** Build of configuration Debug for project Hello_World_2 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-hal-hello-world Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/Hello_World_2'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+[1/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/bsps/APP_CY8CKIT-062-BLE/bluetooth/cybsp_bt_config.o
+[2/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_capsense.o
+[3/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/bsps/APP_CY8CKIT-062-BLE/COMPONENT_CM4/TOOLCHAIN_GCC_ARM/startup_psoc6_01_cm4.o
+[4/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/bsps/APP_CY8CKIT-062-BLE/COMPONENT_CM4/system_psoc6_cm4.o
+[5/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg.o
+[6/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_clocks.o
+[7/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_qspi_memslot.o
+[8/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_routing.o
+[9/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_peripherals.o
+[10/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_pins.o
+[11/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/TOOLCHAIN_GCC_ARM/cy_syslib_ext.o
+[12/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_BLESS/psoc6_cm0p_bless.o
+[13/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_system.o
+[14/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/bsps/APP_CY8CKIT-062-BLE/cybsp.o
+[15/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_104_m_csp_ble.o
+[16/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/local/main.o
+[17/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_104_m_csp_ble_usb.o
+[18/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_116_bga_usb.o
+[19/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_116_bga_ble.o
+[20/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_124_bga.o
+[21/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_124_bga_sip.o
+[22/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_43_smt.o
+[23/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_68_qfn_ble.o
+[24/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_80_wlcsp.o
+[25/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_02_100_wlcsp.o
+[26/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_02_124_bga.o
+[27/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_02_128_tqfp.o
+[28/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_02_68_qfn.o
+[29/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_03_100_tqfp.o
+[30/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_03_49_wlcsp.o
+[31/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_03_68_qfn.o
+[32/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_04_64_tqfp.o
+[33/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_04_68_qfn.o
+[34/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_04_80_m_csp.o
+[35/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_04_80_tqfp.o
+[36/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_144_lqfp.o
+[37/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_100_lqfp.o
+[38/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_176_lqfp.o
+[39/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_64_lqfp.o
+[40/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_80_lqfp.o
+[41/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_176_lqfp.o
+[42/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_144_lqfp.o
+[43/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_100_lqfp.o
+[44/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_64_lqfp.o
+[45/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_80_lqfp.o
+[46/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_100_lqfp.o
+[47/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_64_lqfp.o
+[48/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_176_lqfp.o
+[49/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_144_lqfp.o
+[50/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_80_lqfp.o
+[51/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_psoc6_01.o
+[52/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_psoc6_02.o
+[53/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_tviibe1m.o
+[54/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_psoc6_04.o
+[55/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_psoc6_03.o
+[56/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_tviibe2m.o
+[57/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_tviibe4m.o
+[58/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_adc_mic.o
+[59/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_analog_common.o
+[60/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_adc_sar.o
+[61/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_audio_common.o
+[62/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_comp.o
+[63/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_clock.o
+[64/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_comp_ctb.o
+[65/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_crc.o
+[66/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_comp_lp.o
+[67/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_crypto_common.o
+[68/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_dac.o
+[69/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_dma_dmac.o
+[70/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_dma.o
+[71/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_ezi2c.o
+[72/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_dma_dw.o
+[73/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_gpio.o
+[74/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_hwmgr.o
+[75/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_i2s.o
+[76/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_i2c.o
+[77/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_interconnect.o
+[78/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_irq_impl.o
+[79/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_ipc.o
+[80/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_keyscan.o
+[81/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_lptimer.o
+[82/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_nvm.o
+[83/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_opamp.o
+[84/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_pwm.o
+[85/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_pdmpcm.o
+[86/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_quaddec.o
+[87/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_qspi.o
+[88/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_rtc.o
+[89/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_scb_common.o
+[90/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_sdhc.o
+[91/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_system.o
+[92/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_syspm.o
+[93/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_spi.o
+[94/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_tcpwm_common.o
+[95/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_tdm.o
+[96/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_timer.o
+[97/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_trng.o
+[98/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_udb_sdio.o
+[99/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_uart.o
+[100/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_usb_dev.o
+[101/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_utils.o
+[102/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_adcmic.o
+[103/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/devices/COMPONENT_CAT1A/source/cy_device.o
+[104/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_axidmac.o
+[105/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_wdt.o
+[106/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_utils_impl.o
+[107/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ble_clk.o
+[108/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cordic.o
+[109/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_canfd.o
+[110/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_aes_v2.o
+[111/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_aes_v1.o
+[112/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_cmac_v1.o
+[113/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto.o
+[114/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_cmac_v2.o
+[115/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_crc_v1.o
+[116/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_crc_v2.o
+[117/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_des_v1.o
+[118/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_des_v2.o
+[119/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_domain_params.o
+[120/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_ec25519.o
+[121/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_ecdsa.o
+[122/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_key_gen.o
+[123/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hkdf_v2.o
+[124/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hmac_v1.o
+[125/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_eddsa.o
+[126/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hmac_v2.o
+[127/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hw.o
+[128/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hw_v1.o
+[129/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_nist_p.o
+[130/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_mem_v1.o
+[131/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_prng_v1.o
+[132/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_mem_v2.o
+[133/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_prng_v2.o
+[134/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_sha_v2.o
+[135/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_sha_v1.o
+[136/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_trng.o
+[137/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_rsa.o
+[138/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_vu.o
+[139/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_server.o
+[140/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_aes.o
+[141/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_aes_ccm.o
+[142/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_cmac.o
+[143/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_ecc_key_gen.o
+[144/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_ecdsa.o
+[145/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_hmac.o
+[146/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_hkdf.o
+[147/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_nist_p.o
+[148/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_rsa.o
+[149/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_sha256.o
+[150/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_trng.o
+[151/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_utils.o
+[152/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_vu.o
+[153/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_csd.o
+[154/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_dmac.o
+[155/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_dma.o
+[156/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ctb.o
+[157/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ctdac.o
+[158/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_efuse.o
+[159/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_efuse_v3.o
+[160/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ephy.o
+[161/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ethif.o
+[162/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_evtgen.o
+[163/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_flash_srom.o
+[164/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_flash_v2.o
+[165/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_flash.o
+[166/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_hppass.o
+[167/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_gpio.o
+[168/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_hppass_ac.o
+[169/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_hppass_csg.o
+[170/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ipc_bt.o
+[171/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_hppass_sar.o
+[172/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_i2s.o
+[173/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ipc_drv.o
+[174/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ipc_pipe.o
+[175/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_lin.o
+[176/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_keyscan.o
+[177/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ipc_sema.o
+[178/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_mcwdt_b.o
+[179/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_lvd.o
+[180/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_lvd_ht.o
+[181/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_mcwdt.o
+[182/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_lpcomp.o
+[183/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_mpc.o
+[184/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ms_ctl.o
+[185/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ppc.o
+[186/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_pdm_pcm_v2.o
+[187/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_pra.o
+[188/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_pdm_pcm.o
+[189/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_pra_cfg.o
+[190/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_profile.o
+[191/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_prot.o
+[192/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sar2.o
+[193/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sar.o
+[194/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_rtc.o
+[195/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_common.o
+[196/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_ezi2c.o
+[197/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sd_host.o
+[198/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_uart.o
+[199/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_spi.o
+[200/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_i2c.o
+[201/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_seglcd.o
+[202/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smartio.o
+[203/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smif_hb_flash.o
+[204/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smif.o
+[205/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysanalog.o
+[206/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smif_memslot.o
+[207/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysclk_v2.o
+[208/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smif_sfdp.o
+[209/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysfault.o
+[210/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysint.o
+[211/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysint_v2.o
+[212/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syslib.o
+[213/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysclk.o
+[214/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_btss.o
+[215/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_pdcm.o
+[216/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_ppu.o
+[217/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm.o
+[218/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_v2.o
+[219/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_v3.o
+[220/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_v4.o
+[221/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_systick_v2.o
+[222/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_systick.o
+[223/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_motif.o
+[224/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_counter.o
+[225/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_pwm.o
+[226/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_shiftreg.o
+[227/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_quaddec.o
+[228/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tdm.o
+[229/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_trigmux.o
+[230/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_usbfs_dev_drv.o
+[231/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_usbfs_dev_drv_io.o
+[232/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_usbfs_dev_drv_io_dma.o
+[233/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_wdt.o
+[234/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_wdt_b.o
+[235/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/ppu_v1.o
+[236/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/third_party/ethernet/src/edd.o
+[237/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/third_party/ethernet/src/edd_rx.o
+[238/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/third_party/ethernet/src/edd_tx.o
+[239/240] Building object file C:/Users/Kushi/mtw/Hello_World_2/build/Debug/libraries_shared/retarget-io/source/cy_retarget_io.o
+[240/240] Linking, creating elf file build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-hello-world.elf
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-objcopy -O ihex C:/Users/Kushi/mtw/Hello_World_2/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-hello-world.elf C:/Users/Kushi/mtw/Hello_World_2/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-hello-world.hex
+==============================================================================
+= Build complete =
+==============================================================================
+
+Calculating memory consumption: CY8C6347BZI-BLD53 GCC_ARM
+
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  46536      | 
+  | .ARM.exidx           |  0x1002b5c8   |  8          | 
+  | .copy.table          |  0x1002b5d0   |  24         | 
+  | .zero.table          |  0x1002b5e8   |  8          | 
+  | .data                |  0x0800328c   |  1620       | 
+  | .cy_sharedmem        |  0x080038e0   |  12         | 
+  | .noinit              |  0x080038f0   |  236        | 
+  | .bss                 |  0x080039dc   |  1892       | 
+  | .heap                |  0x08004140   |  272064     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           179280     
+
+
+14:59:37 Build Finished. 0 errors, 0 warnings. (took 26s.575ms)
+

@@ -1,0 +1,140 @@
+13:35:41 **** Incremental Build of configuration Debug for project ex1 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/ex1'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+[1/241] Building object file C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o
+FAILED: C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o 
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o.d -MT C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o @C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o.rsp -o C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o -c C:/Users/Kushi/mtw/mtb_shared/abstraction-rtos/release-v1.9.0/source/cy_worker_thread.c
+In file included from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cy_worker_thread.h:37,
+                 from C:/Users/Kushi/mtw/mtb_shared/abstraction-rtos/release-v1.9.0/source/cy_worker_thread.c:30:
+../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos.h:32:10: fatal error: cyabs_rtos_impl.h: No such file or directory
+   32 | #include "cyabs_rtos_impl.h"
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+[2/241] Building object file C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o
+FAILED: C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o 
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o.d -MT C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o @C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o.rsp -o C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o -c C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c
+In file included from C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:41:
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:46:2: error: #error "Unhandled RTOS type"
+   46 | #error "Unhandled RTOS type"
+      |  ^~~~~
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:57:1: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   57 | cy_mutex_pool_semaphore_t cy_mutex_pool_create(void);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:61:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   61 | void cy_mutex_pool_acquire(cy_mutex_pool_semaphore_t m);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:65:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   65 | void cy_mutex_pool_release(cy_mutex_pool_semaphore_t m);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:69:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   69 | void cy_mutex_pool_destroy(cy_mutex_pool_semaphore_t m);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:52:8: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   52 | static cy_mutex_pool_semaphore_t cy_malloc_mutex = NULL, cy_env_mutex = NULL, cy_ctor_mutex = NULL;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:52:52: warning: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   52 | static cy_mutex_pool_semaphore_t cy_malloc_mutex = NULL, cy_env_mutex = NULL, cy_ctor_mutex = NULL;
+      |                                                    ^~~~
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:52:73: warning: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   52 | static cy_mutex_pool_semaphore_t cy_malloc_mutex = NULL, cy_env_mutex = NULL, cy_ctor_mutex = NULL;
+      |                                                                         ^~~~
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:52:95: warning: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   52 | static cy_mutex_pool_semaphore_t cy_malloc_mutex = NULL, cy_env_mutex = NULL, cy_ctor_mutex = NULL;
+      |                                                                                               ^~~~
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:53:1: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   53 | cy_mutex_pool_semaphore_t cy_timer_mutex;
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c: In function '__malloc_lock':
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:102:5: warning: implicit declaration of function 'cy_mutex_pool_acquire'; did you mean 'cy_mutex_pool_create'? [-Wimplicit-function-declaration]
+  102 |     cy_mutex_pool_acquire(cy_malloc_mutex);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     cy_mutex_pool_create
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c: In function '__malloc_unlock':
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:116:5: warning: implicit declaration of function 'cy_mutex_pool_release'; did you mean 'cy_mutex_pool_create'? [-Wimplicit-function-declaration]
+  116 |     cy_mutex_pool_release(cy_malloc_mutex);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     cy_mutex_pool_create
+[3/241] Building object file C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/freertos/Source/croutine.o
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from C:/Users/Kushi/mtw/mtb_shared/freertos/release-v10.5.003/Source/croutine.c:29:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+[4/241] Building object file C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/freertos/Source/event_groups.o
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from C:/Users/Kushi/mtw/mtb_shared/freertos/release-v10.5.003/Source/event_groups.c:38:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+[5/241] Building object file C:/Users/Kushi/mtw/ex1/build/Debug/local/main.o
+FAILED: C:/Users/Kushi/mtw/ex1/build/Debug/local/main.o 
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/ex1/build/Debug/local/main.o.d -MT C:/Users/Kushi/mtw/ex1/build/Debug/local/main.o @C:/Users/Kushi/mtw/ex1/build/Debug/local/main.o.rsp -o C:/Users/Kushi/mtw/ex1/build/Debug/local/main.o -c C:/Users/Kushi/mtw/ex1/main.c
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from C:/Users/Kushi/mtw/ex1/main.c:1:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+C:/Users/Kushi/mtw/ex1/main.c: In function 'vTask1':
+C:/Users/Kushi/mtw/ex1/main.c:21:9: warning: implicit declaration of function 'vPrintString' [-Wimplicit-function-declaration]
+   21 |         vPrintString(pcTaskName);  // Print Task 1 message
+      |         ^~~~~~~~~~~~
+C:/Users/Kushi/mtw/ex1/main.c: In function 'main':
+C:/Users/Kushi/mtw/ex1/main.c:69:14: warning: implicit declaration of function 'cy_retarget_io_init_fc' [-Wimplicit-function-declaration]
+   69 |     result = cy_retarget_io_init_fc(CYBSP_DEBUG_UART_TX, CYBSP_DEBUG_UART_RX,
+      |              ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/ex1/main.c:70:55: error: 'CY_RETARGET_IO_BAUDRATE' undeclared (first use in this function)
+   70 |             CYBSP_DEBUG_UART_CTS,CYBSP_DEBUG_UART_RTS,CY_RETARGET_IO_BAUDRATE);
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/ex1/main.c:70:55: note: each undeclared identifier is reported only once for each function it appears in
+[6/241] Building object file C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/clib-support/source/cy_time.o
+FAILED: C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/clib-support/source/cy_time.o 
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/clib-support/source/cy_time.o.d -MT C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/clib-support/source/cy_time.o @C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/clib-support/source/cy_time.o.rsp -o C:/Users/Kushi/mtw/ex1/build/Debug/libraries_shared/clib-support/source/cy_time.o -c C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c
+In file included from C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c:32:
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:46:2: error: #error "Unhandled RTOS type"
+   46 | #error "Unhandled RTOS type"
+      |  ^~~~~
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:57:1: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   57 | cy_mutex_pool_semaphore_t cy_mutex_pool_create(void);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:61:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   61 | void cy_mutex_pool_acquire(cy_mutex_pool_semaphore_t m);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:65:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   65 | void cy_mutex_pool_release(cy_mutex_pool_semaphore_t m);
+make: *** [../mtb_shared/core-make/release-v3.5.1/make/core/ninja.mk:177: C:/Users/Kushi/mtw/ex1/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-empty-app.elf] Error 1
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:69:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   69 | void cy_mutex_pool_destroy(cy_mutex_pool_semaphore_t m);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c:51:8: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   51 | extern cy_mutex_pool_semaphore_t cy_timer_mutex;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c: In function 'mutex_acquire':
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c:60:5: warning: implicit declaration of function 'cy_mutex_pool_acquire'; did you mean 'cy_mutex_pool_create'? [-Wimplicit-function-declaration]
+   60 |     cy_mutex_pool_acquire(cy_timer_mutex);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     cy_mutex_pool_create
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c: In function 'mutex_release':
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c:73:5: warning: implicit declaration of function 'cy_mutex_pool_release'; did you mean 'cy_mutex_pool_create'? [-Wimplicit-function-declaration]
+   73 |     cy_mutex_pool_release(cy_timer_mutex);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     cy_mutex_pool_create
+ninja: build stopped: subcommand failed.
+"C:/Users/Kushi/ModusToolbox/tools_3.4/modus-shell/bin/make CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj" terminated with exit code 2. Build might be incomplete.
+
+13:35:44 Build Failed. 16 errors, 12 warnings. (took 3s.294ms)
+

@@ -1,0 +1,332 @@
+15:43:46 **** Incremental Build of configuration Debug for project exe1 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-hal-hello-world Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/exe1'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+[1/263] Building object file C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/bluetooth-freertos/platform/common/cybt_patchram_download.o
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos_impl.h:29,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos.h:31,
+                 from C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_patchram_download.c:28:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+[2/263] Building object file C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/bluetooth-freertos/platform/common/cybt_hci_rx_task.o
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos_impl.h:29,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos.h:31,
+                 from C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_platform_task.h:34,
+                 from C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_hci_rx_task.c:32:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_hci_rx_task.c: In function 'cybt_send_msg_to_hci_rx_task':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_hci_rx_task.c:84:14: warning: implicit declaration of function 'cy_rtos_put_queue' [-Wimplicit-function-declaration]
+   84 |     result = cy_rtos_put_queue(&HCI_RX_TASK_QUEUE, (void *) &bt_ind_msg, 0, is_from_isr);
+      |              ^~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_hci_rx_task.c: In function 'handle_task_shutdown':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_hci_rx_task.c:335:30: warning: implicit declaration of function 'cy_rtos_get_queue'; did you mean 'cy_rtos_get_time'? [-Wimplicit-function-declaration]
+  335 |     while(CY_RSLT_SUCCESS == cy_rtos_get_queue(&HCI_RX_TASK_QUEUE,
+      |                              ^~~~~~~~~~~~~~~~~
+      |                              cy_rtos_get_time
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_hci_rx_task.c:342:5: warning: implicit declaration of function 'cy_rtos_deinit_queue'; did you mean 'cy_rtos_deinit_event'? [-Wimplicit-function-declaration]
+  342 |     cy_rtos_deinit_queue(&HCI_RX_TASK_QUEUE);
+      |     ^~~~~~~~~~~~~~~~~~~~
+      |     cy_rtos_deinit_event
+[3/263] Building object file C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/bluetooth-freertos/platform/common/cybt_hci_tx_task.o
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos_impl.h:29,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos.h:31,
+                 from C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_platform_task.h:34,
+                 from C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_hci_tx_task.c:32:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_hci_tx_task.c: In function 'cybt_check_and_resume_hci_tx':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_hci_tx_task.c:130:21: warning: implicit declaration of function 'cy_rtos_put_queue' [-Wimplicit-function-declaration]
+  130 |                     cy_rtos_put_queue(&HCI_TX_TASK_QUEUE, (void *) &p_msg_hdr, 0, false);
+      |                     ^~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_hci_tx_task.c: In function 'cybt_hci_tx_task':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_hci_tx_task.c:282:18: warning: implicit declaration of function 'cy_rtos_get_queue'; did you mean 'cy_rtos_get_time'? [-Wimplicit-function-declaration]
+  282 |         result = cy_rtos_get_queue(&HCI_TX_TASK_QUEUE,
+      |                  ^~~~~~~~~~~~~~~~~
+      |                  cy_rtos_get_time
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_hci_tx_task.c:308:13: warning: implicit declaration of function 'cy_rtos_deinit_queue'; did you mean 'cy_rtos_deinit_event'? [-Wimplicit-function-declaration]
+  308 |             cy_rtos_deinit_queue(&HCI_TX_TASK_QUEUE);
+      |             ^~~~~~~~~~~~~~~~~~~~
+      |             cy_rtos_deinit_event
+[4/263] Building object file C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/bluetooth-freertos/platform/common/cybt_host_stack_platform_interface.o
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos_impl.h:29,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos.h:31,
+                 from C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_host_stack_platform_interface.c:29:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_host_stack_platform_interface.c: In function 'host_stack_mutex_lock':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_host_stack_platform_interface.c:63:5: warning: implicit declaration of function 'cy_rtos_get_mutex'; did you mean 'cy_rtos_get_time'? [-Wimplicit-function-declaration]
+   63 |     cy_rtos_get_mutex(&bt_stack_mutex, CY_RTOS_NEVER_TIMEOUT);
+      |     ^~~~~~~~~~~~~~~~~
+      |     cy_rtos_get_time
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_host_stack_platform_interface.c: In function 'host_stack_mutex_unlock':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_host_stack_platform_interface.c:68:5: warning: implicit declaration of function 'cy_rtos_set_mutex'; did you mean 'cy_rtos_get_time'? [-Wimplicit-function-declaration]
+   68 |     cy_rtos_set_mutex(&bt_stack_mutex);
+      |     ^~~~~~~~~~~~~~~~~
+      |     cy_rtos_get_time
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_host_stack_platform_interface.c: In function 'host_stack_platform_interface_init':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_host_stack_platform_interface.c:439:5: warning: implicit declaration of function 'cy_rtos_init_mutex'; did you mean 'cy_rtos_init_event'? [-Wimplicit-function-declaration]
+  439 |     cy_rtos_init_mutex(&bt_stack_mutex);
+      |     ^~~~~~~~~~~~~~~~~~
+      |     cy_rtos_init_event
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_host_stack_platform_interface.c: In function 'host_stack_platform_interface_deinit':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_host_stack_platform_interface.c:461:5: warning: implicit declaration of function 'cy_rtos_deinit_mutex'; did you mean 'cy_rtos_deinit_event'? [-Wimplicit-function-declaration]
+  461 |     cy_rtos_deinit_mutex(&bt_stack_mutex);
+      |     ^~~~~~~~~~~~~~~~~~~~
+      |     cy_rtos_deinit_event
+[5/263] Building object file C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/bluetooth-freertos/platform/common/cybt_platform_main.o
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos_impl.h:29,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos.h:31,
+                 from C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_platform_task.h:34,
+                 from C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_platform_main.c:31:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_platform_main.c: In function 'wiced_bt_stack_deinit':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_platform_main.c:228:27: warning: implicit declaration of function 'cy_rtos_get_thread_handle' [-Wimplicit-function-declaration]
+  228 |     if(CY_RSLT_SUCCESS != cy_rtos_get_thread_handle(&cur_thread_handle))
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+[6/263] Building object file C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/bluetooth-freertos/platform/debug/cybt_debug_uart.o
+[7/263] Building object file C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos_impl.h:29,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos.h:31,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cy_worker_thread.h:37,
+                 from C:/Users/Kushi/mtw/mtb_shared/abstraction-rtos/release-v1.9.0/source/cy_worker_thread.c:30:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/abstraction-rtos/release-v1.9.0/source/cy_worker_thread.c: In function 'cy_worker_thread_func':
+C:/Users/Kushi/mtw/mtb_shared/abstraction-rtos/release-v1.9.0/source/cy_worker_thread.c:73:18: warning: implicit declaration of function 'cy_rtos_queue_get' [-Wimplicit-function-declaration]
+   73 |         result = cy_rtos_queue_get(&worker->event_queue, &dispatch_info, CY_RTOS_NEVER_TIMEOUT);
+      |                  ^~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/abstraction-rtos/release-v1.9.0/source/cy_worker_thread.c:86:5: warning: implicit declaration of function 'cy_rtos_thread_exit' [-Wimplicit-function-declaration]
+   86 |     cy_rtos_thread_exit();
+      |     ^~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/abstraction-rtos/release-v1.9.0/source/cy_worker_thread.c: In function 'cy_worker_thread_create':
+C:/Users/Kushi/mtw/mtb_shared/abstraction-rtos/release-v1.9.0/source/cy_worker_thread.c:103:24: warning: implicit declaration of function 'cy_rtos_queue_init'; did you mean 'cyhal_ipc_queue_init'? [-Wimplicit-function-declaration]
+  103 |     cy_rslt_t result = cy_rtos_queue_init(&new_worker->event_queue,
+      |                        ^~~~~~~~~~~~~~~~~~
+      |                        cyhal_ipc_queue_init
+C:/Users/Kushi/mtw/mtb_shared/abstraction-rtos/release-v1.9.0/source/cy_worker_thread.c:111:29: warning: implicit declaration of function 'cy_rtos_thread_create'; did you mean 'cy_worker_thread_create'? [-Wimplicit-function-declaration]
+  111 |         result            = cy_rtos_thread_create(&new_worker->thread,
+      |                             ^~~~~~~~~~~~~~~~~~~~~
+      |                             cy_worker_thread_create
+C:/Users/Kushi/mtw/mtb_shared/abstraction-rtos/release-v1.9.0/source/cy_worker_thread.c:124:13: warning: implicit declaration of function 'cy_rtos_queue_deinit' [-Wimplicit-function-declaration]
+  124 |             cy_rtos_queue_deinit(&new_worker->event_queue);
+      |             ^~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/abstraction-rtos/release-v1.9.0/source/cy_worker_thread.c: In function 'cy_worker_thread_delete':
+C:/Users/Kushi/mtw/mtb_shared/abstraction-rtos/release-v1.9.0/source/cy_worker_thread.c:150:22: warning: implicit declaration of function 'cy_rtos_queue_put'; did you mean 'cyhal_ipc_queue_put'? [-Wimplicit-function-declaration]
+  150 |             result = cy_rtos_queue_put(&old_worker->event_queue, &dispatch_info, 0);
+      |                      ^~~~~~~~~~~~~~~~~
+      |                      cyhal_ipc_queue_put
+C:/Users/Kushi/mtw/mtb_shared/abstraction-rtos/release-v1.9.0/source/cy_worker_thread.c:165:22: warning: implicit declaration of function 'cy_rtos_thread_join'; did you mean 'cy_rtos_is_thread_running'? [-Wimplicit-function-declaration]
+  165 |             result = cy_rtos_thread_join(&old_worker->thread);
+      |                      ^~~~~~~~~~~~~~~~~~~
+      |                      cy_rtos_is_thread_running
+[8/263] Building object file C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/bluetooth-freertos/platform/common/cybt_platform_trace.o
+[9/263] Building object file C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o
+FAILED: C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o 
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o.d -MT C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o @C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o.rsp -o C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o -c C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c
+In file included from C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:41:
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:46:2: error: #error "Unhandled RTOS type"
+   46 | #error "Unhandled RTOS type"
+      |  ^~~~~
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:57:1: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   57 | cy_mutex_pool_semaphore_t cy_mutex_pool_create(void);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:61:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   61 | void cy_mutex_pool_acquire(cy_mutex_pool_semaphore_t m);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:65:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   65 | void cy_mutex_pool_release(cy_mutex_pool_semaphore_t m);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:69:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   69 | void cy_mutex_pool_destroy(cy_mutex_pool_semaphore_t m);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:52:8: warning: type defaults to 'int' in declaration of 'cy_mutex_pool_semaphore_t' [-Wimplicit-int]
+   52 | static cy_mutex_pool_semaphore_t, cy_malloc_mutex , cy_env_mutex, cy_ctor_mutex;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:52:35: warning: type defaults to 'int' in declaration of 'cy_malloc_mutex' [-Wimplicit-int]
+   52 | static cy_mutex_pool_semaphore_t, cy_malloc_mutex , cy_env_mutex, cy_ctor_mutex;
+      |                                   ^~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:52:53: warning: type defaults to 'int' in declaration of 'cy_env_mutex' [-Wimplicit-int]
+   52 | static cy_mutex_pool_semaphore_t, cy_malloc_mutex , cy_env_mutex, cy_ctor_mutex;
+      |                                                     ^~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:52:67: warning: type defaults to 'int' in declaration of 'cy_ctor_mutex' [-Wimplicit-int]
+   52 | static cy_mutex_pool_semaphore_t, cy_malloc_mutex , cy_env_mutex, cy_ctor_mutex;
+      |                                                                   ^~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:53:1: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   53 | cy_mutex_pool_semaphore_t cy_timer_mutex;
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c: In function '__malloc_lock':
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:102:5: warning: implicit declaration of function 'cy_mutex_pool_acquire'; did you mean 'cy_mutex_pool_create'? [-Wimplicit-function-declaration]
+  102 |     cy_mutex_pool_acquire(cy_malloc_mutex);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     cy_mutex_pool_create
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c: In function '__malloc_unlock':
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:116:5: warning: implicit declaration of function 'cy_mutex_pool_release'; did you mean 'cy_mutex_pool_create'? [-Wimplicit-function-declaration]
+  116 |     cy_mutex_pool_release(cy_malloc_mutex);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     cy_mutex_pool_create
+At top level:
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:52:8: warning: 'cy_mutex_pool_semaphore_t' defined but not used [-Wunused-variable]
+   52 | static cy_mutex_pool_semaphore_t, cy_malloc_mutex , cy_env_mutex, cy_ctor_mutex;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+[10/263] Building object file C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_BLESS/psoc6_cm0p_bless.o
+[11/263] Building object file C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/bluetooth-freertos/platform/common/cybt_prm.o
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos_impl.h:29,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos.h:31,
+                 from C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_prm.c:31:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+[12/263] Building object file C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/bluetooth-freertos/platform/common/cybt_platform_task.o
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos_impl.h:29,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos.h:31,
+                 from C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_platform_task.c:27:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_platform_task.c: In function 'cybt_platform_task_init':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_platform_task.c:97:17: warning: implicit declaration of function 'cy_rtos_init_queue'; did you mean 'cy_rtos_init_event'? [-Wimplicit-function-declaration]
+   97 |     cy_result = cy_rtos_init_queue(&HCI_TX_TASK_QUEUE,
+      |                 ^~~~~~~~~~~~~~~~~~
+      |                 cy_rtos_init_event
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_platform_task.c: In function 'cybt_platform_task_get_queue_utilization':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_platform_task.c:296:14: warning: implicit declaration of function 'cy_rtos_count_queue' [-Wimplicit-function-declaration]
+  296 |     result = cy_rtos_count_queue(&cybt_task_queue[task_id], &item_cnt_in_queue);
+      |              ^~~~~~~~~~~~~~~~~~~
+[13/263] Building object file C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/bluetooth-freertos/platform/freertos/cybt_platform_freertos.o
+FAILED: C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/bluetooth-freertos/platform/freertos/cybt_platform_freertos.o 
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/bluetooth-freertos/platform/freertos/cybt_platform_freertos.o.d -MT C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/bluetooth-freertos/platform/freertos/cybt_platform_freertos.o @C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/bluetooth-freertos/platform/freertos/cybt_platform_freertos.o.rsp -o C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/bluetooth-freertos/platform/freertos/cybt_platform_freertos.o -c C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos_impl.h:29,
+                 from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos.h:31,
+                 from ../mtb_shared/bluetooth-freertos/release-v3.4.0/platform/common/cybt_platform_task.h:34,
+                 from C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c:40:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c: In function 'cybt_platform_init':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c:166:5: warning: implicit declaration of function 'cy_rtos_init_timer'; did you mean 'cy_rtos_get_time'? [-Wimplicit-function-declaration]
+  166 |     cy_rtos_init_timer(&platform_sleep_idle_timer,
+      |     ^~~~~~~~~~~~~~~~~~
+      |     cy_rtos_get_time
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c:167:24: error: 'CY_TIMER_TYPE_ONCE' undeclared (first use in this function)
+  167 |                        CY_TIMER_TYPE_ONCE,
+      |                        ^~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c:167:24: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c:190:5: warning: implicit declaration of function 'cy_rtos_init_queue'; did you mean 'cy_rtos_init_event'? [-Wimplicit-function-declaration]
+  190 |     cy_rtos_init_queue(&sleep_timer_task_queue,
+      |     ^~~~~~~~~~~~~~~~~~
+      |     cy_rtos_init_event
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c: In function 'cybt_platform_deinit':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c:217:5: warning: implicit declaration of function 'cy_rtos_deinit_timer'; did you mean 'cy_rtos_get_time'? [-Wimplicit-function-declaration]
+  217 |     cy_rtos_deinit_timer(&platform_sleep_idle_timer);
+      |     ^~~~~~~~~~~~~~~~~~~~
+      |     cy_rtos_get_time
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c: In function 'cybt_platform_hci_open':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c:484:5: warning: implicit declaration of function 'cy_rtos_init_mutex'; did you mean 'cy_rtos_init_event'? [-Wimplicit-function-declaration]
+  484 |     cy_rtos_init_mutex(&hci_uart_cb.tx_atomic);
+      |     ^~~~~~~~~~~~~~~~~~
+      |     cy_rtos_init_event
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c: In function 'cybt_platform_hci_write':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c:710:14: warning: implicit declaration of function 'cy_rtos_get_mutex'; did you mean 'cy_rtos_get_time'? [-Wimplicit-function-declaration]
+  710 |     result = cy_rtos_get_mutex(&hci_uart_cb.tx_atomic, CY_RTOS_NEVER_TIMEOUT);
+      |              ^~~~~~~~~~~~~~~~~
+      |              cy_rtos_get_time
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c:737:5: warning: implicit declaration of function 'cy_rtos_set_mutex'; did you mean 'cy_rtos_get_time'? [-Wimplicit-function-declaration]
+  737 |     cy_rtos_set_mutex(&hci_uart_cb.tx_atomic);
+      |     ^~~~~~~~~~~~~~~~~
+      |     cy_rtos_get_time
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c: In function 'cybt_platform_hci_close':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c:893:5: warning: implicit declaration of function 'cy_rtos_deinit_mutex'; did you mean 'cy_rtos_deinit_event'? [-Wimplicit-function-declaration]
+  893 |     cy_rtos_deinit_mutex(&hci_uart_cb.tx_atomic);
+      |     ^~~~~~~~~~~~~~~~~~~~
+      |     cy_rtos_deinit_event
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c: In function 'cybt_send_action_to_sleep_task':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c:935:24: warning: implicit declaration of function 'cy_rtos_put_queue' [-Wimplicit-function-declaration]
+  935 |     cy_rslt_t result = cy_rtos_put_queue(&sleep_timer_task_queue,
+      |                        ^~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c: In function 'cybt_sleep_timer_task':
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c:957:18: warning: implicit declaration of function 'cy_rtos_get_queue'; did you mean 'cy_rtos_get_time'? [-Wimplicit-function-declaration]
+  957 |         result = cy_rtos_get_queue(&sleep_timer_task_queue,
+      |                  ^~~~~~~~~~~~~~~~~
+      |                  cy_rtos_get_time
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c:973:13: warning: implicit declaration of function 'cy_rtos_deinit_queue'; did you mean 'cy_rtos_deinit_event'? [-Wimplicit-function-declaration]
+  973 |             cy_rtos_deinit_queue(&sleep_timer_task_queue);
+      |             ^~~~~~~~~~~~~~~~~~~~
+      |             cy_rtos_deinit_event
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c:980:17: warning: implicit declaration of function 'cy_rtos_start_timer'; did you mean 'cy_rtos_get_time'? [-Wimplicit-function-declaration]
+  980 |                 cy_rtos_start_timer(&platform_sleep_idle_timer,
+      |                 ^~~~~~~~~~~~~~~~~~~
+      |                 cy_rtos_get_time
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c:989:30: warning: implicit declaration of function 'cy_rtos_is_running_timer' [-Wimplicit-function-declaration]
+  989 |                     result = cy_rtos_is_running_timer(&platform_sleep_idle_timer,
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/bluetooth-freertos/release-v3.4.0/platform/freertos/cybt_platform_freertos.c:994:25: warning: implicit declaration of function 'cy_rtos_stop_timer'; did you mean 'cy_rtos_get_time'? [-Wimplicit-function-declaration]
+  994 |                         cy_rtos_stop_timer(&platform_sleep_idle_timer);
+      |                         ^~~~~~~~~~~~~~~~~~
+      |                         cy_rtos_get_time
+[14/263] Building object file C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/clib-support/source/cy_time.o
+FAILED: C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/clib-support/source/cy_time.o 
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/clib-support/source/cy_time.o.d -MT C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/clib-support/source/cy_time.o @C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/clib-support/source/cy_time.o.rsp -o C:/Users/Kushi/mtw/exe1/build/Debug/libraries_shared/clib-support/source/cy_time.o -c C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c
+In file included from C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c:32:
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:46:2: error: #error "Unhandled RTOS type"
+   46 | #error "Unhandled RTOS type"
+      |  ^~~~~
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:57:1: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   57 | cy_mutex_pool_semaphore_t cy_mutex_pool_create(void);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:61:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   61 | void cy_mutex_pool_acquire(cy_mutex_pool_semaphore_t m);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:65:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   65 | void cy_mutex_pool_release(cy_mutex_pool_semaphore_t m);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:69:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   69 | void cy_mutex_pool_destroy(cy_mutex_pool_semaphore_t m);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c:51:8: error: unknown type name 'cy_mutex_pool_semaphore_t'
+   51 | extern cy_mutex_pool_semaphore_t cy_timer_mutex;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c: In function 'mutex_acquire':
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c:60:5: warning: implicit declaration of function 'cy_mutex_pool_acquire'; did you mean 'cy_mutex_pool_create'? [-Wimplicit-function-declaration]
+   60 |     cy_mutex_pool_acquire(cy_timer_mutex);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     cy_mutex_pool_create
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c: In function 'mutex_release':
+C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c:73:5: warning: implicit declaration of function 'cy_mutex_pool_release'; did you mean 'cy_mutex_pool_create'? [-Wimplicit-function-declaration]
+   73 |     cy_mutex_pool_release(cy_timer_mutex);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     cy_mutex_pool_create
+ninja: build stopped: subcommand failed.
+make: *** [../mtb_shared/core-make/release-v3.5.1/make/core/ninja.mk:177: C:/Users/Kushi/mtw/exe1/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-hello-world.elf] Error 1
+"C:/Users/Kushi/ModusToolbox/tools_3.4/modus-shell/bin/make CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj" terminated with exit code 2. Build might be incomplete.
+
+15:43:51 Build Failed. 14 errors, 51 warnings. (took 5s.259ms)
+

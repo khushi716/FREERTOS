@@ -1,0 +1,36 @@
+#ifndef FREERTOS_CONFIG_H
+#define FREERTOS_CONFIG_H
+
+/* The priority of the idle task. */
+#define configIDLE_TASK_PRIORITY      ( 1 )
+
+/* The frequency of the RTOS ticks, usually 1000 Hz for 1ms time slices. */
+#define configTICK_RATE_HZ            ( ( TickType_t ) 1000 )
+
+/* Maximum number of priorities that tasks can have. */
+#define configMAX_PRIORITIES          ( 5 )
+
+/* The total number of task and queue data structures that the RTOS can handle. */
+#define configMAX_TASK_NAME_LEN       ( 16 )
+#define configUSE_TIMERS              ( 1 )
+
+/* Stack size for tasks, depends on your specific platform */
+#define configMINIMAL_STACK_SIZE      ( 128 )
+
+/* Enable/Disable features like heap management and tickless idle */
+#define configUSE_IDLE_HOOK           ( 1 )
+#define configUSE_TICK_HOOK           ( 0 )
+
+/* Enable or disable the trace facility */
+#define configUSE_TRACE_FACILITY      ( 1 )
+
+/* Enable or disable the time slicing (this allows multiple tasks to run on the same priority) */
+#define configUSE_PREEMPTION          ( 1 )
+
+/* Set the total heap size for the FreeRTOS heap */
+#define configTOTAL_HEAP_SIZE         ( ( size_t ) ( 16 * 1024 ) ) /* Adjust this based on your system */
+
+/* Include specific headers for your platform */
+#include "platform_specific_headers.h"
+
+#endif /* FREERTOS_CONFIG_H */

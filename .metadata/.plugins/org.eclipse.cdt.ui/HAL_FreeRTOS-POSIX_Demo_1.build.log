@@ -1,0 +1,29 @@
+16:09:21 **** Build of configuration Debug for project HAL_FreeRTOS-POSIX_Demo_1 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-hal-posix-freertos Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_1'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+[1/1] Linking, creating elf file build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-posix-freertos.elf
+FAILED: build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-posix-freertos.elf 
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-g++.exe -mcpu=cortex-m4 --specs=nano.specs -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -Wl,--gc-sections -Tbsps/TARGET_APP_CY8CKIT-062-BLE/COMPONENT_CM4/TOOLCHAIN_GCC_ARM/linker.ld -Wl,-Map,C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_1/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-posix-freertos.map -Wl,--start-group @build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-posix-freertos.elf.rsp -Wl,--end-group -o build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-posix-freertos.elf
+c:/users/kushi/modustoolbox/tools_3.4/gcc/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_1/build/Debug/libraries_shared/freertos/Source/tasks.o: in function `prvIdleTask':
+C:/Users/Kushi/mtw/mtb_shared/freertos/release-v10.5.003/Source/tasks.c:3514: undefined reference to `vApplicationIdleHook'
+
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+make: *** [../mtb_shared/core-make/release-v3.5.1/make/core/ninja.mk:177: C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_1/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-posix-freertos.elf] Error 1
+"C:/Users/Kushi/ModusToolbox/tools_3.4/modus-shell/bin/make CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj" terminated with exit code 2. Build might be incomplete.
+
+16:09:24 Build Failed. 3 errors, 0 warnings. (took 2s.561ms)
+

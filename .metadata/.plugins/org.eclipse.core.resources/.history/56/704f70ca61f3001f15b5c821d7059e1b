@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 1
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+[remote "cypress"]
+	url = https://github.com/cypresssemiconductorco/clib-support
+	fetch = +refs/heads/*:refs/remotes/cypress/*
+	promisor = true
+	partialclonefilter = blob:none
+[branch "master"]
+	remote = cypress
+	merge = refs/heads/master
