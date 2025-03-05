@@ -1,3 +1,6 @@
+
+
+
 #include "cybsp.h"
 #include "cyhal.h"
 #include "cy_retarget_io.h"
@@ -5,120 +8,161 @@
 #include "task.h"
 #include "timers.h"
 
-/*******************************************************************************
-* Macros
-*******************************************************************************/
-#define mainONE_SHOT_TIMER_PERIOD pdMS_TO_TICKS( 3333 )
-#define mainAUTO_RELOAD_TIMER_PERIOD pdMS_TO_TICKS( 500 )
+#define mainONE_SHOT_TIMER_PERIOD pdMS_TO_TICKS(500)
+#define mainONE_SHOT_TIMER_PERIOD1 pdMS_TO_TICKS(700)
+#define mainAUTO_RELOAD_TIMER_PERIOD pdMS_TO_TICKS(200)
+#define GPIO_INTERRUPT_PRIORITY (7u)
 
-/*******************************************************************************
-* Function Prototypes
-*******************************************************************************/
- void vPrintStringAndNumber(const char *pcString, uint32_t ul);
- static  void prvOneShotTimerCallback( TimerHandle_t xTimer );
- static void prvAutoReloadTimerCallback( TimerHandle_t xTimer );
-/*******************************************************************************
-* Global Variables
-*******************************************************************************/
+volatile bool gpio_intr_flag = false;
+cyhal_gpio_callback_data_t gpio_btn_callback_data;
+BaseType_t xTimer1Started;
+TimerHandle_t xOneShotTimer;
+void vPrintString(const char *pcString)
+{
+    printf("%s", pcString);  // Print the string to UART (Retarget IO)
+}
 
-
-/*******************************************************************************
-* Function Definitions
-*******************************************************************************/
-// function to print and number
 void vPrintStringAndNumber(const char *pcString, uint32_t ul)
 {
     printf("%s", pcString);  // Print the string to UART (Retarget IO)
     printf(" %ld\n", ul);  // Print the string to UART (Retarget IO)
 }
 
-static void prvOneShotTimerCallback( TimerHandle_t xTimer )
+
+static void gpio_interrupt_handler(void *handler_arg, cyhal_gpio_event_t event)
 {
-    TickType_t xTimeNow;
-    /* Obtain the current tick count. */
-    xTimeNow = xTaskGetTickCount();
-    vPrintStringAndNumber( "One-shot timer callback executing at time", xTimeNow );
+    gpio_intr_flag = true;  // Set the flag when the button is pressed
+    vPrintString("GPIO Interrupt triggered\n");
 }
 
-static void prvAutoReloadTimerCallback( TimerHandle_t xTimer )
+static void gpio_timer_callback(TimerHandle_t xTimer)
 {
-    TickType_t xTimeNow;
-    /* Obtain the current tick count. */
-    xTimeNow = xTaskGetTickCount();
-    vPrintStringAndNumber( "Auto-reload timer callback executing at time", xTimeNow );
+    if (gpio_intr_flag)
+    {
+        gpio_intr_flag = false;  // Clear the flag
+        TickType_t xTimeNow = xTaskGetTickCount();
+        vPrintStringAndNumber("GPIO interrupt handled by timer at time", xTimeNow);  // Print current time
+        xTimer1Started = xTimerStart(xOneShotTimer, 0);
+    }
+//    add functionality after 500 ticks one shot timer executed
+
+
+
 }
 
-/**
- * Function Name: main
- * Description: This is the main entry point for the application. It initializes the
- *              hardware, creates FreeRTOS tasks, and starts the scheduler.
- */
+static void prvOneShotTimerCallback(TimerHandle_t xTimer)
+{
+    TickType_t xTimeNow = xTaskGetTickCount();
+    vPrintStringAndNumber("One-shot timer callback executing at time", xTimeNow);
+}
+
+static void prvAutoReloadTimerCallback(TimerHandle_t xTimer)
+{
+    TickType_t xTimeNow = xTaskGetTickCount();
+    vPrintStringAndNumber("Auto-reload timer callback executing at time", xTimeNow);
+}
+
 int main(void)
 {
     cy_rslt_t result;
 
-    /* Initialize the device and board peripherals */
+    // Initialize the device and board peripherals
     result = cybsp_init();
     if (result != CY_RSLT_SUCCESS)
     {
         CY_ASSERT(0);  // Initialization failed, stop here
     }
 
-    /* Initialize UART for retargeted IO (so we can print to UART) */
+    // Initialize retarget-io to use the debug UART port
     result = cy_retarget_io_init(CYBSP_DEBUG_UART_TX, CYBSP_DEBUG_UART_RX, CY_RETARGET_IO_BAUDRATE);
     if (result != CY_RSLT_SUCCESS)
     {
         CY_ASSERT(0);  // UART initialization failed, stop here
+        vPrintString("UART Initialization failed!\n");
+    }
+    else
+    {
+        vPrintString("UART Initialized successfully.\n");
     }
 
-    /* Enable global interrupts */
+    // Initialize the user button
+    result = cyhal_gpio_init(CYBSP_USER_BTN, CYHAL_GPIO_DIR_INPUT, CYBSP_USER_BTN_DRIVE, CYBSP_BTN_OFF);
+
+    if (result != CY_RSLT_SUCCESS)
+       {
+           CY_ASSERT(0);  // UART initialization failed, stop here
+           vPrintString("button Initialization failed!\n");
+       }
+       else
+       {
+           vPrintString("button Initialized successfully.\n");
+       }
+    // Configure GPIO interrupt
+    gpio_btn_callback_data.callback = gpio_interrupt_handler;
+    cyhal_gpio_register_callback(CYBSP_USER_BTN, &gpio_btn_callback_data);
+    cyhal_gpio_enable_event(CYBSP_USER_BTN, CYHAL_GPIO_IRQ_FALL, GPIO_INTERRUPT_PRIORITY, true);
+
+    // Enable global interrupts
     __enable_irq();
 
-    // Create timer handles
-    TimerHandle_t xAutoReloadTimer, xOneShotTimer;
-    BaseType_t xTimer1Started, xTimer2Started;
+    TimerHandle_t xAutoReloadTimer, xGpioTimer;
+    BaseType_t  xTimer2Started, xTimer3Started;
 
-    // Print the tick count before timers start
     TickType_t xTickCountBeforeTimers = xTaskGetTickCount();
     vPrintStringAndNumber("Tick count before starting timers:", xTickCountBeforeTimers);
 
-    // Create One-shot Timer
-    xOneShotTimer = xTimerCreate(
-        "OneShot",
-        mainONE_SHOT_TIMER_PERIOD,
-        pdFALSE,  // One-shot timer (no auto-reload)
-        0,
-        prvOneShotTimerCallback
-    );
+    xOneShotTimer = xTimerCreate("OneShot", mainONE_SHOT_TIMER_PERIOD, pdFALSE, 0, prvOneShotTimerCallback);
+    xAutoReloadTimer = xTimerCreate("AutoReload", mainAUTO_RELOAD_TIMER_PERIOD, pdTRUE, 0, prvAutoReloadTimerCallback);
+    xGpioTimer = xTimerCreate("GpioTimer", mainONE_SHOT_TIMER_PERIOD1, pdTRUE, 0, gpio_timer_callback);
 
-    // Create Auto-Reload Timer
-    xAutoReloadTimer = xTimerCreate(
-        "AutoReload",
-        mainAUTO_RELOAD_TIMER_PERIOD,
-        pdTRUE,  // Auto-reload timer
-        0,
-        prvAutoReloadTimerCallback
-    );
-
-    /* Check the software timers were created. */
-    if (xOneShotTimer != NULL && xAutoReloadTimer != NULL)
+    if (xOneShotTimer != NULL)
     {
-        // Start both timers
-        xTimer1Started = xTimerStart(xOneShotTimer, 0);
-        xTimer2Started = xTimerStart(xAutoReloadTimer, 0);
-
-        // Print the result of starting timers
-        vPrintStringAndNumber("Result of starting One-shot timer:", xTimer1Started);
-        vPrintStringAndNumber("Result of starting Auto-reload timer:", xTimer2Started);
-
-        if ((xTimer1Started == pdPASS) && (xTimer2Started == pdPASS))
-        {
-            // Start the scheduler
-            vTaskStartScheduler();
-        }
+        vPrintString("One-shot timer created successfully.\n");
     }
-    /* As always, this line should not be reached. */
-    for (;;);
+    else
+    {
+        vPrintString("Failed to create One-shot timer.\n");
+    }
 
-    return 0;
+    if (xAutoReloadTimer != NULL)
+    {
+        vPrintString("Auto-reload timer created successfully.\n");
+    }
+    else
+    {
+        vPrintString("Failed to create Auto-reload timer.\n");
+    }
+
+    if (xGpioTimer != NULL)
+    {
+        vPrintString("GPIO timer created successfully.\n");
+    }
+    else
+    {
+        vPrintString("Failed to create GPIO timer.\n");
+    }
+
+    xTimer1Started = xTimerStart(xOneShotTimer, 0);
+    xTimer2Started = xTimerStart(xAutoReloadTimer, 0);
+    xTimer3Started = xTimerStart(xGpioTimer, 0);
+
+    vPrintStringAndNumber("Result of starting One-shot timer:", xTimer1Started);
+    vPrintStringAndNumber("Result of starting Auto-reload timer:", xTimer2Started);
+    vPrintStringAndNumber("Result of starting GPIO checking timer:", xTimer3Started);
+
+    if (xTimer1Started == pdPASS && xTimer2Started == pdPASS && xTimer3Started == pdPASS)
+    {
+        vPrintString("Timers started successfully, starting scheduler...\n");
+        vTaskStartScheduler();
+    }
+    else
+    {
+        vPrintString("Failed to start one or more timers.\n");
+    }
+
+    // Infinite loop if the scheduler doesn't start
+    for (;;)
+    {
+        vPrintString("Main loop running...\n"); // Keep the program alive if the scheduler doesn't start
+    }
 }

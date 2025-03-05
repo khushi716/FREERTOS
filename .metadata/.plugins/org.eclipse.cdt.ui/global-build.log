@@ -39026,3 +39026,289 @@ ninja: no work to do.
   Total Internal Flash (Available)          1048576    
   Total Internal Flash (Utilized)           188012     
 
+12:42:08 **** Build of configuration Debug for project ex_14 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/ex_14'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+ninja: no work to do.
+==============================================================================
+= Build complete =
+==============================================================================
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  55556      | 
+  | .ARM.exidx           |  0x1002d904   |  8          | 
+  | .copy.table          |  0x1002d90c   |  24         | 
+  | .zero.table          |  0x1002d924   |  8          | 
+  | .data                |  0x0800328c   |  1620       | 
+  | .cy_sharedmem        |  0x080038e0   |  12         | 
+  | .noinit              |  0x080038f0   |  236        | 
+  | .bss                 |  0x080039dc   |  4440       | 
+  | .heap                |  0x08004b38   |  269512     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           188300     
+
+14:34:13 **** Build of configuration Debug for project ex_13 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/ex_13'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+[1/2] Building object file C:/Users/Kushi/mtw/ex_13/build/Debug/local/main.o
+FAILED: C:/Users/Kushi/mtw/ex_13/build/Debug/local/main.o 
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/ex_13/build/Debug/local/main.o.d -MT C:/Users/Kushi/mtw/ex_13/build/Debug/local/main.o @C:/Users/Kushi/mtw/ex_13/build/Debug/local/main.o.rsp -o C:/Users/Kushi/mtw/ex_13/build/Debug/local/main.o -c C:/Users/Kushi/mtw/ex_13/main.c
+C:/Users/Kushi/mtw/ex_13/main.c: In function 'prvTimerCallback':
+C:/Users/Kushi/mtw/ex_13/main.c:150:16: warning: unused variable 'xTimeNow' [-Wunused-variable]
+  150 |     TickType_t xTimeNow;
+      |                ^~~~~~~~
+C:/Users/Kushi/mtw/ex_13/main.c: In function 'gpio_interrupt_handler':
+C:/Users/Kushi/mtw/ex_13/main.c:182:5: warning: implicit declaration of function 'vPrintString' [-Wimplicit-function-declaration]
+  182 |     vPrintString("GPIO Interrupt triggered\n");
+      |     ^~~~~~~~~~~~
+C:/Users/Kushi/mtw/ex_13/main.c: In function 'main':
+C:/Users/Kushi/mtw/ex_13/main.c:217:51: error: 'gpio_btn_callback_data' undeclared (first use in this function)
+  217 |     cyhal_gpio_register_callback(CYBSP_USER_BTN, &gpio_btn_callback_data);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/ex_13/main.c:217:51: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+C:/Users/Kushi/mtw/ex_13/main.c:179:13: warning: 'gpio_interrupt_handler' defined but not used [-Wunused-function]
+  179 | static void gpio_interrupt_handler()
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+make: *** [../mtb_shared/core-make/release-v3.5.1/make/core/ninja.mk:177: C:/Users/Kushi/mtw/ex_13/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-empty-app.elf] Error 1
+"C:/Users/Kushi/ModusToolbox/tools_3.4/modus-shell/bin/make CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj" terminated with exit code 2. Build might be incomplete.
+15:56:01 **** Incremental Build of configuration Debug for project ex_13 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/ex_13'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+ninja: no work to do.
+==============================================================================
+= Build complete =
+==============================================================================
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  56604      | 
+  | .ARM.exidx           |  0x1002dd1c   |  8          | 
+  | .copy.table          |  0x1002dd24   |  24         | 
+  | .zero.table          |  0x1002dd3c   |  8          | 
+  | .data                |  0x0800328c   |  1620       | 
+  | .cy_sharedmem        |  0x080038e0   |  12         | 
+  | .noinit              |  0x080038f0   |  236        | 
+  | .bss                 |  0x080039dc   |  4444       | 
+  | .heap                |  0x08004b38   |  269512     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           189348     
+
+16:08:43 **** Build of configuration Debug for project ex_15 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/ex_15'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+ninja: no work to do.
+==============================================================================
+= Build complete =
+==============================================================================
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  56340      | 
+  | .ARM.exidx           |  0x1002dc14   |  8          | 
+  | .copy.table          |  0x1002dc1c   |  24         | 
+  | .zero.table          |  0x1002dc34   |  8          | 
+  | .data                |  0x0800328c   |  1620       | 
+  | .cy_sharedmem        |  0x080038e0   |  12         | 
+  | .noinit              |  0x080038f0   |  236        | 
+  | .bss                 |  0x080039dc   |  4444       | 
+  | .heap                |  0x08004b38   |  269512     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           189084     
+
+16:20:53 **** Incremental Build of configuration Debug for project ex_15 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/ex_15'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+ninja: no work to do.
+==============================================================================
+= Build complete =
+==============================================================================
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  56340      | 
+  | .ARM.exidx           |  0x1002dc14   |  8          | 
+  | .copy.table          |  0x1002dc1c   |  24         | 
+  | .zero.table          |  0x1002dc34   |  8          | 
+  | .data                |  0x0800328c   |  1628       | 
+  | .cy_sharedmem        |  0x080038e8   |  12         | 
+  | .noinit              |  0x080038f8   |  236        | 
+  | .bss                 |  0x080039e4   |  4444       | 
+  | .heap                |  0x08004b40   |  269504     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           189092     
+
+19:24:12 **** Incremental Build of configuration Debug for project ex_13 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/ex_13'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+ninja: no work to do.
+==============================================================================
+= Build complete =
+==============================================================================
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  57220      | 
+  | .ARM.exidx           |  0x1002df84   |  8          | 
+  | .copy.table          |  0x1002df8c   |  24         | 
+  | .zero.table          |  0x1002dfa4   |  8          | 
+  | .data                |  0x0800328c   |  1620       | 
+  | .cy_sharedmem        |  0x080038e0   |  12         | 
+  | .noinit              |  0x080038f0   |  236        | 
+  | .bss                 |  0x080039dc   |  4444       | 
+  | .heap                |  0x08004b38   |  269512     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           189964     
+
+14:49:27 **** Build of configuration Debug for project ex_16 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/ex_16'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+[1/2] Building object file C:/Users/Kushi/mtw/ex_16/build/Debug/local/main.o
+FAILED: C:/Users/Kushi/mtw/ex_16/build/Debug/local/main.o 
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/ex_16/build/Debug/local/main.o.d -MT C:/Users/Kushi/mtw/ex_16/build/Debug/local/main.o @C:/Users/Kushi/mtw/ex_16/build/Debug/local/main.o.rsp -o C:/Users/Kushi/mtw/ex_16/build/Debug/local/main.o -c C:/Users/Kushi/mtw/ex_16/main.c
+C:/Users/Kushi/mtw/ex_16/main.c: In function 'vPeriodicTask':
+C:/Users/Kushi/mtw/ex_16/main.c:32:9: warning: implicit declaration of function 'vPortGenerateSimulatedInterrupt' [-Wimplicit-function-declaration]
+   32 |         vPortGenerateSimulatedInterrupt(mainINTERRUPT_NUMBER);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/ex_16/main.c: At top level:
+C:/Users/Kushi/mtw/ex_16/main.c:39:6: warning: conflicting types for 'vPortGenerateSimulatedInterrupt'; have 'void(uint32_t)' {aka 'void(long unsigned int)'}
+   39 | void vPortGenerateSimulatedInterrupt(uint32_t interruptNumber)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/ex_16/main.c:32:9: note: previous implicit declaration of 'vPortGenerateSimulatedInterrupt' with type 'void(uint32_t)' {aka 'void(long unsigned int)'}
+   32 |         vPortGenerateSimulatedInterrupt(mainINTERRUPT_NUMBER);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/ex_16/main.c: In function 'vPortGenerateSimulatedInterrupt':
+C:/Users/Kushi/mtw/ex_16/main.c:44:5: warning: implicit declaration of function 'ulExampleInterruptHandler' [-Wimplicit-function-declaration]
+   44 |     ulExampleInterruptHandler();
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/ex_16/main.c: At top level:
+make: *** [../mtb_shared/core-make/release-v3.5.1/make/core/ninja.mk:177: C:/Users/Kushi/mtw/ex_16/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-empty-app.elf] Error 1
+C:/Users/Kushi/mtw/ex_16/main.c:50:17: error: conflicting types for 'ulExampleInterruptHandler'; have 'uint32_t(void)' {aka 'long unsigned int(void)'}
+   50 | static uint32_t ulExampleInterruptHandler(void)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/ex_16/main.c:44:5: note: previous implicit declaration of 'ulExampleInterruptHandler' with type 'int()'
+   44 |     ulExampleInterruptHandler();
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/ex_16/main.c: In function 'ulExampleInterruptHandler':
+C:/Users/Kushi/mtw/ex_16/main.c:59:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   59 | }
+      | ^
+At top level:
+C:/Users/Kushi/mtw/ex_16/main.c:50:17: warning: 'ulExampleInterruptHandler' defined but not used [-Wunused-function]
+   50 | static uint32_t ulExampleInterruptHandler(void)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+"C:/Users/Kushi/ModusToolbox/tools_3.4/modus-shell/bin/make CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj" terminated with exit code 2. Build might be incomplete.
