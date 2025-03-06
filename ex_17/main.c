@@ -64,7 +64,7 @@ static void vHandlerTask1(void *pvParameters)
         // Wait for the semaphore to be given
         if (xSemaphoreTake(xCountingSemaphore, portMAX_DELAY) == pdTRUE)
         {
-            vPrintString("Handler task 1 - Processing event1.\r\n");
+            vPrintString("Handler task 1 - Processing event.\r\n");
         }
 
 

@@ -39312,3 +39312,42 @@ C:/Users/Kushi/mtw/ex_16/main.c:50:17: warning: 'ulExampleInterruptHandler' defi
       |                 ^~~~~~~~~~~~~~~~~~~~~~~~~
 ninja: build stopped: subcommand failed.
 "C:/Users/Kushi/ModusToolbox/tools_3.4/modus-shell/bin/make CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj" terminated with exit code 2. Build might be incomplete.
+12:59:48 **** Build of configuration Debug for project ex_18 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/ex_18'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+ninja: no work to do.
+==============================================================================
+= Build complete =
+==============================================================================
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  56020      | 
+  | .ARM.exidx           |  0x1002dad4   |  8          | 
+  | .copy.table          |  0x1002dadc   |  24         | 
+  | .zero.table          |  0x1002daf4   |  8          | 
+  | .data                |  0x0800328c   |  1620       | 
+  | .cy_sharedmem        |  0x080038e0   |  12         | 
+  | .noinit              |  0x080038f0   |  236        | 
+  | .bss                 |  0x080039dc   |  4436       | 
+  | .heap                |  0x08004b30   |  269520     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           188764     
+
