@@ -54,7 +54,6 @@ static void ulExampleInterruptHandler(void)
 
     // Give the semaphore from ISR
     xSemaphoreGiveFromISR(xBinarySemaphore, &xHigherPriorityTaskWoken);
-
     // Request context switch if a higher priority task is woken
     portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
 }

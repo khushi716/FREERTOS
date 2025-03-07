@@ -39351,3 +39351,46 @@ ninja: no work to do.
   Total Internal Flash (Available)          1048576    
   Total Internal Flash (Utilized)           188764     
 
+14:23:25 **** Incremental Build of configuration Debug for project ex_18 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/ex_18'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+[1/2] Building object file C:/Users/Kushi/mtw/ex_18/build/Debug/local/main.o
+FAILED: C:/Users/Kushi/mtw/ex_18/build/Debug/local/main.o 
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/ex_18/build/Debug/local/main.o.d -MT C:/Users/Kushi/mtw/ex_18/build/Debug/local/main.o @C:/Users/Kushi/mtw/ex_18/build/Debug/local/main.o.rsp -o C:/Users/Kushi/mtw/ex_18/build/Debug/local/main.o -c C:/Users/Kushi/mtw/ex_18/main.c
+C:/Users/Kushi/mtw/ex_18/main.c: In function 'vPeriodicTask':
+C:/Users/Kushi/mtw/ex_18/main.c:191:32: error: macro "vTaskNotifyGiveFromISR" requires 2 arguments, but only 1 given
+  191 |         vTaskNotifyGiveFromISR();
+      |                                ^
+In file included from C:/Users/Kushi/mtw/ex_18/main.c:154:
+../mtb_shared/freertos/release-v10.5.003/Source/include/task.h:2533: note: macro "vTaskNotifyGiveFromISR" defined here
+ 2533 | #define vTaskNotifyGiveFromISR( xTaskToNotify, pxHigherPriorityTaskWoken ) \
+      | 
+C:/Users/Kushi/mtw/ex_18/main.c:191:9: error: 'vTaskNotifyGiveFromISR' undeclared (first use in this function); did you mean 'vTaskGenericNotifyGiveFromISR'?
+  191 |         vTaskNotifyGiveFromISR();
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+      |         vTaskGenericNotifyGiveFromISR
+C:/Users/Kushi/mtw/ex_18/main.c:191:9: note: each undeclared identifier is reported only once for each function it appears in
+C:/Users/Kushi/mtw/ex_18/main.c: In function 'vPortGenerateSimulatedInterrupt':
+C:/Users/Kushi/mtw/ex_18/main.c:200:16: warning: unused variable 'xHigherPriorityTaskWoken' [-Wunused-variable]
+  200 |     BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Kushi/mtw/ex_18/main.c: In function 'vHigherPriorityTask':
+C:/Users/Kushi/mtw/ex_18/main.c:244:21: warning: unused variable 'p' [-Wunused-variable]
+  244 |         UBaseType_t p = uxTaskPriorityGet(NULL);
+      |                     ^
+ninja: build stopped: subcommand failed.
+make: *** [../mtb_shared/core-make/release-v3.5.1/make/core/ninja.mk:177: C:/Users/Kushi/mtw/ex_18/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-empty-app.elf] Error 1
+"C:/Users/Kushi/ModusToolbox/tools_3.4/modus-shell/bin/make CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj" terminated with exit code 2. Build might be incomplete.

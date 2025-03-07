@@ -32,7 +32,7 @@ void vPrintStringAndNumber(const char *pcString, uint32_t ul)
 static void gpio_interrupt_handler(void *handler_arg, cyhal_gpio_event_t event)
 {
     gpio_intr_flag = true;  // Set the flag when the button is pressed
-    vPrintString("GPIO Interrupt triggered\n");
+
 }
 
 static void gpio_timer_callback(TimerHandle_t xTimer)
