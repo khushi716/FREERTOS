@@ -570,3 +570,5 @@
 8096	9257	7626974197896216	C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_2/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread.o	7008aa2ce753f833
 81	1000	7626976296769217	C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_2/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_sched.o	4ac9c169b5a84663
 77	1087	7626976296769217	C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_2/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread_mutex.o	30f91f6b66155cfb
+5029	5809	7633052782767567	C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_2/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_unistd.o	9e18bf6da56f30fa
+5032	5858	7633052782797491	C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_2/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_utils.o	35843ee636e63972

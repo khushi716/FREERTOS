@@ -389,7 +389,7 @@ static void vPeriodicTask(void *pvParameters)
             ulValueToSend++;
         }
 
-        // Check if GPIO interrupt flag is set (button pressed)
+        // Check if GPIO interrupt flag is set
         if (gpio_intr_flag)
         {
             gpio_intr_flag = false;  // Clear the flag
@@ -424,7 +424,6 @@ static void vInterruptTaskHandler(void *pvParameters)
     }
 }
 
-// String Printer Task
 static void vStringPrinter(void *pvParameters)
 {
     char *pcString;
@@ -436,7 +435,6 @@ static void vStringPrinter(void *pvParameters)
         vPrintString(pcString);
     }
 }
-
 int main(void)
 {
     cy_rslt_t result;
@@ -503,3 +501,5 @@ int main(void)
     // Infinite loop in case the scheduler doesn't start
     for (;;);
 }
+
+

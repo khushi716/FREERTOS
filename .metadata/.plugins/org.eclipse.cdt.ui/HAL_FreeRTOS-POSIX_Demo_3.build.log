@@ -1,4 +1,4 @@
-12:46:04 **** Incremental Build of configuration Debug for project HAL_FreeRTOS-POSIX_Demo_3 ****
+15:51:19 **** Build of configuration Debug for project HAL_FreeRTOS-POSIX_Demo_3 ****
 "C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
 Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
 Searching installed tools in progress...
@@ -14,19 +14,294 @@ Prebuild operations complete
 # 0: Loading the application in directory 'C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3'
 # 0: Loading the ModusToolbox Technology Packs and Early Access Packs
 # 0: Loading the tools information
-ninja: no work to do.
+[1/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/bsps/APP_CY8CKIT-062-BLE/COMPONENT_CM4/TOOLCHAIN_GCC_ARM/startup_psoc6_01_cm4.o
+[2/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/bsps/APP_CY8CKIT-062-BLE/bluetooth/cybsp_bt_config.o
+[3/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_capsense.o
+[4/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/bsps/APP_CY8CKIT-062-BLE/COMPONENT_CM4/system_psoc6_cm4.o
+[5/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_qspi_memslot.o
+[6/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_routing.o
+[7/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_clocks.o
+[8/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_pins.o
+[9/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg.o
+[10/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/TOOLCHAIN_GCC_ARM/cy_syslib_ext.o
+[11/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_peripherals.o
+[12/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_system.o
+[13/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/bsps/APP_CY8CKIT-062-BLE/cybsp.o
+[14/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/local/source/main.o
+[15/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/abstraction-rtos/source/COMPONENT_FREERTOS/cyabs_rtos_dsram.o
+[16/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/abstraction-rtos/source/COMPONENT_FREERTOS/cyabs_freertos_common.o
+[17/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/abstraction-rtos/source/COMPONENT_FREERTOS/cyabs_freertos_helpers.o
+[18/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_BLESS/psoc6_cm0p_bless.o
+[19/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/clib-support/source/COMPONENT_FREERTOS/cy_mutex_pool.o
+[20/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/abstraction-rtos/source/COMPONENT_FREERTOS/cyabs_rtos_freertos.o
+[21/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o
+[22/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o
+[23/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/clib-support/source/cy_time.o
+[24/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o
+[25/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread.o
+[26/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_mqueue.o
+[27/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread_cond.o
+[28/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread_barrier.o
+[29/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread_mutex.o
+[30/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_sched.o
+[31/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_semaphore.o
+[32/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_timer.o
+[33/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_utils.o
+[34/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_unistd.o
+[35/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos/Source/croutine.o
+[36/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos/Source/event_groups.o
+[37/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos/Source/list.o
+[38/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos/Source/portable/MemMang/heap_1.o
+[39/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos/Source/portable/COMPONENT_CM4/TOOLCHAIN_GCC_ARM/port.o
+[40/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos/Source/portable/MemMang/heap_2.o
+[41/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos/Source/portable/MemMang/heap_3.o
+[42/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos/Source/portable/MemMang/heap_5.o
+[43/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos/Source/portable/MemMang/heap_4.o
+[44/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos/Source/stream_buffer.o
+[45/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos/Source/queue.o
+[46/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos/Source/tasks.o
+[47/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_104_m_csp_ble.o
+[48/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/freertos/Source/timers.o
+[49/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_104_m_csp_ble_usb.o
+[50/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_116_bga_ble.o
+[51/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_116_bga_usb.o
+[52/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_124_bga.o
+[53/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_43_smt.o
+[54/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_124_bga_sip.o
+[55/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_68_qfn_ble.o
+[56/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_02_100_wlcsp.o
+[57/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_80_wlcsp.o
+[58/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_02_124_bga.o
+[59/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_02_128_tqfp.o
+[60/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_02_68_qfn.o
+[61/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_03_100_tqfp.o
+[62/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_03_49_wlcsp.o
+[63/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_04_64_tqfp.o
+[64/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_03_68_qfn.o
+[65/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_04_68_qfn.o
+[66/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_04_80_m_csp.o
+[67/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_04_80_tqfp.o
+[68/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_100_lqfp.o
+[69/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_144_lqfp.o
+[70/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_176_lqfp.o
+[71/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_80_lqfp.o
+[72/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_64_lqfp.o
+[73/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_100_lqfp.o
+[74/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_176_lqfp.o
+[75/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_144_lqfp.o
+[76/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_64_lqfp.o
+[77/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_80_lqfp.o
+[78/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_100_lqfp.o
+[79/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_144_lqfp.o
+[80/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_80_lqfp.o
+[81/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_176_lqfp.o
+[82/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_64_lqfp.o
+[83/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_psoc6_02.o
+[84/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_psoc6_01.o
+[85/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_psoc6_04.o
+[86/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_psoc6_03.o
+[87/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_tviibe1m.o
+[88/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_tviibe2m.o
+[89/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_tviibe4m.o
+[90/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_adc_mic.o
+[91/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_analog_common.o
+[92/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_adc_sar.o
+[93/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_audio_common.o
+[94/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_comp_ctb.o
+[95/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_comp.o
+[96/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_clock.o
+[97/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_comp_lp.o
+[98/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_crc.o
+[99/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_crypto_common.o
+[100/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_dma_dmac.o
+[101/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_dma.o
+[102/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_dac.o
+[103/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_dma_dw.o
+[104/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_hwmgr.o
+[105/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_ezi2c.o
+[106/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_gpio.o
+[107/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_i2s.o
+[108/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_i2c.o
+[109/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_irq_impl.o
+[110/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_interconnect.o
+[111/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_keyscan.o
+[112/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_ipc.o
+[113/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_lptimer.o
+[114/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_nvm.o
+[115/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_opamp.o
+[116/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_pwm.o
+[117/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_pdmpcm.o
+[118/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_qspi.o
+[119/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_quaddec.o
+[120/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_rtc.o
+[121/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_scb_common.o
+[122/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_sdhc.o
+[123/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_spi.o
+[124/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_system.o
+[125/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_syspm.o
+[126/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_tcpwm_common.o
+[127/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_tdm.o
+[128/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_timer.o
+[129/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_udb_sdio.o
+[130/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_trng.o
+[131/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/devices/COMPONENT_CAT1A/source/cy_device.o
+[132/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_usb_dev.o
+[133/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_utils.o
+[134/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_uart.o
+[135/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_utils_impl.o
+[136/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_adcmic.o
+[137/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_axidmac.o
+[138/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_canfd.o
+[139/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_wdt.o
+[140/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cordic.o
+[141/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ble_clk.o
+[142/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_aes_v1.o
+[143/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_aes_v2.o
+[144/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto.o
+[145/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_cmac_v1.o
+[146/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_crc_v1.o
+[147/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_cmac_v2.o
+[148/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_crc_v2.o
+[149/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_des_v2.o
+[150/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_des_v1.o
+[151/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_domain_params.o
+[152/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_ecdsa.o
+[153/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_ec25519.o
+[154/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_key_gen.o
+[155/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hkdf_v2.o
+[156/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hmac_v2.o
+[157/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hmac_v1.o
+[158/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_eddsa.o
+[159/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hw_v1.o
+[160/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hw.o
+[161/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_nist_p.o
+[162/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_mem_v2.o
+[163/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_mem_v1.o
+[164/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_prng_v1.o
+[165/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_prng_v2.o
+[166/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_sha_v2.o
+[167/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_trng.o
+[168/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_rsa.o
+[169/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_sha_v1.o
+[170/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_cmac.o
+[171/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_aes_ccm.o
+[172/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_aes.o
+[173/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_vu.o
+[174/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_server.o
+[175/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_ecc_key_gen.o
+[176/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_ecdsa.o
+[177/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_hmac.o
+[178/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_hkdf.o
+[179/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_nist_p.o
+[180/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_sha256.o
+[181/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_rsa.o
+[182/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_utils.o
+[183/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_vu.o
+[184/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_trng.o
+[185/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_csd.o
+[186/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ctdac.o
+[187/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ctb.o
+[188/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_dmac.o
+[189/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_efuse.o
+[190/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_dma.o
+[191/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_efuse_v3.o
+[192/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ephy.o
+[193/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_evtgen.o
+[194/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ethif.o
+[195/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_flash_srom.o
+[196/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_flash_v2.o
+[197/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_hppass.o
+[198/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_gpio.o
+[199/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_hppass_ac.o
+[200/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_flash.o
+[201/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_hppass_csg.o
+[202/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_hppass_sar.o
+[203/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ipc_bt.o
+[204/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_i2s.o
+[205/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ipc_drv.o
+[206/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ipc_pipe.o
+[207/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_keyscan.o
+[208/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_lin.o
+[209/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ipc_sema.o
+[210/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_lvd.o
+[211/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_lvd_ht.o
+[212/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_mcwdt.o
+[213/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_lpcomp.o
+[214/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_mcwdt_b.o
+[215/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_mpc.o
+[216/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ms_ctl.o
+[217/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_pdm_pcm_v2.o
+[218/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_pdm_pcm.o
+[219/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ppc.o
+[220/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_pra.o
+[221/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_pra_cfg.o
+[222/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_profile.o
+[223/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_prot.o
+[224/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_common.o
+[225/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_rtc.o
+[226/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sar2.o
+[227/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sar.o
+[228/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_ezi2c.o
+[229/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sd_host.o
+[230/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_seglcd.o
+[231/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_spi.o
+[232/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smartio.o
+[233/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_i2c.o
+[234/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_uart.o
+[235/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smif_hb_flash.o
+[236/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smif.o
+[237/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysanalog.o
+[238/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smif_memslot.o
+[239/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysclk_v2.o
+[240/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysfault.o
+[241/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smif_sfdp.o
+[242/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysint.o
+[243/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysint_v2.o
+[244/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syslib.o
+[245/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysclk.o
+[246/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_btss.o
+[247/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_pdcm.o
+[248/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_ppu.o
+[249/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_v2.o
+[250/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm.o
+[251/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_v3.o
+[252/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_v4.o
+[253/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_systick_v2.o
+[254/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_systick.o
+[255/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_counter.o
+[256/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_quaddec.o
+[257/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_motif.o
+[258/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_pwm.o
+[259/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_shiftreg.o
+[260/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tdm.o
+[261/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_trigmux.o
+[262/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_usbfs_dev_drv_io.o
+[263/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_usbfs_dev_drv.o
+[264/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_usbfs_dev_drv_io_dma.o
+[265/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_wdt_b.o
+[266/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/ppu_v1.o
+[267/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_wdt.o
+[268/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/third_party/ethernet/src/edd_rx.o
+[269/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/third_party/ethernet/src/edd.o
+[270/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/third_party/ethernet/src/edd_tx.o
+[271/272] Building object file C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/Debug/libraries_shared/retarget-io/source/cy_retarget_io.o
+[272/272] Linking, creating elf file build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-posix-freertos.elf
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-objcopy -O ihex C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-posix-freertos.elf C:/Users/Kushi/mtw/HAL_FreeRTOS-POSIX_Demo_3/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-posix-freertos.hex
 ==============================================================================
 = Build complete =
 ==============================================================================
+
+Calculating memory consumption: CY8C6347BZI-BLD53 GCC_ARM
+
 
    ---------------------------------------------------- 
   | Section Name         |  Address      |  Size       | 
    ---------------------------------------------------- 
   | .cy_m0p_image        |  0x10000000   |  112144     | 
-  | .text                |  0x10020000   |  54884      | 
-  | .ARM.exidx           |  0x1002d664   |  8          | 
-  | .copy.table          |  0x1002d66c   |  24         | 
-  | .zero.table          |  0x1002d684   |  8          | 
+  | .text                |  0x10020000   |  55260      | 
+  | .ARM.exidx           |  0x1002d7dc   |  8          | 
+  | .copy.table          |  0x1002d7e4   |  24         | 
+  | .zero.table          |  0x1002d7fc   |  8          | 
   | .data                |  0x0800328c   |  1620       | 
   | .cy_sharedmem        |  0x080038e0   |  12         | 
   | .noinit              |  0x080038f0   |  236        | 
@@ -35,8 +310,8 @@ ninja: no work to do.
    ---------------------------------------------------- 
 
   Total Internal Flash (Available)          1048576    
-  Total Internal Flash (Utilized)           187628     
+  Total Internal Flash (Utilized)           188004     
 
 
-12:46:07 Build Finished. 0 errors, 0 warnings. (took 2s.601ms)
+15:52:03 Build Finished. 0 errors, 0 warnings. (took 43s.690ms)
 
