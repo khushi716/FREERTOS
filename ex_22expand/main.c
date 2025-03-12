@@ -79,8 +79,8 @@ void vPrintString(const char *pcString)
 // Print string and number function
 void vPrintStringAndNumber(const char *pcString, uint32_t ul)
 {
-    printf("%s", pcString);  // Print string to UART
-    printf(" %ld\n", ul);  // Print the number to UART
+    printf("%s", pcString);
+    printf(" %ld\n", ul);
 }
 
 // Event Bit Setting Task
@@ -132,10 +132,10 @@ static void vEventBitReadingTask(void *pvParameters)
     const EventBits_t xBitsToWaitFor = (mainFIRST_TASK_BIT | mainSECOND_TASK_BIT | mainISR_BIT);
     for (;;)
     {
-        // Block to wait for event bits to become set within the event group
+
         xEventGroupValue = xEventGroupWaitBits(xEventGroup, xBitsToWaitFor, pdTRUE,  pdTRUE, portMAX_DELAY);
 
-        // Print a message for each bit that was set
+
         if ((xEventGroupValue & mainFIRST_TASK_BIT) != 0)
         {
             vPrintString("Event bit 0 was set\r\n");
@@ -208,19 +208,19 @@ int main(void)
     // Enable global interrupts
     __enable_irq();
 
-    // Create event group
+
     xEventGroup = xEventGroupCreate();
     new_Sem = xSemaphoreCreateMutex();
       if (new_Sem == NULL)
       {
           CY_ASSERT(0);  // Mutex creation failed, halt execution
       }
-    // Create tasks
+
     xTaskCreate(vEventBitSettingTask, "Bit Setter", 1000, NULL, 1, NULL);
     xTaskCreate(vEventBitReadingTask, "Bit Reader", 1000, NULL, 2, NULL);
     xTaskCreate(vInterruptEventBitReadingTask, "Interrupt Bit Setter", 1000, NULL, 3, NULL);
 
-    // Start the FreeRTOS scheduler
+
     vTaskStartScheduler();
 
     // Infinite loop in case scheduler fails to start

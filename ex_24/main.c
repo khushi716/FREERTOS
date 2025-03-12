@@ -15,8 +15,6 @@
 // Task handles
 TaskHandle_t xHandlerTask;
 TaskHandle_t xInterruptTask;
-// Semaphore handle
-SemaphoreHandle_t xBinarySemaphore;
 
 // GPIO
 volatile bool gpio_intr_flag = false;  // Flag set by GPIO interrupt
@@ -25,7 +23,7 @@ cyhal_gpio_callback_data_t gpio_btn_callback_data;  // GPIO callback data
 // Function to print strings
 void vPrintString(const char *pcString)
 {
-    printf("%s", pcString);  // Print string to UART (Retarget IO)
+    printf("%s", pcString);
 }
 
 // GPIO interrupt handler
@@ -35,15 +33,15 @@ static void gpio_interrupt_handler(void *handler_arg, cyhal_gpio_event_t event)
 }
 
 // Interrupt handler for deferred processing
-static void ulExampleInterruptHandler(void *pvParameter1, uint32_t ulParameter)
+static void ulExampleInterruptHandler(void *pvParameter1)
 {
     BaseType_t xHigherPriorityTaskWoken = pdFALSE;
 
     // Notify the handler task that the interrupt occurred
     vTaskNotifyGiveFromISR(xHandlerTask, &xHigherPriorityTaskWoken);
 
-    // Perform context switch if needed
-    portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+
+
 }
 
 // Periodic task that generates interrupts and checks the flag
@@ -62,13 +60,14 @@ static void vPeriodicTask(void *pvParameters)
             gpio_intr_flag = false;  // Clear the flag
             vPrintString("Periodic task - About to notify interrupt task.\r\n");
 
-            static uint32_t ulParameter = 0;
+
                BaseType_t xHigherPriorityTaskWoken = pdFALSE;
 
                // Queue the deferred function call (this will execute outside the ISR context)
-               xTimerPendFunctionCallFromISR( ulExampleInterruptHandler, NULL, ulParameter, &xHigherPriorityTaskWoken);
+               xTimerPendFunctionCallFromISR( ulExampleInterruptHandler, NULL, NULL, &xHigherPriorityTaskWoken);
                vTaskDelay(xDelay);
                vPrintString("Periodic task - Interrupt task notified.\r\n\r\n\r\n");
+               portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
         }
 
 
@@ -93,8 +92,10 @@ static void vHandlerTask(void *pvParameters)
                 ulEventsToProcess--;
             }
         }
-    }
-}
+}}
+
+
+
 
 int main(void)
 {
@@ -129,30 +130,26 @@ int main(void)
     // Enable global interrupts
     __enable_irq();
 
-    // Create binary semaphore (not used here, but could be useful for synchronization)
-    xBinarySemaphore = xSemaphoreCreateBinary();
-    if (xBinarySemaphore == NULL)
-    {
-        CY_ASSERT(0);  // Semaphore creation failed, stop here
-    }
+
 
     // Create the handler task
     if (xTaskCreate(vHandlerTask, "Handler Task", 1000, NULL, 3, &xHandlerTask) != pdPASS)
     {
-        CY_ASSERT(0);  // Task creation failed, stop here
+        CY_ASSERT(0);
     }
 
     // Create the periodic task
     if (xTaskCreate(vPeriodicTask, "Periodic Task", 1000, NULL, 1, &xInterruptTask) != pdPASS)
     {
-        CY_ASSERT(0);  // Task creation failed, stop here
+        CY_ASSERT(0);
     }
 
-    // Start the FreeRTOS scheduler
+
     vTaskStartScheduler();
 
-    // Infinite loop in case the scheduler doesn't start
+
     for (;;)
     {
     }
 }
+

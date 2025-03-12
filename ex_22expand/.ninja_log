@@ -272,3 +272,5 @@
 30309	30727	7633893617574132	C:/Users/Kushi/mtw/ex_22expand/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/third_party/ethernet/src/edd_tx.o	fd769ec11e592a80
 30516	31469	7633893619648580	C:/Users/Kushi/mtw/ex_22expand/build/Debug/libraries_shared/retarget-io/source/cy_retarget_io.o	6f4c745a965391c6
 31469	31915	7633893629179168	build/APP_CY8CKIT-062-BLE/Debug/mtb-example-empty-app.elf	281b8f82ddc2bbdf
+71	725	7633940158493452	C:/Users/Kushi/mtw/ex_22expand/build/Debug/local/main.o	35e72c5ca3997c84
+725	1116	7633940165028532	build/APP_CY8CKIT-062-BLE/Debug/mtb-example-empty-app.elf	281b8f82ddc2bbdf
