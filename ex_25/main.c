@@ -96,8 +96,6 @@ static void vHandlerTask(void *pvParameters)
 }}
 
 
-
-
 int main(void)
 {
     cy_rslt_t result;

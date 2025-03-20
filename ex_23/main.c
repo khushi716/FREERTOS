@@ -111,6 +111,7 @@ int main(void)
     // Infinite loop in case scheduler fails to start
     for (;;)
     {
+
     }
 }
 

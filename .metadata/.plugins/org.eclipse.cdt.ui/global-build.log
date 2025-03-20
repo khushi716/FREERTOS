@@ -40734,3 +40734,560 @@ Searching installed tools in progress...
 Searching installed tools complete
 INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
 rm -rf C:/Users/Kushi/mtw/ex_23/build
+19:04:11 **** Clean-only build of configuration Debug for project practice ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 clean_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+rm -rf C:/Users/Kushi/mtw/practice/build
+16:40:48 **** Clean-only build of configuration Debug for project practice ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 clean_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+rm -rf C:/Users/Kushi/mtw/practice/build
+16:41:25 **** Build of configuration Debug for project practice ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/practice'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+[1/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/bsps/APP_CY8CKIT-062-BLE/COMPONENT_CM4/TOOLCHAIN_GCC_ARM/startup_psoc6_01_cm4.o
+[2/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/bsps/APP_CY8CKIT-062-BLE/bluetooth/cybsp_bt_config.o
+[3/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_capsense.o
+[4/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/bsps/APP_CY8CKIT-062-BLE/COMPONENT_CM4/system_psoc6_cm4.o
+[5/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_qspi_memslot.o
+[6/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_routing.o
+[7/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg.o
+[8/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_clocks.o
+[9/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_pins.o
+[10/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_peripherals.o
+[11/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/TOOLCHAIN_GCC_ARM/cy_syslib_ext.o
+[12/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_system.o
+[13/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/bsps/APP_CY8CKIT-062-BLE/cybsp.o
+[14/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/local/main.o
+[15/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_BLESS/psoc6_cm0p_bless.o
+[16/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/abstraction-rtos/source/COMPONENT_FREERTOS/cyabs_freertos_common.o
+[17/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/abstraction-rtos/source/COMPONENT_FREERTOS/cyabs_freertos_helpers.o
+[18/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/abstraction-rtos/source/COMPONENT_FREERTOS/cyabs_rtos_dsram.o
+[19/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o
+[20/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/abstraction-rtos/source/COMPONENT_FREERTOS/cyabs_rtos_freertos.o
+[21/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/clib-support/source/COMPONENT_FREERTOS/cy_mutex_pool.o
+[22/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/clib-support/source/cy_time.o
+[23/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o
+[24/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_mqueue.o
+[25/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o
+[26/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread.o
+[27/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread_barrier.o
+[28/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread_cond.o
+[29/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread_mutex.o
+[30/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_sched.o
+[31/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_semaphore.o
+[32/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_timer.o
+[33/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_unistd.o
+[34/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_utils.o
+[35/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos/Source/event_groups.o
+[36/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos/Source/croutine.o
+[37/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos/Source/list.o
+[38/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos/Source/portable/COMPONENT_CM4/TOOLCHAIN_GCC_ARM/port.o
+[39/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos/Source/portable/MemMang/heap_1.o
+[40/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos/Source/portable/MemMang/heap_2.o
+[41/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos/Source/portable/MemMang/heap_3.o
+[42/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos/Source/portable/MemMang/heap_5.o
+[43/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos/Source/portable/MemMang/heap_4.o
+[44/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos/Source/queue.o
+[45/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos/Source/stream_buffer.o
+[46/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_104_m_csp_ble.o
+[47/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_104_m_csp_ble_usb.o
+[48/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos/Source/timers.o
+[49/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_116_bga_ble.o
+[50/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/freertos/Source/tasks.o
+[51/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_124_bga.o
+[52/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_116_bga_usb.o
+[53/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_43_smt.o
+[54/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_124_bga_sip.o
+[55/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_80_wlcsp.o
+[56/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_01_68_qfn_ble.o
+[57/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_02_100_wlcsp.o
+[58/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_02_124_bga.o
+[59/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_02_128_tqfp.o
+[60/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_02_68_qfn.o
+[61/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_03_100_tqfp.o
+[62/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_03_49_wlcsp.o
+[63/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_04_64_tqfp.o
+[64/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_03_68_qfn.o
+[65/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_04_68_qfn.o
+[66/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_04_80_m_csp.o
+[67/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_psoc6_04_80_tqfp.o
+[68/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_100_lqfp.o
+[69/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_144_lqfp.o
+[70/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_176_lqfp.o
+[71/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_64_lqfp.o
+[72/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe1m_80_lqfp.o
+[73/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_100_lqfp.o
+[74/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_144_lqfp.o
+[75/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_176_lqfp.o
+[76/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_80_lqfp.o
+[77/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe2m_64_lqfp.o
+[78/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_100_lqfp.o
+[79/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_144_lqfp.o
+[80/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_176_lqfp.o
+[81/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_64_lqfp.o
+[82/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/pin_packages/cyhal_tviibe4m_80_lqfp.o
+[83/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_psoc6_01.o
+[84/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_psoc6_02.o
+[85/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_psoc6_03.o
+[86/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_psoc6_04.o
+[87/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_tviibe1m.o
+[88/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_tviibe2m.o
+[89/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/COMPONENT_CAT1A/source/triggers/cyhal_triggers_tviibe4m.o
+[90/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_adc_mic.o
+[91/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_analog_common.o
+[92/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_adc_sar.o
+[93/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_comp.o
+[94/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_audio_common.o
+[95/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_clock.o
+[96/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_comp_ctb.o
+[97/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_comp_lp.o
+[98/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_crypto_common.o
+[99/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_crc.o
+[100/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_dac.o
+[101/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_dma.o
+[102/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_dma_dmac.o
+[103/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_dma_dw.o
+[104/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_gpio.o
+[105/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_ezi2c.o
+[106/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_hwmgr.o
+[107/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_i2c.o
+[108/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_i2s.o
+[109/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_irq_impl.o
+[110/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_ipc.o
+[111/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_interconnect.o
+[112/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_keyscan.o
+[113/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_lptimer.o
+[114/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_nvm.o
+[115/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_opamp.o
+[116/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_pwm.o
+[117/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_pdmpcm.o
+[118/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_quaddec.o
+[119/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_qspi.o
+[120/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_rtc.o
+[121/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_scb_common.o
+[122/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_sdhc.o
+[123/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_system.o
+[124/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_spi.o
+[125/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_syspm.o
+[126/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_tcpwm_common.o
+[127/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_tdm.o
+[128/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_timer.o
+[129/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_udb_sdio.o
+[130/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_trng.o
+[131/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_usb_dev.o
+[132/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/devices/COMPONENT_CAT1A/source/cy_device.o
+[133/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_uart.o
+[134/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_utils.o
+[135/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_adcmic.o
+[136/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_axidmac.o
+[137/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_canfd.o
+[138/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_wdt.o
+[139/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-hal-cat1/source/cyhal_utils_impl.o
+[140/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cordic.o
+[141/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ble_clk.o
+[142/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_aes_v2.o
+[143/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto.o
+[144/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_cmac_v1.o
+[145/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_aes_v1.o
+[146/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_cmac_v2.o
+[147/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_crc_v1.o
+[148/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_crc_v2.o
+[149/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_des_v2.o
+[150/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_des_v1.o
+[151/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_domain_params.o
+[152/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_ec25519.o
+[153/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_ecdsa.o
+[154/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_key_gen.o
+[155/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hkdf_v2.o
+[156/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hmac_v1.o
+[157/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hmac_v2.o
+[158/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_eddsa.o
+[159/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_ecc_nist_p.o
+[160/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hw.o
+[161/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_hw_v1.o
+[162/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_mem_v1.o
+[163/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_mem_v2.o
+[164/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_prng_v1.o
+[165/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_prng_v2.o
+[166/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_sha_v2.o
+[167/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_sha_v1.o
+[168/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_trng.o
+[169/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_rsa.o
+[170/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_core_vu.o
+[171/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_aes_ccm.o
+[172/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_crypto_server.o
+[173/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_aes.o
+[174/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_ecc_key_gen.o
+[175/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_cmac.o
+[176/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_ecdsa.o
+[177/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_hkdf.o
+[178/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_hmac.o
+[179/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_nist_p.o
+[180/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_rsa.o
+[181/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_trng.o
+[182/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_sha256.o
+[183/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_utils.o
+[184/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_cryptolite_vu.o
+[185/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_csd.o
+[186/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_dmac.o
+[187/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_dma.o
+[188/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ctb.o
+[189/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ctdac.o
+[190/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_efuse.o
+[191/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ephy.o
+[192/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_efuse_v3.o
+[193/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ethif.o
+[194/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_evtgen.o
+[195/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_flash_v2.o
+[196/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_flash_srom.o
+[197/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_flash.o
+[198/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_gpio.o
+[199/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_hppass.o
+[200/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_hppass_ac.o
+[201/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_hppass_sar.o
+[202/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_hppass_csg.o
+[203/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_i2s.o
+[204/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ipc_bt.o
+[205/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ipc_drv.o
+[206/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ipc_pipe.o
+[207/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_keyscan.o
+[208/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_lin.o
+[209/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ipc_sema.o
+[210/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_lpcomp.o
+[211/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_lvd.o
+[212/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_mcwdt.o
+[213/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_lvd_ht.o
+[214/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_mpc.o
+[215/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_mcwdt_b.o
+[216/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_mixer.o
+[217/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ms_ctl.o
+[218/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_pdm_pcm.o
+[219/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_pdm_pcm_v2.o
+[220/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_ppc.o
+[221/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_pra.o
+[222/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_pra_cfg.o
+[223/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_profile.o
+[224/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sar2.o
+[225/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_prot.o
+[226/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sar.o
+[227/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_rtc.o
+[228/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_common.o
+[229/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_ezi2c.o
+[230/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_spi.o
+[231/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sd_host.o
+[232/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_i2c.o
+[233/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_scb_uart.o
+[234/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_seglcd.o
+[235/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smif_hb_flash.o
+[236/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smartio.o
+[237/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smif.o
+[238/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysanalog.o
+[239/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smif_sfdp.o
+[240/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_smif_memslot.o
+[241/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysfault.o
+[242/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysclk_v2.o
+[243/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysint.o
+[244/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysint_v2.o
+[245/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_btss.o
+[246/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syslib.o
+[247/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_pdcm.o
+[248/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_sysclk.o
+[249/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_ppu.o
+[250/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm.o
+[251/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_v2.o
+[252/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_v3.o
+[253/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_systick.o
+[254/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_syspm_v4.o
+[255/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_systick_v2.o
+[256/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_counter.o
+[257/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_motif.o
+[258/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_quaddec.o
+[259/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_pwm.o
+[260/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tcpwm_shiftreg.o
+[261/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_tdm.o
+[262/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_trigmux.o
+[263/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_usbfs_dev_drv_io.o
+[264/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_usbfs_dev_drv.o
+[265/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_usbfs_dev_drv_io_dma.o
+[266/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_wdt.o
+[267/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/ppu_v1.o
+[268/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/cy_wdt_b.o
+[269/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/third_party/ethernet/src/edd_rx.o
+[270/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/third_party/ethernet/src/edd.o
+[271/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/third_party/ethernet/src/edd_tx.o
+[272/273] Building object file C:/Users/Kushi/mtw/practice/build/Debug/libraries_shared/retarget-io/source/cy_retarget_io.o
+[273/273] Linking, creating elf file build/APP_CY8CKIT-062-BLE/Debug/mtb-example-empty-app.elf
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-objcopy -O ihex C:/Users/Kushi/mtw/practice/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-empty-app.elf C:/Users/Kushi/mtw/practice/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-empty-app.hex
+==============================================================================
+= Build complete =
+==============================================================================
+
+Calculating memory consumption: CY8C6347BZI-BLD53 GCC_ARM
+
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  28820      | 
+  | .ARM.exidx           |  0x10027094   |  8          | 
+  | .copy.table          |  0x1002709c   |  24         | 
+  | .zero.table          |  0x100270b4   |  8          | 
+  | .data                |  0x0800328c   |  1124       | 
+  | .cy_sharedmem        |  0x080036f0   |  12         | 
+  | .noinit              |  0x08003700   |  236        | 
+  | .bss                 |  0x080037ec   |  3776       | 
+  | .heap                |  0x080046b0   |  270672     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           161068     
+
+18:00:15 **** Build of configuration Debug for project uart ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/uart'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+[1/2] Building object file C:/Users/Kushi/mtw/uart/build/Debug/local/main.o
+[2/2] Linking, creating elf file build/APP_CY8CKIT-062-BLE/Debug/mtb-example-empty-app.elf
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-objcopy -O ihex C:/Users/Kushi/mtw/uart/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-empty-app.elf C:/Users/Kushi/mtw/uart/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-empty-app.hex
+==============================================================================
+= Build complete =
+==============================================================================
+
+Calculating memory consumption: CY8C6347BZI-BLD53 GCC_ARM
+
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  30252      | 
+  | .ARM.exidx           |  0x1002762c   |  8          | 
+  | .copy.table          |  0x10027634   |  24         | 
+  | .zero.table          |  0x1002764c   |  8          | 
+  | .data                |  0x0800328c   |  1236       | 
+  | .cy_sharedmem        |  0x08003760   |  12         | 
+  | .noinit              |  0x08003770   |  236        | 
+  | .bss                 |  0x0800385c   |  2216       | 
+  | .heap                |  0x08004108   |  272120     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           162612     
+
+19:31:07 **** Incremental Build of configuration Debug for project uart ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/uart'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+ninja: no work to do.
+==============================================================================
+= Build complete =
+==============================================================================
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  30340      | 
+  | .ARM.exidx           |  0x10027684   |  8          | 
+  | .copy.table          |  0x1002768c   |  24         | 
+  | .zero.table          |  0x100276a4   |  8          | 
+  | .data                |  0x0800328c   |  1236       | 
+  | .cy_sharedmem        |  0x08003760   |  12         | 
+  | .noinit              |  0x08003770   |  236        | 
+  | .bss                 |  0x0800385c   |  2268       | 
+  | .heap                |  0x08004138   |  272072     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           162700     
+
+20:02:12 **** Incremental Build of configuration Debug for project uart ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/uart'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+ninja: no work to do.
+==============================================================================
+= Build complete =
+==============================================================================
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  30372      | 
+  | .ARM.exidx           |  0x100276a4   |  8          | 
+  | .copy.table          |  0x100276ac   |  24         | 
+  | .zero.table          |  0x100276c4   |  8          | 
+  | .data                |  0x0800328c   |  1236       | 
+  | .cy_sharedmem        |  0x08003760   |  12         | 
+  | .noinit              |  0x08003770   |  236        | 
+  | .bss                 |  0x0800385c   |  2268       | 
+  | .heap                |  0x08004138   |  272072     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           162732     
+
+20:03:36 **** Incremental Build of configuration Debug for project uart ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/uart'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+ninja: no work to do.
+==============================================================================
+= Build complete =
+==============================================================================
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  30372      | 
+  | .ARM.exidx           |  0x100276a4   |  8          | 
+  | .copy.table          |  0x100276ac   |  24         | 
+  | .zero.table          |  0x100276c4   |  8          | 
+  | .data                |  0x0800328c   |  1236       | 
+  | .cy_sharedmem        |  0x08003760   |  12         | 
+  | .noinit              |  0x08003770   |  236        | 
+  | .bss                 |  0x0800385c   |  2268       | 
+  | .heap                |  0x08004138   |  272072     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           162732     
+
+20:05:07 **** Incremental Build of configuration Debug for project uart ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/uart'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+ninja: no work to do.
+==============================================================================
+= Build complete =
+==============================================================================
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  30372      | 
+  | .ARM.exidx           |  0x100276a4   |  8          | 
+  | .copy.table          |  0x100276ac   |  24         | 
+  | .zero.table          |  0x100276c4   |  8          | 
+  | .data                |  0x0800328c   |  1236       | 
+  | .cy_sharedmem        |  0x08003760   |  12         | 
+  | .noinit              |  0x08003770   |  236        | 
+  | .bss                 |  0x0800385c   |  2268       | 
+  | .heap                |  0x08004138   |  272072     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           162732     
+
+20:14:17 **** Clean-only build of configuration Debug for project uart ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 clean_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+rm -rf C:/Users/Kushi/mtw/uart/build
+14:51:17 **** Clean-only build of configuration Debug for project timers_2 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 clean_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+rm -rf C:/Users/Kushi/mtw/timers_2/build
+15:33:48 **** Clean-only build of configuration Debug for project timers_2 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 clean_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+rm -rf C:/Users/Kushi/mtw/timers_2/build
+15:46:55 **** Clean-only build of configuration Debug for project timers_2 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 clean_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+rm -rf C:/Users/Kushi/mtw/timers_2/build

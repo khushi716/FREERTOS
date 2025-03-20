@@ -48,6 +48,7 @@ void vPortGenerateSimulatedInterrupt()
 
 }
 
+
 static void ulExampleInterruptHandler(void)
 {
     BaseType_t xHigherPriorityTaskWoken = pdFALSE;
