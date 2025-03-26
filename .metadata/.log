@@ -1023,3 +1023,261 @@ org.eclipse.core.runtime.CoreException: Compilation database (usually compile_co
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 !SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2025-03-26 15:22:34.421
 !MESSAGE Compilation database (usually compile_commands.json) not found at location ${ProjDirPath}\build\compile_commands.json.
+
+!ENTRY org.eclipse.ui 4 4 2025-03-26 16:12:06.863
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.findNext: {ActionHandler(org.eclipse.ui.texteditor.FindNextAction@2c26ba12)} vs {ActionHandler(org.eclipse.ui.texteditor.FindNextAction@2c26ba12)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+!STACK 0
+java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.texteditor.FindNextAction@2c26ba12),  for 'org.eclipse.ui.edit.findNext',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@21c4d453), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.texteditor.FindNextAction@2c26ba12),  for 'org.eclipse.ui.edit.findNext',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@21c4d453), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:265)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:230)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
+	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
+	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
+	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
+	at org.eclipse.ui.texteditor.FindNextAction.update(FindNextAction.java:238)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.updateAction(AbstractTextEditor.java:5359)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.updateContentDependentActions(AbstractTextEditor.java:5443)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextListener.lambda$0(AbstractTextEditor.java:622)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui 4 4 2025-03-26 16:12:06.863
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.findPrevious: {ActionHandler(org.eclipse.ui.texteditor.FindNextAction@12b1a80f)} vs {ActionHandler(org.eclipse.ui.texteditor.FindNextAction@12b1a80f)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+!STACK 0
+java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.texteditor.FindNextAction@12b1a80f),  for 'org.eclipse.ui.edit.findPrevious',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@21c4d453), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.texteditor.FindNextAction@12b1a80f),  for 'org.eclipse.ui.edit.findPrevious',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@21c4d453), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:265)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:230)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
+	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
+	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
+	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
+	at org.eclipse.ui.texteditor.FindNextAction.update(FindNextAction.java:238)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.updateAction(AbstractTextEditor.java:5359)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.updateContentDependentActions(AbstractTextEditor.java:5443)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextListener.lambda$0(AbstractTextEditor.java:622)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui 4 4 2025-03-26 16:12:06.864
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.findIncremental: {ActionHandler(org.eclipse.ui.texteditor.IncrementalFindAction@6fd50e30)} vs {ActionHandler(org.eclipse.ui.texteditor.IncrementalFindAction@6fd50e30)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+!STACK 0
+java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.texteditor.IncrementalFindAction@6fd50e30),  for 'org.eclipse.ui.edit.findIncremental',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@21c4d453), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.texteditor.IncrementalFindAction@6fd50e30),  for 'org.eclipse.ui.edit.findIncremental',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@21c4d453), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:265)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:230)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
+	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
+	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
+	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
+	at org.eclipse.ui.texteditor.IncrementalFindAction.update(IncrementalFindAction.java:118)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.updateAction(AbstractTextEditor.java:5359)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.updateContentDependentActions(AbstractTextEditor.java:5443)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextListener.lambda$0(AbstractTextEditor.java:622)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui 4 4 2025-03-26 16:12:06.865
+!MESSAGE Conflicting handlers for org.eclipse.ui.edit.findIncrementalReverse: {ActionHandler(org.eclipse.ui.texteditor.IncrementalFindAction@2399c8b1)} vs {ActionHandler(org.eclipse.ui.texteditor.IncrementalFindAction@2399c8b1)} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+!STACK 0
+java.lang.IllegalStateException: Conflicting handlers: {[ActionHandler(org.eclipse.ui.texteditor.IncrementalFindAction@2399c8b1),  for 'org.eclipse.ui.edit.findIncrementalReverse',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@21c4d453), active=true, sourcePriority=1048576, participating=true]} vs {[ActionHandler(org.eclipse.ui.texteditor.IncrementalFindAction@2399c8b1),  for 'org.eclipse.ui.edit.findIncrementalReverse',  in PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext, activeWhen=ActivePartExpression(org.eclipse.mylyn.internal.wikitext.ui.editor.MarkupEditor@21c4d453), active=true, sourcePriority=1048576, participating=true]} in: PartImpl (org.eclipse.e4.ui.compatibility.editor)  removeOnHide org.eclipse.mylyn.wikitext.ui.editor.markupEditorContext
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:145)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:265)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:230)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:103)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:114)
+	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:77)
+	at org.eclipse.jface.commands.ActionHandler.lambda$0(ActionHandler.java:81)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:52)
+	at org.eclipse.jface.action.AbstractAction.firePropertyChange(AbstractAction.java:75)
+	at org.eclipse.jface.action.Action.setEnabled(Action.java:541)
+	at org.eclipse.ui.texteditor.IncrementalFindAction.update(IncrementalFindAction.java:118)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.updateAction(AbstractTextEditor.java:5359)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.updateContentDependentActions(AbstractTextEditor.java:5443)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextListener.lambda$0(AbstractTextEditor.java:622)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-03-26 16:12:09.719
+!MESSAGE Indexed 'rtc_oled' (13 sources, 286 headers) in 5.4 sec: 23,927 declarations; 40,532 references; 9 unresolved inclusions; 3 syntax errors; 43 unresolved names (0.067%)
+
+!ENTRY org.eclipse.cdt.ui 4 0 2025-03-26 18:21:16.762
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element main.c does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:485)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:583)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:65)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:641)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:365)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:79)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:64)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:346)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2025-03-26 18:21:16.763
+!MESSAGE Element main.c does not exist.
+
+!ENTRY org.eclipse.cdt.ui 4 0 2025-03-26 18:34:40.633
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element main.c does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:485)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:583)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:65)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:641)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:365)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:79)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:64)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:346)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2025-03-26 18:34:40.634
+!MESSAGE Element main.c does not exist.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2025-03-26 19:19:04.497
+!MESSAGE C:/Users/Kushi/ModusToolbox/tools_3.4/../../../../Infineon/Tools/ModusToolboxProgtools-1.3.1/openocd/bin/openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -s C:/Users/Kushi/ModusToolbox/tools_3.4/../../../../Infineon/Tools/ModusToolboxProgtools-1.3.1/openocd/bin/../scripts -s bsps/TARGET_APP_CY8CKIT-062-BLE/config/GeneratedSource -c source [find interface/kitprog3.cfg] -c transport select swd -c puts stderr {Started by GNU MCU Eclipse} -c source [find target/psoc6.cfg] -c psoc6.cpu.cm4 configure -rtos auto -rtos-wipe-on-reset-halt 1 -c gdb_port 3332 -c psoc6 sflash_restrictions 1 -c init; reset init -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2025-03-26 19:19:04.651
+!MESSAGE C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gdb.exe --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2025-03-26 19:20:18.754
+!MESSAGE C:/Users/Kushi/ModusToolbox/tools_3.4/../../../../Infineon/Tools/ModusToolboxProgtools-1.3.1/openocd/bin/openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -s C:/Users/Kushi/ModusToolbox/tools_3.4/../../../../Infineon/Tools/ModusToolboxProgtools-1.3.1/openocd/bin/../scripts -s bsps/TARGET_APP_CY8CKIT-062-BLE/config/GeneratedSource -c source [find interface/kitprog3.cfg] -c transport select swd -c puts stderr {Started by GNU MCU Eclipse} -c source [find target/psoc6.cfg] -c psoc6.cpu.cm4 configure -rtos auto -rtos-wipe-on-reset-halt 1 -c gdb_port 3332 -c psoc6 sflash_restrictions 1 -c init; reset init -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2025-03-26 19:20:18.840
+!MESSAGE C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gdb.exe --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2025-03-26 19:21:37.941
+!MESSAGE Debug session 'rtc_oled Debug (KitProg3_MiniProg4)' already started. Terminate the first one before restarting.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2025-03-26 19:21:54.107
+!MESSAGE C:/Users/Kushi/ModusToolbox/tools_3.4/../../../../Infineon/Tools/ModusToolboxProgtools-1.3.1/openocd/bin/openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -s C:/Users/Kushi/ModusToolbox/tools_3.4/../../../../Infineon/Tools/ModusToolboxProgtools-1.3.1/openocd/bin/../scripts -s bsps/TARGET_APP_CY8CKIT-062-BLE/config/GeneratedSource -c source [find interface/kitprog3.cfg] -c transport select swd -c puts stderr {Started by GNU MCU Eclipse} -c source [find target/psoc6.cfg] -c psoc6.cpu.cm4 configure -rtos auto -rtos-wipe-on-reset-halt 1 -c gdb_port 3332 -c psoc6 sflash_restrictions 1 -c init; reset init -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2025-03-26 19:21:54.197
+!MESSAGE C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gdb.exe --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2025-03-26 19:27:22.989
+!MESSAGE C:/Users/Kushi/ModusToolbox/tools_3.4/../../../../Infineon/Tools/ModusToolboxProgtools-1.3.1/openocd/bin/openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -s C:/Users/Kushi/ModusToolbox/tools_3.4/../../../../Infineon/Tools/ModusToolboxProgtools-1.3.1/openocd/bin/../scripts -s bsps/TARGET_APP_CY8CKIT-062-BLE/config/GeneratedSource -c source [find interface/kitprog3.cfg] -c transport select swd -c puts stderr {Started by GNU MCU Eclipse} -c source [find target/psoc6.cfg] -c psoc6.cpu.cm4 configure -rtos auto -rtos-wipe-on-reset-halt 1 -c gdb_port 3332 -c psoc6 sflash_restrictions 1 -c init; reset init -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2025-03-26 19:27:23.155
+!MESSAGE C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gdb.exe --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2025-03-26 19:30:52.564
+!MESSAGE C:/Users/Kushi/ModusToolbox/tools_3.4/../../../../Infineon/Tools/ModusToolboxProgtools-1.3.1/openocd/bin/openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -s C:/Users/Kushi/ModusToolbox/tools_3.4/../../../../Infineon/Tools/ModusToolboxProgtools-1.3.1/openocd/bin/../scripts -s bsps/TARGET_APP_CY8CKIT-062-BLE/config/GeneratedSource -c source [find interface/kitprog3.cfg] -c transport select swd -c puts stderr {Started by GNU MCU Eclipse} -c source [find target/psoc6.cfg] -c psoc6.cpu.cm4 configure -rtos auto -rtos-wipe-on-reset-halt 1 -c gdb_port 3332 -c psoc6 sflash_restrictions 1 -c init; reset init -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2025-03-26 19:30:52.650
+!MESSAGE C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gdb.exe --interpreter=mi2 --nx
