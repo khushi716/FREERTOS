@@ -1,4 +1,4 @@
-14:16:23 **** Incremental Build of configuration Debug for project Empty_App ****
+12:49:00 **** Build of configuration Debug for project Empty_App ****
 "C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
 Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
 Searching installed tools in progress...
@@ -14,7 +14,17 @@ Prebuild operations complete
 # 0: Loading the application in directory 'C:/Users/Kushi/mtw/Empty_App'
 # 0: Loading the ModusToolbox Technology Packs and Early Access Packs
 # 0: Loading the tools information
-[1/251] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o
+[1/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_qspi_memslot.o
+[2/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_routing.o
+[3/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/COMPONENT_CM4/system_psoc6_cm4.o
+[4/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_pins.o
+[5/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_clocks.o
+[6/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg.o
+[7/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_peripherals.o
+[8/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/cybsp.o
+[9/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_system.o
+[10/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/TOOLCHAIN_GCC_ARM/cy_syslib_ext.o
+[11/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o
 FAILED: C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o 
 C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o.d -MT C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o @C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o.rsp -o C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o -c C:/Users/Kushi/mtw/mtb_shared/abstraction-rtos/release-v1.9.0/source/cy_worker_thread.c
 In file included from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cy_worker_thread.h:37,
@@ -24,162 +34,14 @@ In file included from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cy_w
       |          ^~~~~~~~~~~~~~~~~~~
 compilation terminated.
 
-[2/251] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o
-FAILED: C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o 
-C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o.d -MT C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o @C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o.rsp -o C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/clib-support/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.o -c C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c
-In file included from C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:41:
-../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:46:2: error: #error "Unhandled RTOS type"
-   46 | #error "Unhandled RTOS type"
-      |  ^~~~~
-../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:57:1: error: unknown type name 'cy_mutex_pool_semaphore_t'
-   57 | cy_mutex_pool_semaphore_t cy_mutex_pool_create(void);
-      | ^~~~~~~~~~~~~~~~~~~~~~~~~
-../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:61:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
-   61 | void cy_mutex_pool_acquire(cy_mutex_pool_semaphore_t m);
-      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
-../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:65:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
-   65 | void cy_mutex_pool_release(cy_mutex_pool_semaphore_t m);
-      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
-../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:69:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
-   69 | void cy_mutex_pool_destroy(cy_mutex_pool_semaphore_t m);
-      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
-C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:52:8: error: unknown type name 'cy_mutex_pool_semaphore_t'
-   52 | static cy_mutex_pool_semaphore_t cy_malloc_mutex = NULL, cy_env_mutex = NULL, cy_ctor_mutex = NULL;
-      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
-C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:52:52: warning: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
-   52 | static cy_mutex_pool_semaphore_t cy_malloc_mutex = NULL, cy_env_mutex = NULL, cy_ctor_mutex = NULL;
-      |                                                    ^~~~
-C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:52:73: warning: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
-   52 | static cy_mutex_pool_semaphore_t cy_malloc_mutex = NULL, cy_env_mutex = NULL, cy_ctor_mutex = NULL;
-      |                                                                         ^~~~
-C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:52:95: warning: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
-   52 | static cy_mutex_pool_semaphore_t cy_malloc_mutex = NULL, cy_env_mutex = NULL, cy_ctor_mutex = NULL;
-      |                                                                                               ^~~~
-C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:53:1: error: unknown type name 'cy_mutex_pool_semaphore_t'
-   53 | cy_mutex_pool_semaphore_t cy_timer_mutex;
-      | ^~~~~~~~~~~~~~~~~~~~~~~~~
-C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c: In function '__malloc_lock':
-C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:102:5: warning: implicit declaration of function 'cy_mutex_pool_acquire'; did you mean 'cy_mutex_pool_create'? [-Wimplicit-function-declaration]
-  102 |     cy_mutex_pool_acquire(cy_malloc_mutex);
-      |     ^~~~~~~~~~~~~~~~~~~~~
-      |     cy_mutex_pool_create
-C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c: In function '__malloc_unlock':
-C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/TOOLCHAIN_GCC_ARM/cy_clib_support_newlib.c:116:5: warning: implicit declaration of function 'cy_mutex_pool_release'; did you mean 'cy_mutex_pool_create'? [-Wimplicit-function-declaration]
-  116 |     cy_mutex_pool_release(cy_malloc_mutex);
-      |     ^~~~~~~~~~~~~~~~~~~~~
-      |     cy_mutex_pool_create
-[3/251] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o
-FAILED: C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o 
-C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o.d -MT C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o @C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o.rsp -o C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o -c C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c
-In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
-                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX.h:41,
-                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c:36:
-../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
-   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
-      |  ^~~~~~~
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c: In function 'clock_settime':
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c:205:5: error: 'errno' undeclared (first use in this function)
-  205 |     errno = EPERM;
-      |     ^~~~~
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c:40:1: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
-   39 | #include "FreeRTOS_POSIX/utils.h"
-  +++ |+#include <errno.h>
-   40 | 
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c:205:5: note: each undeclared identifier is reported only once for each function it appears in
-  205 |     errno = EPERM;
-      |     ^~~~~
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c: In function 'nanosleep':
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c:224:9: error: 'errno' undeclared (first use in this function)
-  224 |         errno = EINVAL;
-      |         ^~~~~
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c:224:9: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
-[4/251] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread_barrier.o
-In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
-                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX.h:41,
-                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_pthread_barrier.c:35:
-../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
-   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
-      |  ^~~~~~~
-[5/251] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_mqueue.o
-FAILED: C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_mqueue.o 
-C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_mqueue.o.d -MT C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_mqueue.o @C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_mqueue.o.rsp -o C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_mqueue.o -c C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c
-In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
-                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX.h:41,
-                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:35:
-../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
-   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
-      |  ^~~~~~~
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c: In function 'mq_close':
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:445:9: error: 'errno' undeclared (first use in this function)
-  445 |         errno = EBADF;
-      |         ^~~~~
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:42:1: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
-   41 | #include "iot_doubly_linked_list.h"
-  +++ |+#include <errno.h>
-   42 | 
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:445:9: note: each undeclared identifier is reported only once for each function it appears in
-  445 |         errno = EBADF;
-      |         ^~~~~
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c: In function 'mq_getattr':
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:484:9: error: 'errno' undeclared (first use in this function)
-  484 |         errno = EBADF;
-      |         ^~~~~
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:484:9: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c: In function 'mq_open':
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:523:9: error: 'errno' undeclared (first use in this function)
-  523 |         errno = EINVAL;
-      |         ^~~~~
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:523:9: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c: In function 'mq_timedreceive':
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:656:9: error: 'errno' undeclared (first use in this function)
-  656 |         errno = EBADF;
-      |         ^~~~~
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:656:9: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c: In function 'mq_timedsend':
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:748:9: error: 'errno' undeclared (first use in this function)
-  748 |         errno = EBADF;
-      |         ^~~~~
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:748:9: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c: In function 'mq_unlink':
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:845:9: error: 'errno' undeclared (first use in this function)
-  845 |         errno = EINVAL;
-      |         ^~~~~
-C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:845:9: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
-[6/251] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/clib-support/source/cy_time.o
-FAILED: C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/clib-support/source/cy_time.o 
-C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/clib-support/source/cy_time.o.d -MT C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/clib-support/source/cy_time.o @C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/clib-support/source/cy_time.o.rsp -o C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/clib-support/source/cy_time.o -c C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c
-In file included from C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c:32:
-../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:46:2: error: #error "Unhandled RTOS type"
-   46 | #error "Unhandled RTOS type"
-      |  ^~~~~
-../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:57:1: error: unknown type name 'cy_mutex_pool_semaphore_t'
-   57 | cy_mutex_pool_semaphore_t cy_mutex_pool_create(void);
-      | ^~~~~~~~~~~~~~~~~~~~~~~~~
-../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:61:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
-   61 | void cy_mutex_pool_acquire(cy_mutex_pool_semaphore_t m);
-      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
-../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:65:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
-   65 | void cy_mutex_pool_release(cy_mutex_pool_semaphore_t m);
-      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
-../mtb_shared/clib-support/release-v1.6.0/include/cy_mutex_pool.h:69:28: error: unknown type name 'cy_mutex_pool_semaphore_t'
-   69 | void cy_mutex_pool_destroy(cy_mutex_pool_semaphore_t m);
-      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
-C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c:51:8: error: unknown type name 'cy_mutex_pool_semaphore_t'
-   51 | extern cy_mutex_pool_semaphore_t cy_timer_mutex;
-      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
-C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c: In function 'mutex_acquire':
-C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c:60:5: warning: implicit declaration of function 'cy_mutex_pool_acquire'; did you mean 'cy_mutex_pool_create'? [-Wimplicit-function-declaration]
-   60 |     cy_mutex_pool_acquire(cy_timer_mutex);
-      |     ^~~~~~~~~~~~~~~~~~~~~
-      |     cy_mutex_pool_create
-C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c: In function 'mutex_release':
-C:/Users/Kushi/mtw/mtb_shared/clib-support/release-v1.6.0/source/cy_time.c:73:5: warning: implicit declaration of function 'cy_mutex_pool_release'; did you mean 'cy_mutex_pool_create'? [-Wimplicit-function-declaration]
-   73 |     cy_mutex_pool_release(cy_timer_mutex);
-      |     ^~~~~~~~~~~~~~~~~~~~~
-      |     cy_mutex_pool_create
+[12/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_BLESS/psoc6_cm0p_bless.o
+[13/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/local/main.o
+[14/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_mqueue.o
+[15/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o
+[16/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread.o
 ninja: build stopped: subcommand failed.
 make: *** [../mtb_shared/core-make/release-v3.5.1/make/core/ninja.mk:177: C:/Users/Kushi/mtw/Empty_App/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-empty-app.elf] Error 1
 "C:/Users/Kushi/ModusToolbox/tools_3.4/modus-shell/bin/make CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj" terminated with exit code 2. Build might be incomplete.
 
-14:16:26 Build Failed. 23 errors, 10 warnings. (took 3s.299ms)
+12:49:18 Build Failed. 2 errors, 0 warnings. (took 17s.346ms)
 

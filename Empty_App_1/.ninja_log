@@ -324,3 +324,6 @@
 7715	8658	7633052256862856	C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread_barrier.o	35b22744ebb21429
 7609	8740	7633052255795713	C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread.o	8c905a3b445925d7
 7989	9092	7633052259596589	C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread_mutex.o	2b7f08964222397b
+6289	7613	7642447703147803	C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_sched.o	bc1f060cc8dc67fd
+6301	7933	7642447703257552	C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_unistd.o	b1c6fbebecf96dee
+7614	8485	7642447716382426	C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_utils.o	77e0325b5bae3994

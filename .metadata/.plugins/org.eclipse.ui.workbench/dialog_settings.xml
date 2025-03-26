@@ -6,18 +6,22 @@
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 		<list key="orderedElements">
+			<item value="search.in.help"/>
 			<item value="backardHistory"/>
 			<item value="/mtb_shared/abstraction-rtos/release-v1.9.0/include/COMPONENT_FREERTOS/cyabs_rtos_impl.h"/>
 		</list>
 		<list key="orderedProviders">
+			<item value="search.help"/>
 			<item value="org.eclipse.ui.actions"/>
 			<item value="org.eclipse.ui.ide/org.eclipse.ui.internal.ide.dialogs.OpenResourceQuickAccessComputer"/>
 		</list>
 		<list key="textEntries">
 			<item value="1"/>
+			<item value="1"/>
 			<item value="2"/>
 		</list>
 		<list key="textArray">
+			<item value="mtb_ssd1306_i2c.c"/>
 			<item value="free"/>
 			<item value="cyabs_rto"/>
 			<item value="cyabs"/>

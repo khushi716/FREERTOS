@@ -10,7 +10,7 @@ uint32_t read_val;
 const cyhal_timer_cfg_t timer_cfg =
 {
     .compare_value = 0,                  // Timer compare value, not used
-    .period        = 200000,              // Timer period set to a large enough value
+    .period        = 2000000,              // Timer period set to a large enough value
     .direction     = CYHAL_TIMER_DIR_UP, // Timer counts up
     .is_compare    = false,              // Don't use compare mode
     .is_continuous = false,              // Do not run timer indefinitely

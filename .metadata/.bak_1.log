@@ -1,4 +1,4 @@
-!SESSION 2025-03-19 12:50:50.290 -----------------------------------------------
+!SESSION 2025-03-26 10:44:17.917 -----------------------------------------------
 eclipse.buildId=unknown
 java.version=17.0.7
 java.vendor=Eclipse Adoptium
@@ -6,9 +6,9 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
 Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 This is a continuation of log file C:\Users\Kushi\mtw\.metadata\.bak_0.log
-Created Time: 2025-03-19 12:51:24.254
+Created Time: 2025-03-26 10:44:53.724
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.255
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:53.725
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\FTDI\single\external\&&_MTB_RECIPE__PRJ_NAME&& Erase All (FTDI).launch.
@@ -105,7 +105,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The 
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.255
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:53.725
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\FTDI\single\external\&&_MTB_RECIPE__PRJ_NAME&& Erase All (FTDI).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference.
@@ -198,7 +198,7 @@ org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.258
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:53.745
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\FTDI\single\internal\&&_MTB_RECIPE__PRJ_NAME&& Erase Device (FTDI).launch.
@@ -295,7 +295,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The 
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.258
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:53.746
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\FTDI\single\internal\&&_MTB_RECIPE__PRJ_NAME&& Erase Device (FTDI).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference.
@@ -388,7 +388,7 @@ org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.260
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:53.758
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\JLink\any\&&_MTB_RECIPE__PRJ_NAME&& Program (JLink).launch.
@@ -485,7 +485,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The 
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.261
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:53.758
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\JLink\any\&&_MTB_RECIPE__PRJ_NAME&& Program (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference.
@@ -578,7 +578,7 @@ org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The entity name
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.263
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:53.768
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\JLink\combine_sign\Program.launch.
@@ -675,7 +675,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The 
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.264
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:53.768
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\JLink\combine_sign\Program.launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference.
@@ -768,7 +768,7 @@ org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The entity name
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.266
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:53.781
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\JLink\single\external\&&_MTB_RECIPE__PRJ_NAME&& Erase All (JLink).launch.
@@ -865,7 +865,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The 
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.266
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:53.782
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\JLink\single\external\&&_MTB_RECIPE__PRJ_NAME&& Erase All (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference.
@@ -958,7 +958,7 @@ org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.270
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:53.790
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\JLink\single\internal\&&_MTB_RECIPE__PRJ_NAME&& Erase Device (JLink).launch.
@@ -1055,7 +1055,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The 
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.270
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:53.790
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\JLink\single\internal\&&_MTB_RECIPE__PRJ_NAME&& Erase Device (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference.
@@ -1148,7 +1148,7 @@ org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.272
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:53.798
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\KitProg3\any\&&_MTB_RECIPE__PRJ_NAME&& Program (KitProg3_MiniProg4).launch.
@@ -1245,7 +1245,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The 
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.273
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:53.799
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\KitProg3\any\&&_MTB_RECIPE__PRJ_NAME&& Program (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference.
@@ -1338,7 +1338,7 @@ org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The entity name
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.275
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:53.810
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\KitProg3\combine_sign\Program.launch.
@@ -1435,7 +1435,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The 
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.275
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:53.810
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\KitProg3\combine_sign\Program.launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference.
@@ -1528,7 +1528,7 @@ org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 83; The entity name
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.277
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:53.816
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\KitProg3\single\external\&&_MTB_RECIPE__PRJ_NAME&& Erase All (KitProg3_MiniProg4).launch.
@@ -1625,7 +1625,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The 
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.278
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:53.817
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\KitProg3\single\external\&&_MTB_RECIPE__PRJ_NAME&& Erase All (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference.
@@ -1718,7 +1718,7 @@ org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.280
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:53.829
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\KitProg3\single\internal\&&_MTB_RECIPE__PRJ_NAME&& Erase Device (KitProg3_MiniProg4).launch.
@@ -1815,7 +1815,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The 
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.280
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:53.829
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\recipe\interface_version_3\Proj\KitProg3\single\internal\&&_MTB_RECIPE__PRJ_NAME&& Erase Device (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name must immediately follow the '&' in the entity reference.
@@ -1908,7 +1908,7 @@ org.xml.sax.SAXParseException; lineNumber: 11; columnNumber: 83; The entity name
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.282
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:53.853
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\Application\JLink\&&_MTB_RECIPE__APP_NAME&& Debug MultiCore (JLink).launch.
@@ -2005,7 +2005,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.283
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:53.854
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\Application\JLink\&&_MTB_RECIPE__APP_NAME&& Debug MultiCore (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -2098,7 +2098,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.285
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:53.889
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\Application\JLink\&&_MTB_RECIPE__APP_NAME&& Erase Application (JLink).launch.
@@ -2195,7 +2195,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.285
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:53.890
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\Application\JLink\&&_MTB_RECIPE__APP_NAME&& Erase Application (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -2288,7 +2288,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.287
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:53.904
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\Application\JLink\&&_MTB_RECIPE__APP_NAME&& Program Application (JLink).launch.
@@ -2385,7 +2385,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.288
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:53.905
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\Application\JLink\&&_MTB_RECIPE__APP_NAME&& Program Application (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -2478,7 +2478,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.290
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:53.925
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\Application\KitProg3\&&_MTB_RECIPE__APP_NAME&& Debug MultiCore (KitProg3_MiniProg4).launch.
@@ -2575,7 +2575,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.290
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:53.925
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\Application\KitProg3\&&_MTB_RECIPE__APP_NAME&& Debug MultiCore (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -2668,7 +2668,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.292
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:53.954
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\Application\KitProg3\&&_MTB_RECIPE__APP_NAME&& Erase Application (KitProg3_MiniProg4).launch.
@@ -2765,7 +2765,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.293
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:53.954
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\Application\KitProg3\&&_MTB_RECIPE__APP_NAME&& Erase Application (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -2858,7 +2858,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.295
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:53.977
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\Application\KitProg3\&&_MTB_RECIPE__APP_NAME&& Program Application (KitProg3_MiniProg4).launch.
@@ -2955,7 +2955,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.295
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:53.977
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\Application\KitProg3\&&_MTB_RECIPE__APP_NAME&& Program Application (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -3048,7 +3048,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.297
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.008
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\JLink\any_core\&&_MTB_RECIPE__PRJ_NAME&& Attach (JLink).launch.
@@ -3145,7 +3145,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.297
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.008
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\JLink\any_core\&&_MTB_RECIPE__PRJ_NAME&& Attach (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -3238,7 +3238,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.299
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.023
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\JLink\any_core\&&_MTB_RECIPE__PRJ_NAME&& Debug (JLink).launch.
@@ -3335,7 +3335,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.300
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.023
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\JLink\any_core\&&_MTB_RECIPE__PRJ_NAME&& Debug (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -3428,7 +3428,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.302
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.066
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\JLink\single_core\&&_MTB_RECIPE__PRJ_NAME&& Erase (JLink).launch.
@@ -3525,7 +3525,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.302
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.067
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\JLink\single_core\&&_MTB_RECIPE__PRJ_NAME&& Erase (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -3618,7 +3618,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.304
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.103
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\JLink\single_core\&&_MTB_RECIPE__PRJ_NAME&& Program (JLink).launch.
@@ -3715,7 +3715,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.305
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.103
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\JLink\single_core\&&_MTB_RECIPE__PRJ_NAME&& Program (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -3808,7 +3808,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.307
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.151
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\KitProg3\any_core\&&_MTB_RECIPE__PRJ_NAME&& Attach (KitProg3_MiniProg4).launch.
@@ -3905,7 +3905,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.307
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.152
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\KitProg3\any_core\&&_MTB_RECIPE__PRJ_NAME&& Attach (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -3998,7 +3998,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.310
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.179
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\KitProg3\any_core\&&_MTB_RECIPE__PRJ_NAME&& Debug (KitProg3_MiniProg4).launch.
@@ -4095,7 +4095,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.310
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.180
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\KitProg3\any_core\&&_MTB_RECIPE__PRJ_NAME&& Debug (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -4188,7 +4188,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.312
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.209
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\KitProg3\multi_core_secure\&&_MTB_RECIPE__PRJ_NAME&& Add CM0+ to CM4 (KitProg3_MiniProg4).launch.
@@ -4285,7 +4285,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.313
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.209
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\KitProg3\multi_core_secure\&&_MTB_RECIPE__PRJ_NAME&& Add CM0+ to CM4 (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -4378,7 +4378,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.315
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.241
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\KitProg3\single_core\&&_MTB_RECIPE__PRJ_NAME&& Erase (KitProg3_MiniProg4).launch.
@@ -4475,7 +4475,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.315
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.241
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\KitProg3\single_core\&&_MTB_RECIPE__PRJ_NAME&& Erase (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -4568,7 +4568,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.318
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.269
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\KitProg3\single_core\&&_MTB_RECIPE__PRJ_NAME&& Program (KitProg3_MiniProg4).launch.
@@ -4665,7 +4665,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.318
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.269
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM0P\KitProg3\single_core\&&_MTB_RECIPE__PRJ_NAME&& Program (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -4758,7 +4758,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.320
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.299
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\JLink\any_core\&&_MTB_RECIPE__PRJ_NAME&& Attach (JLink).launch.
@@ -4855,7 +4855,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.321
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.299
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\JLink\any_core\&&_MTB_RECIPE__PRJ_NAME&& Attach (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -4948,7 +4948,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.323
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.318
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\JLink\any_core\&&_MTB_RECIPE__PRJ_NAME&& Debug (JLink).launch.
@@ -5045,7 +5045,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.323
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.318
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\JLink\any_core\&&_MTB_RECIPE__PRJ_NAME&& Debug (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -5138,7 +5138,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.325
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.337
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\JLink\single_core\&&_MTB_RECIPE__PRJ_NAME&& Erase (JLink).launch.
@@ -5235,7 +5235,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.326
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.337
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\JLink\single_core\&&_MTB_RECIPE__PRJ_NAME&& Erase (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -5328,7 +5328,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.328
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.356
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\JLink\single_core\&&_MTB_RECIPE__PRJ_NAME&& Program (JLink).launch.
@@ -5425,7 +5425,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.328
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.356
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\JLink\single_core\&&_MTB_RECIPE__PRJ_NAME&& Program (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -5518,7 +5518,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.331
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.375
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\KitProg3\any_core\&&_MTB_RECIPE__PRJ_NAME&& Attach (KitProg3_MiniProg4).launch.
@@ -5615,7 +5615,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.331
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.375
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\KitProg3\any_core\&&_MTB_RECIPE__PRJ_NAME&& Attach (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -5708,7 +5708,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.333
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.410
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\KitProg3\any_core\&&_MTB_RECIPE__PRJ_NAME&& Debug (KitProg3_MiniProg4).launch.
@@ -5805,7 +5805,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.334
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.411
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\KitProg3\any_core\&&_MTB_RECIPE__PRJ_NAME&& Debug (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -5898,7 +5898,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.336
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.432
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\KitProg3\multi_core\&&_MTB_RECIPE__PRJ_NAME&& Add CM4 to CM0+ (KitProg3_MiniProg4).launch.
@@ -5995,7 +5995,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.336
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.432
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\KitProg3\multi_core\&&_MTB_RECIPE__PRJ_NAME&& Add CM4 to CM0+ (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -6088,7 +6088,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.338
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.451
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\KitProg3\single_core\&&_MTB_RECIPE__PRJ_NAME&& Erase (KitProg3_MiniProg4).launch.
@@ -6185,7 +6185,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.339
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.451
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\KitProg3\single_core\&&_MTB_RECIPE__PRJ_NAME&& Erase (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -6278,7 +6278,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.341
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.483
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\KitProg3\single_core\&&_MTB_RECIPE__PRJ_NAME&& Program (KitProg3_MiniProg4).launch.
@@ -6375,7 +6375,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.341
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.484
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_2\eclipse\CM4\KitProg3\single_core\&&_MTB_RECIPE__PRJ_NAME&& Program (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -6468,7 +6468,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.344
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.507
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\Application\JLink\&&_MTB_RECIPE__APP_NAME&& Debug MultiCore (JLink).launch.
@@ -6565,7 +6565,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.344
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.507
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\Application\JLink\&&_MTB_RECIPE__APP_NAME&& Debug MultiCore (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -6658,7 +6658,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.347
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.520
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\Application\KitProg3\&&_MTB_RECIPE__APP_NAME&& Debug MultiCore (KitProg3_MiniProg4).launch.
@@ -6755,7 +6755,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.347
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.520
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\Application\KitProg3\&&_MTB_RECIPE__APP_NAME&& Debug MultiCore (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -6848,7 +6848,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.349
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.607
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\JLink\any_core\&&_MTB_RECIPE__PRJ_NAME&& Attach (JLink).launch.
@@ -6945,7 +6945,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.350
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.608
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\JLink\any_core\&&_MTB_RECIPE__PRJ_NAME&& Attach (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -7038,7 +7038,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.352
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.630
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\JLink\any_core\&&_MTB_RECIPE__PRJ_NAME&& Debug (JLink).launch.
@@ -7135,7 +7135,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.352
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.630
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\JLink\any_core\&&_MTB_RECIPE__PRJ_NAME&& Debug (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -7228,7 +7228,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.354
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.659
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\JLink\combine_sign\Debug.launch.
@@ -7325,7 +7325,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.355
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.659
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\JLink\combine_sign\Debug.launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -7418,7 +7418,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.357
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.675
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\JLink\multi_core\&&_MTB_RECIPE__PRJ_NAME&& Debug Multicore (JLink).launch.
@@ -7515,7 +7515,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.357
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.675
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\JLink\multi_core\&&_MTB_RECIPE__PRJ_NAME&& Debug Multicore (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -7608,7 +7608,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.360
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.710
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\JLink\multi_core_secure\&&_MTB_RECIPE__PRJ_NAME&& Add CM0+ to CM4 (JLink).launch.
@@ -7705,7 +7705,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.360
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.710
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\JLink\multi_core_secure\&&_MTB_RECIPE__PRJ_NAME&& Add CM0+ to CM4 (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -7798,7 +7798,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.363
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.724
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\KitProg3\any_core\&&_MTB_RECIPE__PRJ_NAME&& Attach (KitProg3_MiniProg4).launch.
@@ -7895,7 +7895,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.363
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.724
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\KitProg3\any_core\&&_MTB_RECIPE__PRJ_NAME&& Attach (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -7988,7 +7988,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.365
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.748
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\KitProg3\any_core\&&_MTB_RECIPE__PRJ_NAME&& Debug (KitProg3_MiniProg4).launch.
@@ -8085,7 +8085,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.366
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.749
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\KitProg3\any_core\&&_MTB_RECIPE__PRJ_NAME&& Debug (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -8178,7 +8178,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.368
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.773
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\KitProg3\combine_sign\Debug.launch.
@@ -8275,7 +8275,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.369
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.773
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\KitProg3\combine_sign\Debug.launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -8368,7 +8368,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.371
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.788
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\KitProg3\multi_core\&&_MTB_RECIPE__PRJ_NAME&& Debug Multicore (KitProg3_MiniProg4).launch.
@@ -8465,7 +8465,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.371
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.788
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\KitProg3\multi_core\&&_MTB_RECIPE__PRJ_NAME&& Debug Multicore (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -8558,7 +8558,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.374
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.835
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\KitProg3\multi_core_secure\&&_MTB_RECIPE__PRJ_NAME&& Add CM0+ to CM4 (KitProg3_MiniProg4).launch.
@@ -8655,7 +8655,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.375
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.835
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM0P\KitProg3\multi_core_secure\&&_MTB_RECIPE__PRJ_NAME&& Add CM0+ to CM4 (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -8748,7 +8748,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.378
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.866
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\JLink\any_core\&&_MTB_RECIPE__PRJ_NAME&& Attach (JLink).launch.
@@ -8845,7 +8845,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.378
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.866
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\JLink\any_core\&&_MTB_RECIPE__PRJ_NAME&& Attach (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -8938,7 +8938,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.380
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.888
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\JLink\any_core\&&_MTB_RECIPE__PRJ_NAME&& Debug (JLink).launch.
@@ -9035,7 +9035,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.380
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.888
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\JLink\any_core\&&_MTB_RECIPE__PRJ_NAME&& Debug (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -9128,7 +9128,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.383
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.905
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\JLink\combine_sign\Debug.launch.
@@ -9225,7 +9225,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.385
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.905
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\JLink\combine_sign\Debug.launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -9318,7 +9318,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.387
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.921
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\JLink\multi_core\&&_MTB_RECIPE__PRJ_NAME&& Add CM4 to CM0+ (JLink).launch.
@@ -9415,7 +9415,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.388
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.921
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\JLink\multi_core\&&_MTB_RECIPE__PRJ_NAME&& Add CM4 to CM0+ (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -9508,7 +9508,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.391
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.936
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\JLink\multi_core_secure\&&_MTB_RECIPE__PRJ_NAME&& Debug Multicore (JLink).launch.
@@ -9605,7 +9605,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.392
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.936
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\JLink\multi_core_secure\&&_MTB_RECIPE__PRJ_NAME&& Debug Multicore (JLink).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -9698,7 +9698,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.394
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.952
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\KitProg3\any_core\&&_MTB_RECIPE__PRJ_NAME&& Attach (KitProg3_MiniProg4).launch.
@@ -9795,7 +9795,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.395
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.952
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\KitProg3\any_core\&&_MTB_RECIPE__PRJ_NAME&& Attach (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -9888,7 +9888,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.397
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:54.983
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\KitProg3\any_core\&&_MTB_RECIPE__PRJ_NAME&& Debug (KitProg3_MiniProg4).launch.
@@ -9985,7 +9985,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.397
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:54.983
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\KitProg3\any_core\&&_MTB_RECIPE__PRJ_NAME&& Debug (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -10078,7 +10078,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.400
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:55.030
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\KitProg3\combine_sign\Debug.launch.
@@ -10175,7 +10175,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.401
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:55.030
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\KitProg3\combine_sign\Debug.launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.
@@ -10268,7 +10268,7 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name 
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.debug.core 4 125 2025-03-19 12:51:24.403
+!ENTRY org.eclipse.debug.core 4 125 2025-03-26 10:44:55.061
 !MESSAGE Error logged from Debug Core: 
 !STACK 1
 org.eclipse.debug.core.DebugException: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\KitProg3\multi_core\&&_MTB_RECIPE__PRJ_NAME&& Add CM4 to CM0+ (KitProg3_MiniProg4).launch.
@@ -10365,7 +10365,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The e
 	at org.eclipse.debug.internal.core.LaunchManager.createInfoFromXML(LaunchManager.java:953)
 	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1364)
 	... 70 more
-!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-19 12:51:24.404
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2025-03-26 10:44:55.061
 !MESSAGE org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference. occurred while reading launch configuration file: C:\Users\Kushi\mtw\mtb_shared\recipe-make-cat1a\release-v2.4.0\make\scripts\interface_version_3\eclipse\CM4\KitProg3\multi_core\&&_MTB_RECIPE__PRJ_NAME&& Add CM4 to CM0+ (KitProg3_MiniProg4).launch.
 !STACK 0
 org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 66; The entity name must immediately follow the '&' in the entity reference.

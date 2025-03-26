@@ -41291,3 +41291,346 @@ Searching installed tools in progress...
 Searching installed tools complete
 INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
 rm -rf C:/Users/Kushi/mtw/timers_2/build
+12:48:38 **** Build of configuration Debug for project 1.2 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/1.2'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+ninja: no work to do.
+==============================================================================
+= Build complete =
+==============================================================================
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  15108      | 
+  | .ARM.exidx           |  0x10023b04   |  8          | 
+  | .copy.table          |  0x10023b0c   |  24         | 
+  | .zero.table          |  0x10023b24   |  8          | 
+  | .data                |  0x0800328c   |  1036       | 
+  | .cy_sharedmem        |  0x08003698   |  12         | 
+  | .noinit              |  0x080036a8   |  236        | 
+  | .bss                 |  0x08003794   |  732        | 
+  | .heap                |  0x08003a70   |  273808     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           147268     
+
+12:48:50 **** Build of configuration Debug for project ADC_basic ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-hal-adc-basic Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/ADC_basic'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+ninja: no work to do.
+==============================================================================
+= Build complete =
+==============================================================================
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  51856      | 
+  | .ARM.exidx           |  0x1002ca90   |  8          | 
+  | .copy.table          |  0x1002ca98   |  24         | 
+  | .zero.table          |  0x1002cab0   |  8          | 
+  | .data                |  0x0800328c   |  1596       | 
+  | .cy_sharedmem        |  0x080038c8   |  12         | 
+  | .noinit              |  0x080038d8   |  236        | 
+  | .bss                 |  0x080039c4   |  2188       | 
+  | .heap                |  0x08004250   |  271792     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           184576     
+
+12:49:00 **** Build of configuration Debug for project Empty_App ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/Empty_App'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+[1/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_qspi_memslot.o
+[2/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_routing.o
+[3/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/COMPONENT_CM4/system_psoc6_cm4.o
+[4/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_pins.o
+[5/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_clocks.o
+[6/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg.o
+[7/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_peripherals.o
+[8/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/cybsp.o
+[9/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/bsps/APP_CY8CKIT-062-BLE/config/GeneratedSource/cycfg_system.o
+[10/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/mtb-pdl-cat1/drivers/source/TOOLCHAIN_GCC_ARM/cy_syslib_ext.o
+[11/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o
+FAILED: C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o 
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o.d -MT C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o @C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o.rsp -o C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/abstraction-rtos/source/cy_worker_thread.o -c C:/Users/Kushi/mtw/mtb_shared/abstraction-rtos/release-v1.9.0/source/cy_worker_thread.c
+In file included from ../mtb_shared/abstraction-rtos/release-v1.9.0/include/cy_worker_thread.h:37,
+                 from C:/Users/Kushi/mtw/mtb_shared/abstraction-rtos/release-v1.9.0/source/cy_worker_thread.c:30:
+../mtb_shared/abstraction-rtos/release-v1.9.0/include/cyabs_rtos.h:32:10: fatal error: cyabs_rtos_impl.h: No such file or directory
+   32 | #include "cyabs_rtos_impl.h"
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+[12/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/cat1cm0p/COMPONENT_CAT1A/COMPONENT_CM0P_BLESS/psoc6_cm0p_bless.o
+[13/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/local/main.o
+[14/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_mqueue.o
+[15/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o
+[16/262] Building object file C:/Users/Kushi/mtw/Empty_App/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_pthread.o
+ninja: build stopped: subcommand failed.
+make: *** [../mtb_shared/core-make/release-v3.5.1/make/core/ninja.mk:177: C:/Users/Kushi/mtw/Empty_App/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-empty-app.elf] Error 1
+"C:/Users/Kushi/ModusToolbox/tools_3.4/modus-shell/bin/make CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj" terminated with exit code 2. Build might be incomplete.
+12:49:18 **** Build of configuration Debug for project Empty_App_1 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-hal-posix-freertos Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/Empty_App_1'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+[1/245] Building object file C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_sched.o
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX.h:41,
+                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_sched.c:32:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+[2/245] Building object file C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o
+FAILED: C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o 
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o.d -MT C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o @C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o.rsp -o C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_clock.o -c C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX.h:41,
+                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c:36:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c: In function 'clock_settime':
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c:205:5: error: 'errno' undeclared (first use in this function)
+  205 |     errno = EPERM;
+      |     ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c:40:1: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
+   39 | #include "FreeRTOS_POSIX/utils.h"
+  +++ |+#include <errno.h>
+   40 | 
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c:205:5: note: each undeclared identifier is reported only once for each function it appears in
+  205 |     errno = EPERM;
+      |     ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c: In function 'nanosleep':
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c:224:9: error: 'errno' undeclared (first use in this function)
+  224 |         errno = EINVAL;
+      |         ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_clock.c:224:9: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
+[3/245] Building object file C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_unistd.o
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX.h:41,
+                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_unistd.c:32:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+[4/245] Building object file C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_timer.o
+FAILED: C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_timer.o 
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_timer.o.d -MT C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_timer.o @C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_timer.o.rsp -o C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_timer.o -c C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_timer.c
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX.h:41,
+                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_timer.c:35:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_timer.c: In function 'timer_create':
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_timer.c:115:9: error: 'errno' undeclared (first use in this function)
+  115 |         errno = ENOTSUP;
+      |         ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_timer.c:44:1: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
+   43 | #include "timers.h"
+  +++ |+#include <errno.h>
+   44 | 
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_timer.c:115:9: note: each undeclared identifier is reported only once for each function it appears in
+  115 |         errno = ENOTSUP;
+      |         ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_timer.c: In function 'timer_settime':
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_timer.c:207:13: error: 'errno' undeclared (first use in this function)
+  207 |             errno = EINVAL;
+      |             ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_timer.c:207:13: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
+[5/245] Building object file C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_semaphore.o
+FAILED: C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_semaphore.o 
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_semaphore.o.d -MT C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_semaphore.o @C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_semaphore.o.rsp -o C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_semaphore.o -c C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_semaphore.c
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX.h:41,
+                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_semaphore.c:35:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_semaphore.c: In function 'sem_init':
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_semaphore.c:87:9: error: 'errno' undeclared (first use in this function)
+   87 |         errno = EINVAL;
+      |         ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_semaphore.c:41:1: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
+   40 | #include "atomic.h"
+  +++ |+#include <errno.h>
+   41 | 
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_semaphore.c:87:9: note: each undeclared identifier is reported only once for each function it appears in
+   87 |         errno = EINVAL;
+      |         ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_semaphore.c: In function 'sem_timedwait':
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_semaphore.c:185:17: error: 'errno' undeclared (first use in this function)
+  185 |                 errno = ETIMEDOUT;
+      |                 ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_semaphore.c:185:17: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_semaphore.c: In function 'sem_trywait':
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_semaphore.c:217:32: error: 'errno' undeclared (first use in this function)
+  217 |     if( ( iStatus == -1 ) && ( errno == ETIMEDOUT ) )
+      |                                ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_semaphore.c:217:32: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
+[6/245] Building object file C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_mqueue.o
+FAILED: C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_mqueue.o 
+C:/Users/Kushi/ModusToolbox/tools_3.4/gcc/bin/arm-none-eabi-gcc.exe -c -mcpu=cortex-m4 --specs=nano.specs -Og -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -ffunction-sections -fdata-sections -ffat-lto-objects -g -Wall -pipe -MMD -MP -MF C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_mqueue.o.d -MT C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_mqueue.o @C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_mqueue.o.rsp -o C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_mqueue.o -c C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX.h:41,
+                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:35:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+      |  ^~~~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c: In function 'mq_close':
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:445:9: error: 'errno' undeclared (first use in this function)
+  445 |         errno = EBADF;
+      |         ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:42:1: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
+   41 | #include "iot_doubly_linked_list.h"
+  +++ |+#include <errno.h>
+   42 | 
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:445:9: note: each undeclared identifier is reported only once for each function it appears in
+  445 |         errno = EBADF;
+      |         ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c: In function 'mq_getattr':
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:484:9: error: 'errno' undeclared (first use in this function)
+  484 |         errno = EBADF;
+      |         ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:484:9: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c: In function 'mq_open':
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:523:9: error: 'errno' undeclared (first use in this function)
+  523 |         errno = EINVAL;
+      |         ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:523:9: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c: In function 'mq_timedreceive':
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:656:9: error: 'errno' undeclared (first use in this function)
+  656 |         errno = EBADF;
+      |         ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:656:9: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c: In function 'mq_timedsend':
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:748:9: error: 'errno' undeclared (first use in this function)
+  748 |         errno = EBADF;
+      |         ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:748:9: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c: In function 'mq_unlink':
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:845:9: error: 'errno' undeclared (first use in this function)
+  845 |         errno = EINVAL;
+      |         ^~~~~
+C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_mqueue.c:845:9: note: 'errno' is defined in header '<errno.h>'; did you forget to '#include <errno.h>'?
+[7/245] Building object file C:/Users/Kushi/mtw/Empty_App_1/build/Debug/libraries_shared/freertos-posix/source/FreeRTOS_POSIX_utils.o
+In file included from ../mtb_shared/freertos/release-v10.5.003/Source/include/FreeRTOS.h:59,
+                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX.h:41,
+                 from C:/Users/Kushi/mtw/mtb_shared/freertos-posix/release-v1.0.0/source/FreeRTOS_POSIX_utils.c:36:
+../mtb_shared/freertos/release-v10.5.003/Source/portable/COMPONENT_CM4/FreeRTOSConfig.h:56:2: warning: #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details. [-Wcpp]
+   56 | #warning This is a template. Copy this file to your project and remove this line. Refer to FreeRTOS README.md for usage details.
+make: *** [../mtb_shared/core-make/release-v3.5.1/make/core/ninja.mk:177: C:/Users/Kushi/mtw/Empty_App_1/build/APP_CY8CKIT-062-BLE/Debug/mtb-example-hal-posix-freertos.elf] Error 1
+      |  ^~~~~~~
+ninja: build stopped: subcommand failed.
+"C:/Users/Kushi/ModusToolbox/tools_3.4/modus-shell/bin/make CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj" terminated with exit code 2. Build might be incomplete.
+12:49:32 **** Build of configuration Debug for project Empty_App_2 ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/Empty_App_2'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+Command canceled
+17:45:23 **** Build of configuration Debug for project uart ****
+"C:\\Users\\Kushi\\ModusToolbox\\tools_3.4\\modus-shell\\bin\\make" CY_MAKE_IDE=eclipse CY_IDE_TOOLS_DIR=C:/Users/Kushi/ModusToolbox/tools_3.4 CY_IDE_BT_TOOLS_DIR= -j4 build_proj 
+Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
+Searching installed tools in progress...
+Searching installed tools complete
+INFO: Multiple tools versions were found in "/cygdrive/c/Users/Kushi/ModusToolbox/tools_3.2 /cygdrive/c/Users/Kushi/ModusToolbox/tools_3.4 C:/Users/Kushi/ModusToolbox/tools_3.2 C:/Users/Kushi/ModusToolbox/tools_3.4". This build is currently using "C:/Users/Kushi/ModusToolbox/tools_3.4". Check that this is the correct version that should be used in this build. To stop seeing this message, set the CY_TOOLS_PATHS environment variable to the location of the tools directory. This can be done either as an environment variable or set in the application Makefile.
+NOTE: Using 'C:/Users/Kushi/ModusToolbox/tools_3.4/ninja/ninja.exe' from PATH.
+Generating mtbninja data files...
+Generating mtbninja data complete...
+Toolchain validation: PASS
+Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+
+Prebuild operations complete
+# 0: Loading the application in directory 'C:/Users/Kushi/mtw/uart'
+# 0: Loading the ModusToolbox Technology Packs and Early Access Packs
+# 0: Loading the tools information
+ninja: no work to do.
+==============================================================================
+= Build complete =
+==============================================================================
+
+   ---------------------------------------------------- 
+  | Section Name         |  Address      |  Size       | 
+   ---------------------------------------------------- 
+  | .cy_m0p_image        |  0x10000000   |  112144     | 
+  | .text                |  0x10020000   |  30340      | 
+  | .ARM.exidx           |  0x10027684   |  8          | 
+  | .copy.table          |  0x1002768c   |  24         | 
+  | .zero.table          |  0x100276a4   |  8          | 
+  | .data                |  0x0800328c   |  1236       | 
+  | .cy_sharedmem        |  0x08003760   |  12         | 
+  | .noinit              |  0x08003770   |  236        | 
+  | .bss                 |  0x0800385c   |  2268       | 
+  | .heap                |  0x08004138   |  272072     | 
+   ---------------------------------------------------- 
+
+  Total Internal Flash (Available)          1048576    
+  Total Internal Flash (Utilized)           162700     
+
