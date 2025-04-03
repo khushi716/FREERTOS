@@ -243,5 +243,5 @@ uint8_t DS1307_EncodeBCD(uint8_t dec) {
 }
 #endif
 
-
+temperature and humidity measure by one sensor
 

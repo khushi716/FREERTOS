@@ -1,240 +1,241 @@
-///******************************************************************************
-//* File Name: main.c
-//*
-//* Description: This example demonstrates the UART transmit and receive
-//*              operation using HAL APIs
-//*
-//* Related Document: See Readme.md
-//*
-//*******************************************************************************
-//* Copyright 2019-2024, Cypress Semiconductor Corporation (an Infineon company) or
-//* an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
-//*
-//* This software, including source code, documentation and related
-//* materials ("Software") is owned by Cypress Semiconductor Corporation
-//* or one of its affiliates ("Cypress") and is protected by and subject to
-//* worldwide patent protection (United States and foreign),
-//* United States copyright laws and international treaty provisions.
-//* Therefore, you may use this Software only as provided in the license
-//* agreement accompanying the software package from which you
-//* obtained this Software ("EULA").
-//* If no EULA applies, Cypress hereby grants you a personal, non-exclusive,
-//* non-transferable license to copy, modify, and compile the Software
-//* source code solely for use in connection with Cypress's
-//* integrated circuit products.  Any reproduction, modification, translation,
-//* compilation, or representation of this Software except as specified
-//* above is prohibited without the express written permission of Cypress.
-//*
-//* Disclaimer: THIS SOFTWARE IS PROVIDED AS-IS, WITH NO WARRANTY OF ANY KIND,
-//* EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT, IMPLIED
-//* WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Cypress
-//* reserves the right to make changes to the Software without notice. Cypress
-//* does not assume any liability arising out of the application or use of the
-//* Software or any product or circuit described in the Software. Cypress does
-//* not authorize its products for use in any products where a malfunction or
-//* failure of the Cypress product may reasonably be expected to result in
-//* significant property damage, injury or death ("High Risk Product"). By
-//* including Cypress's product in a High Risk Product, the manufacturer
-//* of such system or application assumes all risk of such use and in doing
-//* so agrees to indemnify Cypress against all liability.
-//*******************************************************************************/
-//
-//#include "cyhal.h"
-//#include "cybsp.h"
-//#include "cy_retarget_io.h"
-//
-//
-///*******************************************************************************
-//* Function Name: handle_error
-//********************************************************************************
-//* Summary:
-//* User defined error handling function.
-//*
-//* Parameters:
-//*  void
-//*
-//* Return:
-//*  void
-//*
-//*******************************************************************************/
-//void handle_error(void)
-//{
-//     /* Disable all interrupts. */
-//    __disable_irq();
-//
-//    CY_ASSERT(0);
-//}
-//
-///*******************************************************************************
-//* Function Name: main
-//********************************************************************************
-//* Summary:
-//* This is the main function.
-//* Reads one byte from the serial terminal and echoes back the read byte.
-//*
-//* Parameters:
-//*  void
-//*
-//* Return:
-//*  int
-//*
-//*******************************************************************************/
-//int main(void)
-//{
-//    cy_rslt_t result;
-//    #if defined(CY_DEVICE_SECURE)
-//        cyhal_wdt_t wdt_obj;
-//        /* Clear watchdog timer so that it doesn't trigger a reset */
-//        result = cyhal_wdt_init(&wdt_obj, cyhal_wdt_get_max_timeout_ms());
-//        CY_ASSERT(CY_RSLT_SUCCESS == result);
-//        cyhal_wdt_free(&wdt_obj);
-//    #endif
-//
-//    uint8_t read_data; /* Variable to store the received character
-//                        * through terminal */
-//
-//    /* Initialize the device and board peripherals */
-//    result = cybsp_init();
-//    if (result != CY_RSLT_SUCCESS)
-//    {
-//        handle_error();
-//    }
-//
-//    /* Initialize retarget-io to use the debug UART port */
-//
-//    result = cy_retarget_io_init_fc(CYBSP_DEBUG_UART_TX,
-//                                    CYBSP_DEBUG_UART_RX,
-//                                    CYBSP_DEBUG_UART_CTS,
-//                                    CYBSP_DEBUG_UART_RTS,
-//                                    CY_RETARGET_IO_BAUDRATE);
-//
-//    if (result != CY_RSLT_SUCCESS)
-//    {
-//        handle_error();
-//    }
-//
-//    /* \x1b[2J\x1b[;H - ANSI ESC sequence for clear screen */
-//    printf("\x1b[2J\x1b[;H");
-//
-//    printf("***********************************************************\r\n");
-//    printf("HAL: UART Transmit and Receive\r\n");
-//    printf("***********************************************************\r\n\n");
-//    printf(">> Start typing to see the echo on the screen \r\n\n");
-//
-//    __enable_irq();
-//
-//    for (;;)
-//    {
-//        if (CY_RSLT_SUCCESS == cyhal_uart_getc(&cy_retarget_io_uart_obj,
-//                                               &read_data, 0))
-//        {
-//            if (CY_RSLT_SUCCESS != cyhal_uart_putc(&cy_retarget_io_uart_obj,
-//                                                   read_data))
-//            {
-//                handle_error();
-//            }
-//        }
-//        else
-//        {
-//            handle_error();
-//        }
-//    }
-//}
-//
-///* [] END OF FILE */
+#include "cy_pdl.h"
 #include "cyhal.h"
 #include "cybsp.h"
-#include "cy_retarget_io.h"
-#include <string.h>
+#include <stdio.h>
 
-#define RX_BUF_SIZE 64
+// Macro Definitions
+#define DATA_BITS_8     8
+#define STOP_BITS_1     1
+#define BAUD_RATE       9600
+#define UART_DELAY      10u
+#define RX_BUF_SIZE     4
+#define TX_BUF_SIZE     4
 
-uint8_t rx_buf[RX_BUF_SIZE];
-size_t rx_index = 0;
-void handle_error(void)
+// Variable Declarations
+cy_rslt_t    rslt;
+cyhal_uart_t uart_obj;
+uint32_t     actualbaud;
+uint8_t      tx_buf[TX_BUF_SIZE] = { '1', '2', '3', '4' };
+uint8_t      rx_buf[RX_BUF_SIZE];
+size_t       tx_length = TX_BUF_SIZE;
+size_t       rx_length = RX_BUF_SIZE;
+uint32_t     value = 'A';
+
+// UART Configuration structure
+const cyhal_uart_cfg_t uart_config =
 {
-     /* Disable all interrupts. */
-    __disable_irq();
+    .data_bits      = DATA_BITS_8,
+    .stop_bits      = STOP_BITS_1,
+    .parity         = CYHAL_UART_PARITY_NONE,
+    .rx_buffer      = rx_buf,
+    .rx_buffer_size = RX_BUF_SIZE
+};
 
-    CY_ASSERT(0);
-}
-void process_command(const char *command)
-{
-    if (strcmp(command, "cmd1") == 0)
-    {
-        printf("Response: Command 1 Executed\r\n");
-    }
-    else if (strcmp(command, "cmd2") == 0)
-    {
-        printf("Response: Command 2 Executed\r\n");
-    }
-    else
-    {
-        printf("Error: Unknown Command\r\n");
-    }
-}
+// Function Prototypes
+void check_status(char *message, cy_rslt_t status);
 
 int main(void)
 {
     cy_rslt_t result;
-    uint8_t read_data;
 
-    /* Initialize the device and board peripherals */
+    // Initialize the device and board peripherals
     result = cybsp_init();
-    if (result != CY_RSLT_SUCCESS)
-    {
-        handle_error();
-    }
+    check_status("Board initialization failed", result);
 
-    /* Initialize retarget-io to use the debug UART port */
-    result = cy_retarget_io_init_fc(CYBSP_DEBUG_UART_TX,
-                                     CYBSP_DEBUG_UART_RX,
-                                     CYBSP_DEBUG_UART_CTS,
-                                     CYBSP_DEBUG_UART_RTS,
-                                     CY_RETARGET_IO_BAUDRATE);
-
-    if (result != CY_RSLT_SUCCESS)
-    {
-        handle_error();
-    }
-
-    /* Clear the screen and print the prompt */
-    printf("\x1b[2J\x1b[;H");
-    printf("***********************************************************\r\n");
-    printf("HAL: UART Command Handler\r\n");
-    printf("***********************************************************\r\n\n");
-    printf("Enter a command (cmd1, cmd2):\r\n");
-
+    // Enable global interrupts
     __enable_irq();
 
-    while (1)
-    {
-        /* Read one byte from the terminal */
-        if (CY_RSLT_SUCCESS == cyhal_uart_getc(&cy_retarget_io_uart_obj,
-                                               &read_data, 0))
-        {
-            /* Add the received byte to the rx buffer */
-            if (read_data == '\n' || read_data == '\r')  // Command end check
-            {
-                rx_buf[rx_index] = '\0'; // Null-terminate the command
-                process_command((const char *)rx_buf);  // Process the received command
+    // Initialize the UART Block
+    rslt = cyhal_uart_init(&uart_obj, CYBSP_DEBUG_UART_TX, CYBSP_DEBUG_UART_RX, NC, NC, NULL, &uart_config);
+    check_status("UART initialization failed", rslt);
 
-                // Reset buffer for the next command
-                rx_index = 0;
-            }
-            else
-            {
-                if (rx_index < RX_BUF_SIZE - 1)  // Prevent overflow
-                {
-                    rx_buf[rx_index++] = read_data;  // Store the byte
-                }
-            }
-        }
-        else
-        {
-            handle_error();  // Error handling for UART communication failure
-        }
+    // Set the baud rate
+    rslt = cyhal_uart_set_baud(&uart_obj, BAUD_RATE, &actualbaud);
+    check_status("Setting baud rate failed", rslt);
+
+    // Print initial status to the console
+    printf("\x1b[2J\x1b[;H");  // Clear the screen (ANSI escape code)
+    printf("UART Test Program\n");
+    printf("Baud Rate: %ld\n", actualbaud);
+
+    // Begin Tx Transfer
+    rslt = cyhal_uart_write(&uart_obj, (void*)tx_buf, tx_length);
+    check_status("UART write failed", rslt);
+    cyhal_system_delay_ms(UART_DELAY); // Wait for a moment to ensure data is transmitted
+
+    // Send a Character
+    rslt = cyhal_uart_putc(&uart_obj, value);
+    check_status("UART putc failed", rslt);
+    cyhal_system_delay_ms(UART_DELAY); // Wait for a moment to ensure data is transmitted
+
+    // Begin Rx Transfer
+    rslt = cyhal_uart_read(&uart_obj, (void*)rx_buf, rx_length);
+    check_status("UART read failed", rslt);
+    cyhal_system_delay_ms(UART_DELAY); // Wait for a moment to ensure data is received
+
+    // Print received data to console
+    printf("Received Data: ");
+    for (size_t i = 0; i < rx_length; i++) {
+        printf("%c", rx_buf[i]);
     }
+    printf("\n");
 
-    return 0;
+    // Main loop
+    for (;;) {
+        // The system will continue to wait and handle UART operations.
+        // Additional code or logic could be implemented here to manage UART communication continuously.
+    }
 }
+
+// Function to check the status of peripheral initialization
+void check_status(char *message, cy_rslt_t status)
+{
+    if (CY_RSLT_SUCCESS != status)
+    {
+        printf("\r\n=====================================================\r\n");
+        printf("FAIL: %s\r\n", message);
+        printf("\r\n=====================================================\r\n");
+        while (true); // Infinite loop to halt execution
+    }
+}
+
+//
+//#include "cy_pdl.h"
+//#include "cyhal.h"
+//#include "cybsp.h"
+//#include <string.h>
+//
+//// UART Configuration
+//#define DATA_BITS_8     8
+//#define STOP_BITS_1     1
+//#define BAUD_RATE       115200
+//#define UART_DELAY      10u
+//#define RX_BUF_SIZE     64
+//#define TX_BUF_SIZE     64
+//
+//// Status message buffers
+//const uint8_t init_msg[] = "UART Initialized\r\n";
+//const uint8_t tx_msg[] = "Sent: ";
+//const uint8_t rx_msg[] = "Received: ";
+//const uint8_t err_msg[] = "Error!\r\n";
+//const uint8_t echo_msg[] = "Echo: ";
+//const uint8_t newline[] = "\r\n";
+//
+//void uart_send_string(cyhal_uart_t *uart, const uint8_t *str)
+//{
+//    size_t len = strlen((const char*)str);
+//    cyhal_uart_write(uart, (void*)str, &len);
+//}
+//
+//void uart_send_hex(cyhal_uart_t *uart, uint8_t value)
+//{
+//    uint8_t hex_buf[3];
+//    const uint8_t hex_chars[] = "0123456789ABCDEF";
+//
+//    hex_buf[0] = hex_chars[(value >> 4) & 0x0F];
+//    hex_buf[1] = hex_chars[value & 0x0F];
+//    hex_buf[2] = ' ';
+//
+//    size_t len = 3;
+//    cyhal_uart_write(uart, hex_buf, &len);
+//}
+//
+//int main(void)
+//{
+//    // Variable Declarations
+//    cy_rslt_t    rslt;
+//    cyhal_uart_t uart_obj;
+//    uint32_t     actualbaud;
+//    uint8_t      tx_buf[TX_BUF_SIZE] = {'1', '2', '3', '4'};
+//    uint8_t      rx_buf[RX_BUF_SIZE] = {0};
+//    size_t       tx_length = 4; // Send first 4 bytes initially
+//    size_t       rx_length = RX_BUF_SIZE;
+//
+//    // Initialize board peripherals
+//    rslt = cybsp_init();
+//    if (rslt != CY_RSLT_SUCCESS)
+//    {
+//        CY_ASSERT(0);
+//    }
+//
+//    // Enable global interrupts
+//    __enable_irq();
+//
+//    // Initialize the UART configuration structure
+//    const cyhal_uart_cfg_t uart_config =
+//    {
+//        .data_bits      = DATA_BITS_8,
+//        .stop_bits      = STOP_BITS_1,
+//        .parity         = CYHAL_UART_PARITY_NONE,
+//        .rx_buffer      = rx_buf,
+//        .rx_buffer_size = RX_BUF_SIZE
+//    };
+//
+//    // Initialize the UART Block
+//    rslt = cyhal_uart_init(&uart_obj, CYBSP_DEBUG_UART_TX, CYBSP_DEBUG_UART_RX, NC, NC, NULL, &uart_config);
+//    if (rslt != CY_RSLT_SUCCESS)
+//    {
+//        while(1); // Hang on error
+//    }
+//
+//    // Set the baud rate
+//    rslt = cyhal_uart_set_baud(&uart_obj, BAUD_RATE, &actualbaud);
+//    if (rslt != CY_RSLT_SUCCESS)
+//    {
+//        while(1); // Hang on error
+//    }
+//
+//    // Send initialization message
+//    uart_send_string(&uart_obj, init_msg);
+//
+//    // Main communication loop
+//    for (;;)
+//    {
+//        // Transmit data
+//        rslt = cyhal_uart_write(&uart_obj, (void*)tx_buf, &tx_length);
+//        if (rslt == CY_RSLT_SUCCESS)
+//        {
+//            uart_send_string(&uart_obj, tx_msg);
+//            for (int i = 0; i < tx_length; i++)
+//            {
+//                uart_send_hex(&uart_obj, tx_buf[i]);
+//            }
+//            uart_send_string(&uart_obj, newline);
+//        }
+//        else
+//        {
+//            uart_send_string(&uart_obj, err_msg);
+//        }
+//        cyhal_system_delay_ms(UART_DELAY);
+//
+//        // Receive data (wait until data is available)
+//        while (cyhal_uart_readable(&uart_obj) == 0)
+//        {
+//            cyhal_system_delay_ms(1);
+//        }
+//
+//        rx_length = RX_BUF_SIZE;
+//        rslt = cyhal_uart_read(&uart_obj, (void*)rx_buf, &rx_length);
+//        if (rslt == CY_RSLT_SUCCESS && rx_length > 0)
+//        {
+//            uart_send_string(&uart_obj, rx_msg);
+//            for (int i = 0; i < rx_length; i++)
+//            {
+//                uart_send_hex(&uart_obj, rx_buf[i]);
+//            }
+//            uart_send_string(&uart_obj, newline);
+//
+//            // Echo back received data
+//            uart_send_string(&uart_obj, echo_msg);
+//            size_t echo_len = rx_length;
+//            cyhal_uart_write(&uart_obj, (void*)rx_buf, &echo_len);
+//            uart_send_string(&uart_obj, newline);
+//        }
+//        else
+//        {
+//            uart_send_string(&uart_obj, err_msg);
+//        }
+//
+//        cyhal_system_delay_ms(1000); // Delay between cycles
+//    }
+//}

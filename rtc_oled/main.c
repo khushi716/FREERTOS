@@ -158,4 +158,3 @@ void i2c_init(void){
 	        CY_ASSERT(0);
 	    }
 }
-

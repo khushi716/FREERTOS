@@ -148,6 +148,7 @@
 #define LED_BLINK_COUNT         (4)
 #define GPIO_INTERRUPT_PRIORITY (7u)
 #define BACKLIGHT_TIMEOUT pdMS_TO_TICKS(5000)  // Time for backlight to turn off (5 seconds)
+cyhal_i2c_t i2c_obj;
 
 volatile bool gpio_intr_flag = false;  // Flag set by GPIO interrupt
 BaseType_t xSimulatedBacklightOn =pdFALSE; // Simulated backlight state

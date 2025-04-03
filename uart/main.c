@@ -77,7 +77,7 @@
 //
 //    return 0;
 //}
-
+//
 #include "cyhal.h"
 #include "cybsp.h"
 #include "cy_sysint.h"
@@ -210,4 +210,3 @@ int main(void)
 
     return 0;
 }
-

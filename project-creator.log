@@ -1,7 +1,7 @@
 Loading the ModusToolbox Technology Packs and Early Access Packs
 Finished loading the ModusToolbox Technology Packs and Early Access Packs (8 ms)
 Loading the tools information
-Finished loading the tools information (65 ms)
+Finished loading the tools information (64 ms)
 From ModusToolbox Tools version 3.4.0.0 installed at C:/Users/Kushi/ModusToolbox/tools_3.4, using
  airoc-tools version 5.0.1.207
  bsp-assistant version 1.30.0.2394
@@ -132,13 +132,13 @@ Finished download of file 'https://github.com/golioth/mtb-golioth-mw-manifest/ra
 Finished download of file 'https://github.com/memfault/mtb-memfault-mw-manifest/raw/main/mtb-memfault-mw-manifest-fv2.xml'
 Finished download of file 'https://github.com/rtlabs-com/mtb-rtlabs-manifest/raw/main/rtlabs-mtb-mw-manifest-fw2-rtlabs.xml'
 Finished download of file 'https://github.com/sensiml/sensiml-mw-manifest/raw/main/sensiml-mw-manifest-fv2.xml'
-Finished loading the manifest data (3232 ms)
+Finished loading the manifest data (3601 ms)
 0 error(s), 0 warning(s)
 
 Summary: 
 
 BSP: CY8CKIT-062-BLE
-Template Application(s): Empty App
+Template Application(s): UART Transmit and Receive
 Application(s) Root Path: C:/Users/Kushi/mtw
 
 Press "Create" to create the selected application(s).
@@ -146,125 +146,76 @@ Press "Create" to create the selected application(s).
 Collecting application data...
 
 Info: The following entered on the command line will create the exact same project as that created with the GUI tool:
-C:/Users/Kushi/ModusToolbox/tools_3.4/project-creator/project-creator-cli.exe --board-id CY8CKIT-062-BLE --board-uri https://github.com/cypresssemiconductorco/TARGET_CY8CKIT-062-BLE --board-commit latest-v4.X --app-id mtb-example-empty-app --app-uri https://github.com/Infineon/mtb-example-empty-app --app-commit latest-v4.X --target-dir C:/Users/Kushi/mtw --user-app-name rtc_oled --use-modus-shell
-Starting application creation for 'C:/Users/Kushi/mtw/rtc_oled'.
-Acquiring the application source 'https://github.com/Infineon/mtb-example-empty-app'.
-Git#0>Cloning into 'rtc_oled'...
-Git#0>remote: Enumerating objects: 44, done.        
-Git#0>remote: Counting objects:   3% (1/29)        
-Git#0>remote: Counting objects:   6% (2/29)        
-Git#0>remote: Counting objects:  10% (3/29)        
-Git#0>remote: Counting objects:  13% (4/29)        
-Git#0>remote: Counting objects:  17% (5/29)        
-Git#0>remote: Counting objects:  20% (6/29)        
-Git#0>remote: Counting objects:  24% (7/29)        
-Git#0>remote: Counting objects:  27% (8/29)        
-Git#0>remote: Counting objects:  31% (9/29)        
-Git#0>remote: Counting objects:  34% (10/29)        
-Git#0>remote: Counting objects:  37% (11/29)        
-Git#0>remote: Counting objects:  41% (12/29)        
-Git#0>remote: Counting objects:  44% (13/29)        
-Git#0>remote: Counting objects:  48% (14/29)        
-Git#0>remote: Counting objects:  51% (15/29)        
-Git#0>remote: Counting objects:  55% (16/29)        
-Git#0>remote: Counting objects:  58% (17/29)        
-Git#0>remote: Counting objects:  62% (18/29)        
-Git#0>remote: Counting objects:  65% (19/29)        
-Git#0>remote: Counting objects:  68% (20/29)        
-Git#0>remote: Counting objects:  72% (21/29)        
-Git#0>remote: Counting objects:  75% (22/29)        
-Git#0>remote: Counting objects:  79% (23/29)        
-Git#0>remote: Counting objects:  82% (24/29)        
-Git#0>remote: Counting objects:  86% (25/29)        
-Git#0>remote: Counting objects:  89% (26/29)        
-Git#0>remote: Counting objects:  93% (27/29)        
-Git#0>remote: Counting objects:  96% (28/29)        
-Git#0>remote: Counting objects: 100% (29/29)        
-Git#0>remote: Counting objects: 100% (29/29), done.        
-Git#0>remote: Compressing objects:   4% (1/24)        
-Git#0>remote: Compressing objects:   8% (2/24)        
-Git#0>remote: Compressing objects:  12% (3/24)        
-Git#0>remote: Compressing objects:  16% (4/24)        
-Git#0>remote: Compressing objects:  20% (5/24)        
-Git#0>remote: Compressing objects:  25% (6/24)        
-Git#0>remote: Compressing objects:  29% (7/24)        
-Git#0>remote: Compressing objects:  33% (8/24)        
-Git#0>remote: Compressing objects:  37% (9/24)        
-Git#0>remote: Compressing objects:  41% (10/24)        
-Git#0>remote: Compressing objects:  45% (11/24)        
-Git#0>remote: Compressing objects:  50% (12/24)        
-Git#0>remote: Compressing objects:  54% (13/24)        
-Git#0>remote: Compressing objects:  58% (14/24)        
-Git#0>remote: Compressing objects:  62% (15/24)        
-Git#0>remote: Compressing objects:  66% (16/24)        
-Git#0>remote: Compressing objects:  70% (17/24)        
-Git#0>remote: Compressing objects:  75% (18/24)        
-Git#0>remote: Compressing objects:  79% (19/24)        
-Git#0>remote: Compressing objects:  83% (20/24)        
-Git#0>remote: Compressing objects:  87% (21/24)        
-Git#0>remote: Compressing objects:  91% (22/24)        
-Git#0>remote: Compressing objects:  95% (23/24)        
-Git#0>remote: Compressing objects: 100% (24/24)        
-Git#0>remote: Compressing objects: 100% (24/24), done.        
-Git#0>remote: Total 44 (delta 10), reused 22 (delta 5), pack-reused 15 (from 1)        
-Git#0>Receiving objects:   2% (1/44)
-Git#0>Receiving objects:   4% (2/44)
-Git#0>Receiving objects:   6% (3/44)
-Git#0>Receiving objects:   9% (4/44)
-Git#0>Receiving objects:  11% (5/44)
-Git#0>Receiving objects:  13% (6/44)
-Git#0>Receiving objects:  15% (7/44)
-Git#0>Receiving objects:  18% (8/44)
-Git#0>Receiving objects:  20% (9/44)
-Git#0>Receiving objects:  22% (10/44)
-Git#0>Receiving objects:  25% (11/44)
-Git#0>Receiving objects:  27% (12/44)
-Git#0>Receiving objects:  29% (13/44)
-Git#0>Receiving objects:  31% (14/44)
-Git#0>Receiving objects:  34% (15/44)
-Git#0>Receiving objects:  36% (16/44)
-Git#0>Receiving objects:  38% (17/44)
-Git#0>Receiving objects:  40% (18/44)
-Git#0>Receiving objects:  43% (19/44)
-Git#0>Receiving objects:  45% (20/44)
-Git#0>Receiving objects:  47% (21/44)
-Git#0>Receiving objects:  50% (22/44)
-Git#0>Receiving objects:  52% (23/44)
-Git#0>Receiving objects:  54% (24/44)
-Git#0>Receiving objects:  56% (25/44)
-Git#0>Receiving objects:  59% (26/44)
-Git#0>Receiving objects:  61% (27/44)
-Git#0>Receiving objects:  63% (28/44)
-Git#0>Receiving objects:  65% (29/44)
-Git#0>Receiving objects:  68% (30/44)
-Git#0>Receiving objects:  70% (31/44)
-Git#0>Receiving objects:  72% (32/44)
-Git#0>Receiving objects:  75% (33/44)
-Git#0>Receiving objects:  77% (34/44)
-Git#0>Receiving objects:  79% (35/44)
-Git#0>Receiving objects:  81% (36/44)
-Git#0>Receiving objects:  84% (37/44)
-Git#0>Receiving objects:  86% (38/44)
-Git#0>Receiving objects:  88% (39/44)
-Git#0>Receiving objects:  90% (40/44)
-Git#0>Receiving objects:  93% (41/44)
-Git#0>Receiving objects:  95% (42/44)
-Git#0>Receiving objects:  97% (43/44)
-Git#0>Receiving objects: 100% (44/44)
-Git#0>Receiving objects: 100% (44/44), 6.48 KiB | 663.00 KiB/s, done.
-Git#0>Resolving deltas:   0% (0/11)
-Git#0>Resolving deltas:   9% (1/11)
-Git#0>Resolving deltas:  18% (2/11)
-Git#0>Resolving deltas:  27% (3/11)
-Git#0>Resolving deltas:  36% (4/11)
-Git#0>Resolving deltas:  45% (5/11)
-Git#0>Resolving deltas:  54% (6/11)
-Git#0>Resolving deltas:  63% (7/11)
-Git#0>Resolving deltas:  72% (8/11)
-Git#0>Resolving deltas:  81% (9/11)
-Git#0>Resolving deltas:  90% (10/11)
-Git#0>Resolving deltas: 100% (11/11)
-Git#0>Resolving deltas: 100% (11/11), done.
+C:/Users/Kushi/ModusToolbox/tools_3.4/project-creator/project-creator-cli.exe --board-id CY8CKIT-062-BLE --board-uri https://github.com/cypresssemiconductorco/TARGET_CY8CKIT-062-BLE --board-commit latest-v4.X --app-id mtb-example-hal-uart-transmit-receive --app-uri https://github.com/Infineon/mtb-example-hal-uart-transmit-receive --app-commit latest-v3.X --target-dir C:/Users/Kushi/mtw --user-app-name UART_Transmit_and_Receive_2 --use-modus-shell
+Starting application creation for 'C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2'.
+Acquiring the application source 'https://github.com/Infineon/mtb-example-hal-uart-transmit-receive'.
+Git#0>Cloning into 'UART_Transmit_and_Receive_2'...
+Git#0>remote: Enumerating objects: 29, done.        
+Git#0>remote: Counting objects:   6% (1/15)        
+Git#0>remote: Counting objects:  13% (2/15)        
+Git#0>remote: Counting objects:  20% (3/15)        
+Git#0>remote: Counting objects:  26% (4/15)        
+Git#0>remote: Counting objects:  33% (5/15)        
+Git#0>remote: Counting objects:  40% (6/15)        
+Git#0>remote: Counting objects:  46% (7/15)        
+Git#0>remote: Counting objects:  53% (8/15)        
+Git#0>remote: Counting objects:  60% (9/15)        
+Git#0>remote: Counting objects:  66% (10/15)        
+Git#0>remote: Counting objects:  73% (11/15)        
+Git#0>remote: Counting objects:  80% (12/15)        
+Git#0>remote: Counting objects:  86% (13/15)        
+Git#0>remote: Counting objects:  93% (14/15)        
+Git#0>remote: Counting objects: 100% (15/15)        
+Git#0>remote: Counting objects: 100% (15/15), done.        
+Git#0>remote: Compressing objects:  10% (1/10)        
+Git#0>remote: Compressing objects:  20% (2/10)        
+Git#0>remote: Compressing objects:  30% (3/10)        
+Git#0>remote: Compressing objects:  40% (4/10)        
+Git#0>remote: Compressing objects:  50% (5/10)        
+Git#0>remote: Compressing objects:  60% (6/10)        
+Git#0>remote: Compressing objects:  70% (7/10)        
+Git#0>remote: Compressing objects:  80% (8/10)        
+Git#0>remote: Compressing objects:  90% (9/10)        
+Git#0>remote: Compressing objects: 100% (10/10)        
+Git#0>remote: Compressing objects: 100% (10/10), done.        
+Git#0>remote: Total 29 (delta 5), reused 13 (delta 3), pack-reused 14 (from 1)        
+Git#0>Receiving objects:   3% (1/29)
+Git#0>Receiving objects:   6% (2/29)
+Git#0>Receiving objects:  10% (3/29)
+Git#0>Receiving objects:  13% (4/29)
+Git#0>Receiving objects:  17% (5/29)
+Git#0>Receiving objects:  20% (6/29)
+Git#0>Receiving objects:  24% (7/29)
+Git#0>Receiving objects:  27% (8/29)
+Git#0>Receiving objects:  31% (9/29)
+Git#0>Receiving objects:  34% (10/29)
+Git#0>Receiving objects:  37% (11/29)
+Git#0>Receiving objects:  41% (12/29)
+Git#0>Receiving objects:  44% (13/29)
+Git#0>Receiving objects:  48% (14/29)
+Git#0>Receiving objects:  51% (15/29)
+Git#0>Receiving objects:  55% (16/29)
+Git#0>Receiving objects:  58% (17/29)
+Git#0>Receiving objects:  62% (18/29)
+Git#0>Receiving objects:  65% (19/29)
+Git#0>Receiving objects:  68% (20/29)
+Git#0>Receiving objects:  72% (21/29)
+Git#0>Receiving objects:  75% (22/29)
+Git#0>Receiving objects:  79% (23/29)
+Git#0>Receiving objects:  82% (24/29)
+Git#0>Receiving objects:  86% (25/29)
+Git#0>Receiving objects:  89% (26/29)
+Git#0>Receiving objects:  93% (27/29)
+Git#0>Receiving objects:  96% (28/29)
+Git#0>Receiving objects: 100% (29/29)
+Git#0>Receiving objects: 100% (29/29), 4.69 KiB | 240.00 KiB/s, done.
+Git#0>Resolving deltas:   0% (0/5)
+Git#0>Resolving deltas:  20% (1/5)
+Git#0>Resolving deltas:  40% (2/5)
+Git#0>Resolving deltas:  60% (3/5)
+Git#0>Resolving deltas:  80% (4/5)
+Git#0>Resolving deltas: 100% (5/5)
+Git#0>Resolving deltas: 100% (5/5), done.
 Git#1>Updating files:  28% (2/7)
 Git#1>Updating files:  42% (3/7)
 Git#1>Updating files:  57% (4/7)
@@ -272,25 +223,26 @@ Git#1>Updating files:  71% (5/7)
 Git#1>Updating files:  85% (6/7)
 Git#1>Updating files: 100% (7/7)
 Git#1>Updating files: 100% (7/7), done.
-Git#1>HEAD is now at 36b22d4 Upload mtb-example-empty-app [2792]
+Git#1>HEAD is now at 575310e Upload mtb-example-hal-uart-transmit-receive [2307]
 Acquired application source successfully.
 Loading the application.
 Loaded the application successfully.
-Processing project 'rtc_oled'.
-Starting to commit changes to the filesystem and project 'mtb-example-empty-app'.
-Writing mtb file for asset 'CY8CKIT-062-BLE' to the folder 'C:/Users/Kushi/mtw/rtc_oled/deps'.
-Writing mtb file for asset 'cat1cm0p' to the folder 'C:/Users/Kushi/mtw/rtc_oled/libs'.
-Writing mtb file for asset 'core-lib' to the folder 'C:/Users/Kushi/mtw/rtc_oled/libs'.
-Writing mtb file for asset 'core-make' to the folder 'C:/Users/Kushi/mtw/rtc_oled/libs'.
-Writing mtb file for asset 'mtb-hal-cat1' to the folder 'C:/Users/Kushi/mtw/rtc_oled/libs'.
-Writing mtb file for asset 'mtb-pdl-cat1' to the folder 'C:/Users/Kushi/mtw/rtc_oled/libs'.
-Writing mtb file for asset 'recipe-make-cat1a' to the folder 'C:/Users/Kushi/mtw/rtc_oled/libs'.
-Writing mtb file for asset 'cmsis' to the folder 'C:/Users/Kushi/mtw/rtc_oled/libs'.
-Writing mtb file for asset 'device-db' to the folder 'C:/Users/Kushi/mtw/rtc_oled/libs'.
-Git#2>Starting: git -C C:/Users/Kushi/mtw/rtc_oled/libs clone --progress --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/TARGET_CY8CKIT-062-BLE TARGET_CY8CKIT-062-BLE
-Git#3>Starting: git -C C:/Users/Kushi/mtw/mtb_shared/cat1cm0p/release-v1.8.0 -c advice.detachedHead=false checkout --progress release-v1.8.0
-Git#4>Starting: git -C C:/Users/Kushi/mtw/mtb_shared/core-lib/release-v1.4.3 -c advice.detachedHead=false checkout --progress release-v1.4.3
-Git#5>Starting: git -C C:/Users/Kushi/mtw/mtb_shared/core-make/release-v3.5.1 -c advice.detachedHead=false checkout --progress release-v3.5.1
+Processing project 'UART_Transmit_and_Receive_2'.
+Starting to commit changes to the filesystem and project 'mtb-example-hal-uart-transmit-receive'.
+Writing mtb file for asset 'CY8CKIT-062-BLE' to the folder 'C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/deps'.
+Writing mtb file for asset 'cat1cm0p' to the folder 'C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/libs'.
+Writing mtb file for asset 'core-lib' to the folder 'C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/libs'.
+Writing mtb file for asset 'core-make' to the folder 'C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/libs'.
+Writing mtb file for asset 'mtb-hal-cat1' to the folder 'C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/libs'.
+Writing mtb file for asset 'mtb-pdl-cat1' to the folder 'C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/libs'.
+Writing mtb file for asset 'recipe-make-cat1a' to the folder 'C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/libs'.
+Writing mtb file for asset 'cmsis' to the folder 'C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/libs'.
+Writing mtb file for asset 'device-db' to the folder 'C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/libs'.
+Writing mtb file for asset 'retarget-io' to the folder 'C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/deps'.
+Git#2>Starting: git -C C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/libs clone --progress --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/TARGET_CY8CKIT-062-BLE TARGET_CY8CKIT-062-BLE
+Git#3>Starting: git -C C:/Users/Kushi/mtw/mtb_shared/retarget-io/release-v1.7.0 -c advice.detachedHead=false checkout --progress release-v1.7.0
+Git#4>Starting: git -C C:/Users/Kushi/mtw/mtb_shared/cat1cm0p/release-v1.8.0 -c advice.detachedHead=false checkout --progress release-v1.8.0
+Git#5>Starting: git -C C:/Users/Kushi/mtw/mtb_shared/core-lib/release-v1.4.3 -c advice.detachedHead=false checkout --progress release-v1.4.3
 Git#2>Cloning into 'TARGET_CY8CKIT-062-BLE'...
 Git#2>remote: Enumerating objects: 172, done.        
 Git#2>remote: Counting objects:   2% (1/49)        
@@ -454,11 +406,9 @@ Git#2>Receiving objects:  65% (112/172)
 Git#2>Receiving objects:  66% (114/172)
 Git#2>Receiving objects:  67% (116/172)
 Git#2>Receiving objects:  68% (117/172)
-Receiving objects
-Git#2>:  69% (119/172)
+Git#2>Receiving objects:  69% (119/172)
 Git#2>Receiving objects:  70% (121/172)
-Receiving objects:  71% (123/172)
-Git#2>
+Git#2>Receiving objects:  71% (123/172)
 Git#2>Receiving objects:  72% (124/172)
 Git#2>Receiving objects:  73% (126/172)
 Git#2>Receiving objects:  74% (128/172)
@@ -488,11 +438,11 @@ Git#2>Receiving objects:  97% (167/172)
 Git#2>Receiving objects:  98% (169/172)
 Git#2>Receiving objects:  99% (171/172)
 Git#2>Receiving objects: 100% (172/172)
-Git#2>Receiving objects: 100% (172/172), 36.08 KiB | 1.20 MiB/s, done.
+Git#2>Receiving objects: 100% (172/172), 36.08 KiB | 1.57 MiB/s, done.
 Git#2>Resolving deltas:   0% (0/38)
 Git#2>Resolving deltas:   2% (1/38)
 Git#2>Resolving deltas:   5% (2/38)
-Git#2>Resolving deltas:  10% (4/38)
+Git#2>Resolving deltas:   7% (3/38)
 Git#2>Resolving deltas:  13% (5/38)
 Git#2>Resolving deltas:  15% (6/38)
 Git#2>Resolving deltas:  21% (8/38)
@@ -500,13 +450,12 @@ Git#2>Resolving deltas:  23% (9/38)
 Git#2>Resolving deltas:  26% (10/38)
 Git#2>Resolving deltas:  28% (11/38)
 Git#2>Resolving deltas:  31% (12/38)
+Git#2>Resolving deltas:  34% (13/38)
 Git#2>Resolving deltas:  36% (14/38)
-Git#2>Resolving deltas:  39% (15/38)
+Git#2>Resolving deltas:  42% (16/38)
 Git#2>Resolving deltas:  44% (17/38)
-Git#2>Resolving deltas:  47% (18/38)
 Git#2>Resolving deltas:  50% (19/38)
 Git#2>Resolving deltas:  52% (20/38)
-Git#2>Resolving deltas:  55% (21/38)
 Git#2>Resolving deltas:  57% (22/38)
 Git#2>Resolving deltas:  60% (23/38)
 Git#2>Resolving deltas:  63% (24/38)
@@ -518,190 +467,195 @@ Git#2>Resolving deltas:  76% (29/38)
 Git#2>Resolving deltas:  78% (30/38)
 Git#2>Resolving deltas:  81% (31/38)
 Git#2>Resolving deltas:  84% (32/38)
-Git#2>Resolving deltas:  86% (33/38)
 Git#2>Resolving deltas:  89% (34/38)
 Git#2>Resolving deltas:  92% (35/38)
 Git#2>Resolving deltas:  94% (36/38)
 Git#2>Resolving deltas:  97% (37/38)
 Git#2>Resolving deltas: 100% (38/38)
 Git#2>Resolving deltas: 100% (38/38), done.
-Git#2>Success: git -C C:/Users/Kushi/mtw/rtc_oled/libs clone --progress --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/TARGET_CY8CKIT-062-BLE TARGET_CY8CKIT-062-BLE
-Git#6>Starting: git -C C:/Users/Kushi/mtw/mtb_shared/mtb-hal-cat1/release-v2.6.2 -c advice.detachedHead=false checkout --progress release-v2.6.2
-Git#5>HEAD is now at 1ec0dc5 Upload core-make 3.5.1.6513 [3178]
-Git#5>Success: git -C C:/Users/Kushi/mtw/mtb_shared/core-make/release-v3.5.1 -c advice.detachedHead=false checkout --progress release-v3.5.1
-Git#7>Starting: git -C C:/Users/Kushi/mtw/mtb_shared/mtb-pdl-cat1/release-v3.15.1 -c advice.detachedHead=false checkout --progress release-v3.15.1
-Git#4>HEAD is now at 1603b9b Upload core-lib [3062]
-Git#4>Success: git -C C:/Users/Kushi/mtw/mtb_shared/core-lib/release-v1.4.3 -c advice.detachedHead=false checkout --progress release-v1.4.3
-Git#8>Starting: git -C C:/Users/Kushi/mtw/mtb_shared/recipe-make-cat1a/release-v2.4.0 -c advice.detachedHead=false checkout --progress release-v2.4.0
-Git#3>HEAD is now at bc2632e Upload cat1cm0p 1.8.0.508 [3108]
-Git#3>Success: git -C C:/Users/Kushi/mtw/mtb_shared/cat1cm0p/release-v1.8.0 -c advice.detachedHead=false checkout --progress release-v1.8.0
-Git#9>Starting: git -C C:/Users/Kushi/mtw/mtb_shared/cmsis/release-v5.8.2 -c advice.detachedHead=false checkout --progress release-v5.8.2
-HEAD is now at
-Git#8> 7cffe29 Upload recipe-make-cat1a 2.4.0.6451 [3142]
-Git#8>Success: git -C C:/Users/Kushi/mtw/mtb_shared/recipe-make-cat1a/release-v2.4.0 -c advice.detachedHead=false checkout --progress release-v2.4.0
-Git#10>Starting: git -C C:/Users/Kushi/.modustoolbox/global/device-db/release-v4.21.0 -c advice.detachedHead=false checkout --progress release-v4.21.0
-Git#10>HEAD is now at 516d3c46 Upload device-db 4.21.0.7643 [3221]
-Git#10>Success: git -C C:/Users/Kushi/.modustoolbox/global/device-db/release-v4.21.0 -c advice.detachedHead=false checkout --progress release-v4.21.0
-Git#11>Starting: git -C C:/Users/Kushi/mtw/rtc_oled/libs/TARGET_CY8CKIT-062-BLE -c advice.detachedHead=false checkout --progress release-v4.2.0
-Git#11>Updating files:   1% (2/156)
-Git#11>Updating files:   2% (4/156)
-Git#11>Updating files:   3% (5/156)
-Git#11>Updating files:   4% (7/156)
-Git#11>Updating files:   5% (8/156)
-Git#11>Updating files:   6% (10/156)
-Git#11>Updating files:   7% (11/156)
-Git#11>Updating files:   8% (13/156)
-Git#11>Updating files:   9% (15/156)
-Git#11>Updating files:  10% (16/156)
-Git#11>Updating files:  11% (18/156)
-Git#11>Updating files:  12% (19/156)
-Git#11>Updating files:  13% (21/156)
-Git#11>Updating files:  14% (22/156)
-Git#11>Updating files:  15% (24/156)
-Git#11>Updating files:  16% (25/156)
-Git#11>Updating files:  17% (27/156)
+Git#3>HEAD is now at 9dd4eeb Upload retarget-io [3062]
+Git#3>Success: git -C C:/Users/Kushi/mtw/mtb_shared/retarget-io/release-v1.7.0 -c advice.detachedHead=false checkout --progress release-v1.7.0
+Git#6>Starting: git -C C:/Users/Kushi/mtw/mtb_shared/core-make/release-v3.5.2 -c advice.detachedHead=false checkout --progress release-v3.5.2
+Git#2>Success: git -C C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/libs clone --progress --origin cypress --no-checkout --filter=blob:none https://github.com/cypresssemiconductorco/TARGET_CY8CKIT-062-BLE TARGET_CY8CKIT-062-BLE
+Git#7>Starting: git -C C:/Users/Kushi/mtw/mtb_shared/mtb-hal-cat1/release-v2.7.0 -c advice.detachedHead=false checkout --progress release-v2.7.0
+HEAD is now at 1603b9b Upload core-lib [3062]
+Git#5>
+Git#5>Success: git -C C:/Users/Kushi/mtw/mtb_shared/core-lib/release-v1.4.3 -c advice.detachedHead=false checkout --progress release-v1.4.3
+Git#8>Starting: git -C C:/Users/Kushi/mtw/mtb_shared/mtb-pdl-cat1/release-v3.16.0 -c advice.detachedHead=false checkout --progress release-v3.16.0
+Git#4>HEAD is now at bc2632e Upload cat1cm0p 1.8.0.508 [3108]
+Git#4>Success: git -C C:/Users/Kushi/mtw/mtb_shared/cat1cm0p/release-v1.8.0 -c advice.detachedHead=false checkout --progress release-v1.8.0
+Git#9>Starting: git -C C:/Users/Kushi/mtw/mtb_shared/recipe-make-cat1a/release-v2.4.0 -c advice.detachedHead=false checkout --progress release-v2.4.0
+Git#6>HEAD is now at e03e47f Upload core-make 3.5.2.6741 [3403]
+Git#6>Success: git -C C:/Users/Kushi/mtw/mtb_shared/core-make/release-v3.5.2 -c advice.detachedHead=false checkout --progress release-v3.5.2
+Git#10>Starting: git -C C:/Users/Kushi/mtw/mtb_shared/cmsis/release-v5.8.2 -c advice.detachedHead=false checkout --progress release-v5.8.2
+Git#9>HEAD is now at 7cffe29 Upload recipe-make-cat1a 2.4.0.6451 [3142]
+Git#9>Success: git -C C:/Users/Kushi/mtw/mtb_shared/recipe-make-cat1a/release-v2.4.0 -c advice.detachedHead=false checkout --progress release-v2.4.0
+Git#11>Starting: git -C C:/Users/Kushi/.modustoolbox/global/device-db/release-v4.22.0 -c advice.detachedHead=false checkout --progress release-v4.22.0
+Git#11>HEAD is now at 1d405d38 Upload device-db 4.22.0.7873 [3413]
+Git#11>Success: git -C C:/Users/Kushi/.modustoolbox/global/device-db/release-v4.22.0 -c advice.detachedHead=false checkout --progress release-v4.22.0
+Git#12>Starting: git -C C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/libs/TARGET_CY8CKIT-062-BLE -c advice.detachedHead=false checkout --progress release-v4.2.0
+Git#12>Updating files:   1% (2/156)
+Git#12>Updating files:   2% (4/156)
+Git#12>Updating files:   3% (5/156)
+Git#12>Updating files:   4% (7/156)
+Git#12>Updating files:   5% (8/156)
+Git#12>Updating files:   6% (10/156)
+Git#12>Updating files:   7% (11/156)
+Git#12>Updating files:   8% (13/156)
+Git#12>Updating files:   9% (15/156)
+Git#12>Updating files:  10% (16/156)
 Updating files
-Git#11>:  18% (29/156)
-Git#11>Updating files:  19% (30/156)
-Git#11>Updating files:  20% (32/156)
-Git#11>Updating files:  21% (33/156)
-Git#11>Updating files:  22% (35/156)
-Git#11>Updating files:  23% (36/156)
-Git#11>Updating files:  24% (38/156)
-Git#11>Updating files:  25% (39/156)
-Git#11>Updating files:  26% (41/156)
-Git#11>Updating files:  27% (43/156)
-Git#11>Updating files:  28% (44/156)
-Git#11>Updating files:  29% (46/156)
-Git#11>Updating files:  30% (47/156)
-Git#11>Updating files:  31% (49/156)
+: 
+ 11% (18/156)
+Git#12>
+Git#12>Updating files:  12% (19/156)
 Updating files
-Git#11>:  32% (50/156)
-Git#11>Updating files:  33% (52/156)
-Git#11>Updating files:  34% (54/156)
-Git#11>Updating files:  35% (55/156)
-Git#11>Updating files:  36% (57/156)
-Git#11>Updating files:  37% (58/156)
-Git#11>Updating files:  38% (60/156)
-Git#11>Updating files:  39% (61/156)
-Updating files:  40% (63/156)
-Git#11>
-Git#11>Updating files:  41% (64/156)
-Git#11>Updating files:  42% (66/156)
+Git#12>:  13% (21/156)
+Updating files: 
+Git#12> 14% (22/156)
+Git#12>Updating files:  15% (24/156)
+Git#12>Updating files:  16% (25/156)
+Git#12>Updating files:  17% (27/156)
+Git#12>Updating files:  18% (29/156)
 Updating files
-Git#11>:  43% (68/156)
-Git#11>Updating files:  44% (69/156)
-Updating files:  45% (71/156)
-Git#11>
+Git#12>:  19% (30/156)
+Git#12>Updating files:  20% (32/156)
+Git#12>Updating files:  21% (33/156)
+Git#12>Updating files:  22% (35/156)
+Git#12>Updating files:  23% (36/156)
+Updating files: 
+Git#12> 24% (38/156)
+Git#12>Updating files:  25% (39/156)
+Git#12>Updating files:  26% (41/156)
+Git#12>Updating files:  27% (43/156)
+Git#12>Updating files:  28% (44/156)
+Git#12>Updating files:  29% (46/156)
+Git#12>Updating files:  30% (47/156)
+Git#12>Updating files:  31% (49/156)
+Git#12>Updating files:  32% (50/156)
+Git#12>Updating files:  33% (52/156)
+Git#12>Updating files:  34% (54/156)
+Git#12>Updating files:  35% (55/156)
+Git#12>Updating files:  35% (56/156)
+Git#12>Updating files:  36% (57/156)
 Updating files
-Git#11>:  46% (72/156)
-Git#11>Updating files:  47% (74/156)
+Git#12>:  37% (58/156)
+Git#12>Updating files:  38% (60/156)
+Git#12>Updating files:  39% (61/156)
+Git#12>Updating files:  40% (63/156)
 Updating files
-:  48% (75/156)
-Git#11>
-Git#11>Updating files:  49% (77/156)
-Git#11>Updating files:  50% (78/156)
-Git#11>Updating files:  51% (80/156)
-Git#11>Updating files:  52% (82/156)
-Git#11>Updating files:  53% (83/156)
+Git#12>:  41% (64/156)
 Updating files
-Git#11>:  54% (85/156)
-Git#11>Updating files:  55% (86/156)
-Git#11>Updating files:  56% (88/156)
-Git#11>Updating files:  57% (89/156)
+Git#12>:  42% (66/156)
 Updating files
-Git#11>:  58% (91/156)
-Git#11>Updating files:  59% (93/156)
-Git#11>Updating files:  60% (94/156)
-Git#11>Updating files:  61% (96/156)
-Git#11>Updating files:  62% (97/156)
-Git#11>Updating files:  63% (99/156)
-Git#11>Updating files:  64% (100/156)
-Git#11>Updating files:  65% (102/156)
-Git#11>Updating files:  66% (103/156)
-Git#11>Updating files:  67% (105/156)
-Git#11>Updating files:  68% (107/156)
-Git#11>Updating files:  69% (108/156)
-Git#11>Updating files:  70% (110/156)
-Git#11>Updating files:  71% (111/156)
-Git#11>Updating files:  72% (113/156)
-Updating files:  73% (114/156)
-Git#11>
-Git#11>Updating files:  74% (116/156)
+: 
+Git#12> 43% (68/156)
 Updating files
-Git#11>:  75% (117/156)
-Git#11>Updating files:  76% (119/156)
-Git#11>Updating files:  77% (121/156)
-Git#11>Updating files:  78% (122/156)
+Git#12>:  44% (69/156)
+Git#12>Updating files:  45% (71/156)
+Git#12>Updating files:  46% (72/156)
+Git#12>Updating files:  47% (74/156)
+Git#12>Updating files:  48% (75/156)
+Git#12>Updating files:  49% (77/156)
+Git#12>Updating files:  50% (78/156)
+Git#12>Updating files:  51% (80/156)
+Git#12>Updating files:  52% (82/156)
+Git#12>Updating files:  53% (83/156)
+Git#12>Updating files:  54% (85/156)
+Git#12>Updating files:  55% (86/156)
+Git#12>Updating files:  56% (88/156)
+Git#12>Updating files:  57% (89/156)
+Git#12>Updating files:  58% (91/156)
+Git#12>Updating files:  59% (93/156)
+Updating files: 
+Git#12> 60% (94/156)
+Git#12>Updating files:  61% (96/156)
+Git#12>Updating files:  62% (97/156)
+Git#12>Updating files:  63% (99/156)
+Git#12>Updating files:  64% (100/156)
 Updating files
-Git#11>:  79% (124/156)
+Git#12>:  65% (102/156)
+Git#12>Updating files:  66% (103/156)
+Git#12>Updating files:  67% (105/156)
+Git#12>Updating files:  68% (107/156)
+Git#12>Updating files:  69% (108/156)
+Git#12>Updating files:  70% (110/156)
+Git#12>Updating files:  71% (111/156)
+Git#12>Updating files:  72% (113/156)
+Git#12>Updating files:  73% (114/156)
+Git#12>Updating files:  74% (116/156)
+Git#12>Updating files:  75% (117/156)
+Git#12>Updating files:  76% (119/156)
+Git#12>Updating files:  77% (121/156)
 Updating files
-Git#11>:  80% (125/156)
-Updating files:  81% (127/156)
-Git#11>
-Git#11>Updating files:  82% (128/156)
-Git#11>Updating files:  83% (130/156)
-Git#11>Updating files:  84% (132/156)
-Git#11>Updating files:  85% (133/156)
+Git#12>:  78% (122/156)
+Git#12>Updating files:  79% (124/156)
 Updating files
-Git#11>:  86% (135/156)
-Git#11>Updating files:  87% (136/156)
-Git#11>Updating files:  88% (138/156)
-Git#11>Updating files:  89% (139/156)
-Git#11>Updating files:  90% (141/156)
-Git#11>Updating files:  91% (142/156)
-Git#11>Updating files:  92% (144/156)
-Git#11>Updating files:  93% (146/156)
-Git#11>Updating files:  94% (147/156)
+Git#12>:  80% (125/156)
+Git#12>Updating files:  81% (127/156)
+Git#12>Updating files:  82% (128/156)
+Git#12>Updating files:  83% (130/156)
+Git#12>Updating files:  84% (132/156)
+Git#12>Updating files:  85% (133/156)
+Git#12>Updating files:  86% (135/156)
 Updating files
-Git#11>:  95% (149/156)
-Git#11>Updating files:  96% (150/156)
-Git#11>Updating files:  97% (152/156)
-Git#11>Updating files:  98% (153/156)
-Git#11>Updating files:  99% (155/156)
-Git#11>Updating files: 100% (156/156)
-Git#11>Updating files: 100% (156/156), done.
-Git#11>HEAD is now at e0804f0 Upload TARGET_CY8CKIT-062-BLE [1515]
-Git#11>Success: git -C C:/Users/Kushi/mtw/rtc_oled/libs/TARGET_CY8CKIT-062-BLE -c advice.detachedHead=false checkout --progress release-v4.2.0
-Git#9>HEAD is now at 89700d7 Upload cmsis 5.8.2.133 [3108]
-Git#9>Success: git -C C:/Users/Kushi/mtw/mtb_shared/cmsis/release-v5.8.2 -c advice.detachedHead=false checkout --progress release-v5.8.2
-Git#6>HEAD is now at 14e7f49 Upload mtb-hal-cat1 [3108]
-Git#6>Success: git -C C:/Users/Kushi/mtw/mtb_shared/mtb-hal-cat1/release-v2.6.2 -c advice.detachedHead=false checkout --progress release-v2.6.2
-Git#7>HEAD is now at a4711ad Upload mtb-pdl-cat1 3.15.1.40763 [3344]
-Git#7>Success: git -C C:/Users/Kushi/mtw/mtb_shared/mtb-pdl-cat1/release-v3.15.1 -c advice.detachedHead=false checkout --progress release-v3.15.1
+: 
+Git#12> 87% (136/156)
+Git#12>Updating files:  88% (138/156)
+Git#12>Updating files:  89% (139/156)
+Git#12>Updating files:  90% (141/156)
+Git#12>Updating files:  91% (142/156)
+Git#12>Updating files:  92% (144/156)
+Git#12>Updating files:  93% (146/156)
+Git#12>Updating files:  94% (147/156)
+Git#12>Updating files:  95% (149/156)
+Git#12>Updating files:  96% (150/156)
+Git#12>Updating files:  97% (152/156)
+Git#12>Updating files:  98% (153/156)
+Git#12>Updating files:  99% (155/156)
+Git#12>Updating files: 100% (156/156)
+Git#12>Updating files: 100% (156/156), done.
+Git#12>HEAD is now at e0804f0 Upload TARGET_CY8CKIT-062-BLE [1515]
+Git#12>Success: git -C C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/libs/TARGET_CY8CKIT-062-BLE -c advice.detachedHead=false checkout --progress release-v4.2.0
+Git#10>HEAD is now at 89700d7 Upload cmsis 5.8.2.133 [3108]
+Git#10>Success: git -C C:/Users/Kushi/mtw/mtb_shared/cmsis/release-v5.8.2 -c advice.detachedHead=false checkout --progress release-v5.8.2
+Git#8>HEAD is now at cd9299b Upload mtb-pdl-cat1 3.16.0.40964 [3403]
+Git#8>Success: git -C C:/Users/Kushi/mtw/mtb_shared/mtb-pdl-cat1/release-v3.16.0 -c advice.detachedHead=false checkout --progress release-v3.16.0
+Git#7>HEAD is now at 819b03e Upload mtb-hal-cat1 [3403]
+Git#7>Success: git -C C:/Users/Kushi/mtw/mtb_shared/mtb-hal-cat1/release-v2.7.0 -c advice.detachedHead=false checkout --progress release-v2.7.0
 Requested to change the active target to 'APP_CY8CKIT-062-BLE'.
-Removed the file 'C:/Users/Kushi/mtw/rtc_oled/deps/TARGET_CY8CKIT-062-BLE.mtb'.
-Writing the file 'C:/Users/Kushi/mtw/rtc_oled/libs/app.mk'.
-Successfully committed changes to the project 'mtb-example-empty-app'.
-Project "rtc_oled" created successfully.
-Successfully created "rtc_oled" application.
+Removed the file 'C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/deps/TARGET_CY8CKIT-062-BLE.mtb'.
+Writing the file 'C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/libs/app.mk'.
+Successfully committed changes to the project 'mtb-example-hal-uart-transmit-receive'.
+Project "UART_Transmit_and_Receive_2" created successfully.
+Successfully created "UART_Transmit_and_Receive_2" application.
 ==============================================================================
-= Export "rtc_oled" application to Eclipse IDE for ModusToolbox™ =
+= Export "UART_Transmit_and_Receive_2" application to Eclipse IDE for ModusToolbox™ =
 ==============================================================================
-make eclipse CY_IDE_PRJNAME=rtc_oled CY_MAKE_IDE=eclipse CY_MAKE_IDE_VERSION=3.4 CY_TOOLS_PATHS=C:/Users/Kushi/ModusToolbox/tools_3.4 MTB_MAKE_ECLIPSE_FORCE_REGENERATE_PROJECT=1
+make eclipse CY_IDE_PRJNAME=UART_Transmit_and_Receive_2 CY_MAKE_IDE=eclipse CY_MAKE_IDE_VERSION=3.4 CY_TOOLS_PATHS=C:/Users/Kushi/ModusToolbox/tools_3.4 MTB_MAKE_ECLIPSE_FORCE_REGENERATE_PROJECT=1
 Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
 Searching installed tools in progress...
 Searching installed tools complete
 Prebuild operations complete
 Toolchain validation: PASS
-Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+Initializing build: mtb-example-hal-uart-transmit-receive Debug APP_CY8CKIT-062-BLE GCC_ARM
 Auto-discovery in progress...
 Auto-discovery complete
 Tools Directory: C:/Users/Kushi/ModusToolbox/tools_3.4
 Toolchain validation: PASS
-Initializing build: mtb-example-empty-app Debug APP_CY8CKIT-062-BLE GCC_ARM
+Initializing build: mtb-example-hal-uart-transmit-receive Debug APP_CY8CKIT-062-BLE GCC_ARM
 ==============================================================================
 = Building application =
 ==============================================================================
 Generating compilation database file...
 -> ./build/compile_commands.json
 Compilation database file generation complete
-Generated C:/Users/Kushi/mtw/rtc_oled/.cproject
-Generated C:/Users/Kushi/mtw/rtc_oled/.project
-Generated C:/Users/Kushi/mtw/rtc_oled/.mtbLaunchConfigs/rtc_oled Program (KitProg3_MiniProg4).launch
-Generated C:/Users/Kushi/mtw/rtc_oled/.mtbLaunchConfigs/rtc_oled Erase Device (KitProg3_MiniProg4).launch
-Generated C:/Users/Kushi/mtw/rtc_oled/.mtbLaunchConfigs/rtc_oled Attach (KitProg3_MiniProg4).launch
-Generated C:/Users/Kushi/mtw/rtc_oled/.mtbLaunchConfigs/rtc_oled Debug (KitProg3_MiniProg4).launch
+Generated C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/.cproject
+Generated C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/.project
+Generated C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/.mtbLaunchConfigs/UART_Transmit_and_Receive_2 Program (KitProg3_MiniProg4).launch
+Generated C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/.mtbLaunchConfigs/UART_Transmit_and_Receive_2 Erase Device (KitProg3_MiniProg4).launch
+Generated C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/.mtbLaunchConfigs/UART_Transmit_and_Receive_2 Attach (KitProg3_MiniProg4).launch
+Generated C:/Users/Kushi/mtw/UART_Transmit_and_Receive_2/.mtbLaunchConfigs/UART_Transmit_and_Receive_2 Debug (KitProg3_MiniProg4).launch
 
 Instructions:
 1. Open Eclipse IDE for ModusToolbox
@@ -710,9 +664,9 @@ Instructions:
 
 For more information, refer to the Eclipse IDE for ModusToolbox user guide.
 
-The application "rtc_oled" was successfully exported to Eclipse IDE for ModusToolbox™.
+The application "UART_Transmit_and_Receive_2" was successfully exported to Eclipse IDE for ModusToolbox™.
 0 error(s), 0 warning(s)
 
 Summary:
 
-Successfully created and exported "rtc_oled" application.
+Successfully created and exported "UART_Transmit_and_Receive_2" application.
